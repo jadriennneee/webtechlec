@@ -1,0 +1,70 @@
+HTML
+   - used to mark-up documens in the WWW
+   - used for structure and content
+   - application of SGML (ISO 8879)
+   
+  A. Standards
+	1. HTML 2.0 (RFC 1866)
+	2. HTML 3.2 (W3C Recommendation)
+	3. HTML 4.0 (W3C Recommendation)
+	4. HTML 4.01 (W3C Recommendation)
+		- W3C Recommendation came out by 2014
+		** W3C Recommendation - cleans the standard of HTML
+		- Richer user interfaces
+		- favors stylesheet
+		- introduced deprecation of presentational elements
+		
+		>Versions:
+			a. Strict - forbids use of deprecated elements
+			b. Transitional - allows deprecated elements for backward compatibility
+	5. XHTML
+		- Strictly formatted as XML
+			*XML - easily parsed structure
+		- flexible
+		- introduction of new tools for creating. editing, and parsing HTML
+		
+		#Differences of XHTML and HTML 4.0:
+			1. nested elements
+			2. attribute names and elements must be in lower case format
+			3. end tags are required
+			
+	** Netscape became open source
+		- Mozilla Firefox was created
+	** Around 2000 - Second Browser Wars
+		**DOM (Document Object Model)
+			- document used to parse document object
+	** 2008 - Chrome came out
+	
+	6. HTML 5
+		- Ian Hickson edited the first draft of HTML 5 (2008)
+		- W3C Recommendation
+			- October 2014 (HTML 5)
+			- November 2016 (HTML 5.1)
+			- December 2017 (HTML 5.2)
+			- HTML Living Standard (WHATWG)
+			
+  B. HTML Document Structure (Basic)
+	a. Version Information (ex. DOCTYPE)
+	b. Basic Components
+		1. Document Type Declaration (DOCTYPE)
+			- HTML 4.01
+			- XHTML
+			- HTML 5
+		2. Elements
+			- Tags
+			  - Content
+				a. Content Models
+					> Categories:
+						- Flow
+						- Phrasing
+						- Embedded
+						- Interactive
+				b. Void Elements
+			- Attributes and Attribute Values
+				- Global Attributes-can be used by any element
+				- Custom Non-visible Data Attributes-can be used in 
+					creating own attribute that is referenced to a script.
+				- WAI-ARIA attributes-intended for providing accessibilty
+				- Element-specific Attributes-if attributes are not global
+			- MathML, SVG
+		3. Character References
