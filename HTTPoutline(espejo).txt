@@ -1,0 +1,109 @@
+HTTP
+(version)
+-HTTP 0.9(one method(get))
+-HTTP 1.0(added post and header)
+-HTTP 1.1(
+-HTTP 2.0
+
+HTTP
+-typically run on the top of TCP/IP
+-based on Client-server architecture
+-uses a request-responce standard protocol
+-provide functionality:
+	-cache
+	-content media type
+	-language and character
+	-content/ transfer coding
+	-content negation
+	-client-server
+	-persistent connections
+	-request pipelining
+	-authentication
+
+HTTP resource Addressing
+-http reasource are defined using URI's
+HTTP URI's
+-scheme
+-authority
+	-user
+	-host
+	-port number
+-path
+-query
+-fragments
+
+HTTP Request Message
+Request Line
+-method
+-Request target
+-protocol version
+
+-message header
+-Empty line
+-message body
+
+HTTP Responce Message
+Status Line
+-protocol version
+-status
+
+STANDARD METHODS:
+-get
+-post
+-head
+-push
+-delete
+-options
+-trace
+-connect
+
+Method Properties
+-safe Methods
+-Idempotence method
+-cahceable method
+
+Status Code:
+-information(1xx)
+-Sucess(2xx) 
+-Redirection(3xx)
+-Client-Error(4xx)
+
+Message Header:
+-general
+-responce
+-entity header
+
+General header fields:
+-Cache-control
+-connection
+-date
+-pragma
+-trailer
+-transfer-encoding
+-upgrade
+-via
+-warning
+
+Request header fields:
+-accept				-if-natch
+-accept-charset			-if-modified-match
+-accept-encoding		-if-none-match
+-accept-language		-if-range
+-authorization			-if-unmodified-since
+-expect				-max-forwards
+-from				-proxy
+-host				-range
+
+Responce header field:
+-accept				-retry-after
+-age				-server
+-etag				-vary
+-location			-www-authentication
+-proxy-authentication
+
+Entity header Field:
+-allow
+-content-encoding
+-content-language
+-content-length
+-content-location
