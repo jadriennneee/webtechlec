@@ -71,9 +71,28 @@ hr {
     text-shadow: 3px 3px 1px black;
 }
 
-/*section-b*/
+/* Section B*/
 #section-b {
-    grid-area: section-b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    min-height: 100px;
+    background-color: rgb(234, 234, 234);
+}
+
+#section-b ul {
+    display: grid;
+    grid-area: topic-list;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+}
+
+.circle {
+    grid-area: circle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
 }
 
 /*section-c*/
