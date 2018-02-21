@@ -1,0 +1,25 @@
+HTML
+-language used to markup documents in the www
+-used to specify the structure and content of web pages.
+
+
+Version History:
+   -pre standardization
+      a)HTML Tags by Tim-Berners Lee
+      b)Hypertext Markup Language(HTML) Internet DRAFT by Tim Berners-Lee and Dan Connolly published by the IETF (mid 1993)
+    
+    Standards:
+      -HTML 2.0(RFC 1866,Nov 1995)
+         -Supplement RFCs:
+            -Form-based File Upload(RFC 1867, Nov 1995)
+            -HTML Tables(RFC 1942, May 1996)
+            -Client-Side Image Maps (RFC 1980, Aug 1996)
+            -Internationalization of HTML(RFC 2070, Jan 1997)
+      -HTML 3.2 (W3C Recommendation, Jan 1997)
+      -HTML 4.0 (W3C Recommendation, Jan 1997)
+      -HTML 4.01 (W3C Recommendation, Dec 1999)
+          -Strict,Transitional,Frameset DTDs
+
+      -XHTML
+          -Reformation of  HTML in XML
+       
