@@ -13,6 +13,7 @@ body {
         "section-c"
         "footer";
     font-family: Arial, sans-serif;
+    color: gray;
 }
 
 header {
@@ -56,7 +57,7 @@ hr {
 /* Section-a */
 #section-a {
     grid-area: section-a;
-    min-height: 500px;
+    min-height: 550px;
     background: url('img/showcase.jpg');
     background-size: cover;
     background-position: center;
@@ -74,33 +75,52 @@ hr {
 /* Section B*/
 #section-b {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     min-height: 100px;
     background-color: rgb(234, 234, 234);
+    padding: 20px 0;
 }
 
 #section-b ul {
+    align-self: center;
     display: grid;
-    grid-area: topic-list;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 150px;
     list-style-type: none;
 }
 
 .circle {
-    grid-area: circle;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: red;
+    text-align: center;
+    font-size: 90%;
+}
+
+#html {
+    background-color: rgb(64, 77, 201);
+}
+
+#css {
+    background-color: rgb(253, 127, 54);
+}
+
+#protocols {
+    background-color: rgb(253, 201, 54);
 }
 
 /*section-c*/
 #section-c {
     grid-area: section-c;
+    padding: 40px;
 }
 
 /*footer*/
 footer {
     grid-area: footer;
+    background-color: rgb(19, 129, 181);
+    color: #ffff;
+    padding: 40px;
+    text-align: center;
 }
