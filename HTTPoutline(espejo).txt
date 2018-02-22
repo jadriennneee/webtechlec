@@ -1,4 +1,7 @@
 HTTP
+-application layer communications protocol used to access resources.
+-by Tim Berners-Lee
+-jointly developed by the W3C and the IETF
 (version)
 -HTTP 0.9(one method(get))
 -HTTP 1.0(added post and header)
@@ -9,6 +12,8 @@ HTTP
 -typically run on the top of TCP/IP
 -based on Client-server architecture
 -uses a request-responce standard protocol
+-client send an HTTP request message to the server
+-the server processes the request and replies with an HTTp responce message
 -provide functionality:
 	-cache
 	-content media type
@@ -23,14 +28,14 @@ HTTP
 HTTP resource Addressing
 -http reasource are defined using URI's
 HTTP URI's
--scheme
--authority
-	-user
-	-host
+-scheme(http or https)
+-authority  
+	-user -information or user credential
+	-host -
 	-port number
--path
--query
--fragments
+-path - resource resolved relative to the documnet root in the server and may refer to a static or dynamic resources.
+-query - typically provided as key value pairs, with ampersand seperators between key/value pairs.
+-fragments identifier 
 
 HTTP Request Message
 Request Line
@@ -48,25 +53,67 @@ Status Line
 -status
 
 STANDARD METHODS:
--get
--post
--head
+-get - transfer current select representation of the target resource
+-post - request that the target resource perform resource-specific processing of the representation enclosed with the message of the body.
+-head - use to retrieve metadata about the target resource representation without transferring representation data itself.
 -push
--delete
--options
--trace
--connect
+-delete -
+-options - request information about the communication options for the target resource
+-trace - request remote, application-level of the request message
+-connect - used to establish tunnel to server-client
 
 Method Properties
--safe Methods
--Idempotence method
--cahceable method
+-safe Methods - read only
+-Idempotence method -intended effect on the server of multiple identical request with the method is the same as the effect of a single such request.
+-cahceable method - indicate the the responce to method is allowed to be stored for future reuse.
 
 Status Code:
 -information(1xx)
+ -100 continue
+ -101 Switching protocol
 -Sucess(2xx) 
+ -200 ok
+ -201 Created
+ -202 Accpeted
+ -203 Non Authoritative information
+ -204 No content
+ -205 reset connection
+ -206 partial content
 -Redirection(3xx)
+ -300 multiple choices
+ -301 moved permanently
+ -302found
+ -303 see others
+ -304 not modified
+ -305 use proxy
+ -306 unused
+ -307 temporarily redirected
 -Client-Error(4xx)
+ -400 bad request
+ -401 unauthorized
+ -402 payment required
+ -403 forbidden
+ -404 not found
+ -405 method not allowed
+ -406 not acceptable
+ -407 proxy authentication required
+ -408 request timeout
+ -409 conflict
+ -410 gone
+ -411 length required
+ -412 prediction failed
+ -413 payload too large
+ -414 url too long
+ -415 unsupported edia type
+ -416 Range not satisfiable
+ -417 Expectationfailed
+-Server error
+ -500 internal server error
+ -501 not implemented
+ -502 bad gateway
+ -503 service unavailable
+ -504 gateway traffic
+ -505 HTTP version not supported
 
 Message Header:
 -general
