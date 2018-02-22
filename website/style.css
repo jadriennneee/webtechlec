@@ -4,6 +4,11 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
+    color: gray;
+}
+
+body.horizontal-grid {
     display: grid;
     grid-auto-rows: minmax(70px, auto);
     grid-template-areas:
@@ -12,8 +17,10 @@ body {
         "section-b"
         "section-c"
         "footer";
-    font-family: Arial, sans-serif;
-    color: gray;
+}
+
+body.topic-grid {
+    display: grid;
 }
 
 header {
@@ -72,7 +79,7 @@ hr {
     text-shadow: 3px 3px 1px black;
 }
 
-/* Section B*/
+/* Section B */
 #section-b {
     display: grid;
     justify-content: center;
@@ -110,13 +117,47 @@ hr {
     background-color: rgb(253, 201, 54);
 }
 
-/*section-c*/
+/* Section-C */
 #section-c {
     grid-area: section-c;
     padding: 40px;
 }
 
-/*footer*/
+/* Two-column-container */
+#two-column-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+aside {
+    height: 500px;
+    background: rgb(157, 225, 253);
+    padding: 10px;
+    display: grid;
+    color: #ffffff;
+}
+
+aside ul {
+    list-style: none;
+}
+
+.topic-container {
+    background: rgb(64, 77, 201);
+    padding: 10px;
+}
+
+.topic-container h3 {
+    text-align: center;
+}
+
+main {
+    height: 500px;
+    background: blue;
+    padding: 10px;
+    background: rgb(234, 234, 234);
+}
+
+/* Footer */
 footer {
     grid-area: footer;
     background-color: rgb(19, 129, 181);
