@@ -1,0 +1,94 @@
+HTTP (HyperText Transfer Protocol)
+	- communication protocol used to access hypermedia/hypertext on www
+
+	VERSION HISTORY:
+		> HTTP 0.9 (1991)
+			- uses one method only (GET method)
+			- can only use one connection therefore not allowing persistent connection
+			- responses can only provide HTML formats
+		
+		> HTTP 1.0 (RFC 1945, May 1996)
+			- more methods are added (POST and HEAD method)
+			- protocol can already accomodate extensions (ex. characters, etc.)
+			- still uses one connection
+
+		> HTTP 1.1 (RFC 2068 Jan 1997, RFC 2616 Jun 1999, RFC 7230-7235 Jun 2014)
+			- protocol used until now
+			- more methods are added (8 methods)
+
+			FEATURES:
+				- can already reuse connections
+					-can already accomodate persistent connections
+				- already supports data compression
+					- body of message can already be compressed to enhance speed
+					- does not support header compression
+			*SPDY - Google's project to enhance data scheme
+
+		> HTTP 2.0 (RFC 7540 May 2015)
+			- enhanced version of HTTP 1.1
+				- data transmission
+				- already has multiplexing and pipelining
+					*pipelining - making things concurrent
+				- can already accomodate header compression
+
+				FEATURES:
+					- can accomodate server push
+						*server push - server already anticipates the possible request so 
+						that it can already send its response ahead of time
+
+	HTTP FUNDAMENTALS:
+		> stateless protocol
+			*stateless - server does not need to keep information about Client's request
+		> runs on top'of TCP/IP 
+			- uses port 80 by default
+
+		*https
+			- HTTP over SSL/TLS
+			- uses TCPp port 443 by default
+			- protocol for securing information
+		> based on client-server architecture
+			SERVER:
+				- origin server
+					- processes requests
+				- proxy server, gateways, tunnels
+
+			CLIENT ("user agents")
+				- gives requests to server
+				- web crawlers/spiders, etc.
+		> uses "request-response" protocol
+		> provides support for other functionalities:
+			- cache control 
+				- if you need to reuse data
+			- content media type (MIME) specification
+				*MIME extension
+			- language & character set specification
+				- because of internalization
+			- content/transfer codings
+				- can have ways in transmitting the data
+			- content negotiation
+				- allows users/clientns to negotiatie in terms of preferred format
+					(ex: .pdf, etc.)
+			- persistent connection
+			- client-server protocol negotiations
+				- has to do with the way how client and server interact with each other
+			- request pipelining/multiplexing
+				*Multiplexing - concurrency
+			- authentication/authrization
+				- should be possble for user to be authenticated
+
+	HTTP RESOURCE ADDRESSING
+		- HTTP resources are identified using URIs (RFC 3968)
+			> Parts of URL:
+				- scheme (http/https)
+				- authority
+					- user information/authentication credentials (deprecated)
+					- host 
+						- associated with a domain name
+							* Domain Name - resolved to an IP Address using DNS
+					- port number (optional)
+						- If no port number is specified, use default port no. 80
+				- path
+					- to resource 
+						- resolved relative to the document root on the server
+					- may refer to static/dynamic resource
+					                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
