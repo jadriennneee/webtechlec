@@ -1,0 +1,36 @@
+HTML
+(version)
+-pre-standarized
+  -HTML TAGS
+  -HTML Internet draft
+  -HTML +
+
+-standarized
+  -HTML 2.0
+  -HTML 3.2
+  -HTML 4.0
+  -HTML 4.01
+
+ -XHTML
+  -XHTML 1.0
+  -XHTML 1.1
+
+ -HTML5
+  -HTML5
+  -HTML51.
+  -HTML 5.2
+  -HTML living Standard
+
+HTML Document Doctype
+-HTML 4.0 doctype
+-XHTML 1.0 doctype
+-HTML 5 DOCTYPE
+
+ELEMENTS
+-TAGS
+-CONTENT
+ -COntent Model
+ -VOID ELEMENTS
+-ATTIBUTEs
+-MATHML,SVG
+-CHARACTER REFERENCE
