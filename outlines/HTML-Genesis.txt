@@ -1,0 +1,166 @@
+What is HTML?
+	HTML is a computer language devised to allow website creation.
+
+	HyperText is the method by which you move around on the web — by clicking on special text called hyperlinks which bring you to the next page.
+	Markup is what HTML tags do to the text inside them. They mark it as a certain type of text (italicised text, for example).
+
+	link -- http://www.yourhtmlsource.com/starthere/whatishtml.html
+
+
+A.STANDARDS
+
+1.HTML 2.0(RFC 1866)
+  	HTML 2.0 was first created to standardize the features users were already utilizing HTML to perform. However, programmers wanted new features as well.
+  	HTML 2.0 was standardized as a RFC, or “request for comment” project in a memo released by Tim Berners-Lee with the In’s Network Working Group. 
+  	It was clearly a work in progress; its status as a “request for comment” project meant that programmers could submit feedback for consideration in new updates.
+
+2.HTML 3.0(w3c Recommendation)
+  	HTML 3.0 is a set of extensions to the HTML hypertext markup format. Like HTML 2.0, it is based on the Standard Generalized Markup Language (SGML). Unlike conventional desktop publishing, many details of how documents are laid out are left to the capabilities of individual browsers or reader preferences, rather than being completely specified by authors. This allows documents to be viewed on a very wide range of equipment.
+
+	HTML 3.0 was a proposed1 set of standards released after HTML 2.0.It would have added a number of new features to the language, including the ability to code tables, display mathematical equations, and allowing text flow around other objects2. However, it was also designed to be backwards compatible with HTML 2.0, meaning that HTML 2.0 pages could still be read using HTML 3.0.
+
+HTML 3.2(W3C Recommendation)
+  	HTML 3.2 was the first version of HTML to be released as a W3C Recommendation, and implemented most, but not all, of the features that were proposed in 3.0. Most notably, the mathematical equations were removed from 3.2. However, HTML 3.2 also included features that individual internet browsers were already using individually.
+
+  --link : http://historyofhtml.web.unc.edu/home/html-3-2/
+
+3.HTML 4.0
+  	HTML 4.0 was published on December 1997 as a W3C Recommendation. 
+  	In addition to previous revisions of HTML, HTML 4.0 supports style sheets, scripting languages, object support, more multimedia options, and improved accessibility for users with disabilities, among other features.
+
+  --link :https://www.techopedia.com/definition/16391/html-40
+
+  HTML 4.01
+  	There are 22 elements new to HTML in the 4 specifications, and they cover all the areas, from text-formatting to tables to frames and the rest. 
+  	HTML4 has a very loose syntax - for example closing tags are often optional. As an example - paragraphs in HTML4 are automatically ended when a new paragraph is started. (you don't have to close a paragraph with a tag in HTML4)
+
+  a)Strict
+  b)Transitional
+  
+
+XHTML
+   Stands for "Extensible Hypertext Markup Language."
+   XHTML is a spinoff of the hypertext markup language (HTML) used for creating Web pages. It is based on the HTML 4.0 syntax, but has been modified to follow the guidelines of XML, the Extensible Markup Language. Therefore, XHTML 1.0 is sometimes referred to as HTML 5.0.
+
+   differences:
+   The main difference between XHTML and HTML4 is that all tags, once opened, must be closed. There are also some restrictions about what tags can be nested inside each other.
+
+
+4.HTML 5
+  	fifth and current major version of the HTML standard.
+  	-includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications.[6] For the same reasons, HTML5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind.
+
+  --https://en.wikipedia.org/wiki/HTML5
+
+ 	New sematic tags added by html 5
+	header
+	main
+	nav
+	article
+	section
+	aside
+	address
+	footer
+
+  --https://html.com/document/
+
+B.HTML Document Structure(BASIC)
+
+a)Version Information
+
+	-the <!DOCTYPE> declaration must be the very first thing in your HTML document, before the <html> tag.
+
+	-The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+
+In HTML 4.01, the <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML. The DTD specifies the rules for the markup language, so that the browsers render the content correctly.
+
+b.)Basic Components
+1.Document Type Declaration (DOCTYPE)
+	HTML 4.01 Strict = <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	HTML 4.01 Transitional = <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	HTML 4.01 FrameSet =  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+	XHTML 1.0 Strict = <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	XHTML 1.0 Transitional = <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	XHTML 1.0 Frameset =<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+	XHTML 1.1 = <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+	HTML 5= <!DOCTYPE html>
+  --https://html.com/tags/doctype/
+
+2.Elements
+	- usually consists of a start tag and end tag, with the content inserted in between:
+	<tagname>Content goes here...</tagname>
+
+
+	What is the HTML Head?
+	The HTML head is the contents of the <head> element — unlike the contents of the <body> element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document. In the above example, the head is quite small:
+
+	<head>
+  		<meta charset="utf-8">
+  		<title>My test page</title>
+	</head>
+
+	<meta> element - adding metadata to a document
+	<title> element - can be used to add a title document to the document.
+
+  --https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+    a.Content Models
+		Content Model refers to the set of rules that define what type of content each element is allowed to have. Mostly, this translates into what other elements are allowed to be nested inside which other elements.
+
+		Categories:
+		Each element in HTML falls into zero or more categories that group elements with similar characteristics together. The following broad categories are used in this specification:
+
+		1.)Metadata content
+		==Metadata content is content that sets up the presentation or behavior of the rest of the content, or that sets up the relationship of the document with other documents, or that conveys other "out of band" information.
+
+		base,link,meta,noscript,script,style,template,title
+
+		2.)Flow content
+		== Most elements that are used in the body of documents and applications are categorized as flow content.
+
+		a,abbr,address,area (if it is a descendant of a map element),article,aside,audio,b,bdi,bdo,blockquote,br,button,canvas,cite,code,data,datalist,del,details,dfn,dialog,div,dl,em,embed,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,i,iframe,img,input,ins,kbd,label,link (if it is allowed in the body),main (if it is a hierarchically correct main element)ma,mark,MathML math,menu,meta (if the itemprop attribute is present),meter,nav,noscript,object,ol,output,p,picture,pre,progress,q,ruby,s,samp,script,section,select,slot,small,span,strong,sub,sup,SVG svg,table,template,textarea,time,u,ul,var,video,wbr,autonomous custom elements,text
+
+
+		3.)Sectioning content 
+		==is the content that defines the scope of headings and footers.
+
+		article,aside,nav,section
+
+		4.)Heading content 
+		==defines the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself).
+
+		h1,h2,h3,h4,h5,h6,hgroup
+
+		5.)Phrasing content 
+		==is the text of the document, as well as elements that mark up that text at the intra-paragraph level. Runs of phrasing content form paragraphs.
+
+		a,abbr,area (if it is a descendant of a map element),audio,b,bdi,bdo,br,button,canvas,cite,code,data,datalist,del,dfn,em,embed,i,iframe,img,input,ins,kbd,label,link (if it is allowed in the body),mapmarkMathML math,meta (if the itemprop attribute is present),meter,noscript,object,output,picture,progress,q,ruby,s,samp,script,select,slot,small,span,strong,sub,sup,SVG svg,template,textarea,time,u,var,video,wbr,autonomous custom elements,text
+
+		6.)Embedded content 
+		== is the content that imports another resource into the document, or content from another vocabulary that is inserted into the document.
+
+		audio,canvas,embed,iframe,img,MathML math,object,picture,SVG svg,video
+
+		7.)Interactive content 
+		==is the content that is specifically intended for user interaction.
+
+		a (if the href attribute is present),audio (if the controls attribute is present),button,details,embed,iframe,img (if the usemap attribute is present),input (if the type attribute is not in the Hidden state),label,object (if the usemap attribute is present)select,textarea,video (if the controls attribute is present)
+
+
+	b.Void Elements
+		-Most HTML elements have a start tag and an end tag that indicate where the element begins and where it ends. There is a group of elements that are exceptions to this rule. These elements are called empty or void and only have a start tag since they can't have any content. They must not have an end tag in HTML.
+ 	
+ 		HTML 4.0 Void Elements
+ 		-- base, br, col, hr, img, input, link, meta, and param. HTML5 currently adds command, keygen, and source to that list.
+
+ 		HTML 5.0
+    	-- area, base, br, col, command, embed, hr, img, input, keygen, link, meta, param, source, track, wbr
+
+	--https://www.w3.org/TR/2012/WD-html-markup-20120320/syntax.html
+	
+	-ATTRIBUTES.
+	Elements in HTML have attributes; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+	(table yan ay)
+
+
