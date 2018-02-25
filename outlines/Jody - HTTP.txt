@@ -91,4 +91,49 @@ HTTP (HyperText Transfer Protocol)
 					- to resource 
 						- resolved relative to the document root on the server
 					- may refer to static/dynamic resource
-					                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+				- query
+					- '?' indicates the start of a query
+					- additional parameters in URL
+					- typically providd as kuey-value pairs
+					- may be URL encoded
+				- fragment identifier
+
+	MESSAGE FORMATS
+		- Parts:
+			> Headline
+			> Header
+			> Blank Space after header
+			> Body
+		- HTTP Request message 										HTTP Response Message
+			> Request line 												> Status Line
+				- most commonly uses GET method
+			> message headers											> Message Headers
+			> empty line 												> empty line (CRLF)
+			> Body of message (optional)								> Message Body (optional)
+				** a.k.a 'payload'
+
+		HTTP Request Methods
+			> Standard Methods
+				1. GET
+					- transfers data from the server
+					- must be supported by all servers
+				2. HEAD
+					- similar to GET method but there is no message body 
+				3. POST
+					- query is shown in the body
+					- makes changes to the state of the server
+				4. PUT
+					- creates/replaces the stat targete of the target source
+				5. DELETE
+					- removes a resource
+				6. OPTIONS
+					- to find out communication options/requirements needed for the resource without an action
+					- shows allows methods for the resource
+				7. TRACE
+					- get information about request wherein the server will echo back
+					- includes header information and length of body
+				8. CONNECT
+					- used to establish a 'tunnel' between user and client to secure 
+					  a connection through a proxy which can then be secured using TLS.
+					                                                                   
+			                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
