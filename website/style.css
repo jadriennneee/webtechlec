@@ -5,7 +5,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: gray;
+    background-color: #f4f4f4;
 }
 
 body.horizontal-grid {
@@ -27,8 +27,12 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-area: header;
-    background-color: rgb(19, 129, 181);
+    background-color: #2C3A47;
     padding: 20px;
+}
+
+hr {
+    margin: 40px;
 }
 
 /* Branding */
@@ -41,11 +45,14 @@ header {
 }
 
 /* Main navigation */
+nav {
+    align-self: center;
+}
+
 nav ul {
     display: grid;
     grid-template-columns: repeat(4, 120px);
     text-align: center;
-    margin-top: 30px;
     justify-content: right;
     list-style-type: none;
 }
@@ -55,13 +62,7 @@ nav a {
     color: #ffffff;
 }
 
-/* Horizontal Ruler */
-hr {
-    grid-column: 1 / 3;
-    border: 2px solid rgb(41, 162, 74);
-}
-
-/* Section-a */
+/* Section-A */
 #section-a {
     grid-area: section-a;
     min-height: 550px;
@@ -73,10 +74,9 @@ hr {
 }
 
 #section-a h1 {
-    font-size: 500%;
+    font-size: 600%;
     padding: 150px 0;
     text-transform: lowercase;
-    text-shadow: 3px 3px 1px black;
 }
 
 /* Section B */
@@ -85,36 +85,26 @@ hr {
     justify-content: center;
     min-height: 100px;
     background-color: rgb(234, 234, 234);
-    padding: 20px 0;
 }
 
 #section-b ul {
     align-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 150px;
+    grid-template-columns: repeat(5, 1fr);
     list-style-type: none;
 }
 
-.circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: red;
+#section-b li {
+    padding: 20px;
+}
+
+.feature {
+    align-items: center;
     text-align: center;
-    font-size: 90%;
 }
 
-#html {
-    background-color: rgb(64, 77, 201);
-}
-
-#css {
-    background-color: rgb(253, 127, 54);
-}
-
-#protocols {
-    background-color: rgb(253, 201, 54);
+.feature img {
+    width: 100px;
 }
 
 /* Section-C */
@@ -126,42 +116,135 @@ hr {
 /* Two-column-container */
 #two-column-container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 3fr;
+    min-height: 500px;
+    background: rgb(234, 234, 234);
 }
 
-aside {
-    height: 500px;
-    background: rgb(157, 225, 253);
-    padding: 10px;
-    display: grid;
+#side-bar {
     color: #ffffff;
+    padding: 20px;
+    min-height: 500px;
 }
 
-aside ul {
-    list-style: none;
+#side-bar .card {
+    margin-bottom: 5px;
 }
 
-.topic-container {
-    background: rgb(64, 77, 201);
+#side-bar .accordion {
+    width: 100%;
+    background-color: rgb(44, 48, 149);
+    border: none;
     padding: 10px;
+    color: #ffffff;
+    font-size: 130%;
+    cursor: pointer;
 }
 
-.topic-container h3 {
+#side-bar .accordion:hover, #side-bar .accordion:active {
+    background-color: #2C3A47;
+    transition: 0.2s;
+}
+
+#side-bar .accordion:focus {
+    outline: none;
+}
+
+#side-bar .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+}
+
+#side-bar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#side-bar li {
+    padding: 10px;
+    margin: 0;
     text-align: center;
 }
 
+#side-bar li a {
+    font-weight: lighter;
+    font-size: 80%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#overview .accordion, #overview .panel {
+    background-color: #2d4895;
+}
+
+#http .accordion, #http .panel {
+    background-color: #952c2e;
+}
+
+#url .accordion, #url .panel {
+    background-color: #639633;
+}
+
+#html .accordion, #html .panel {
+    background-color: #966130;
+}
+
+#csws .accordion, #csws .panel {
+    background-color: #31967c;
+}
+
+#ssws .accordion, #ssws .panel {
+    background-color: #952e61;
+}
+
+#webSecurity .accordion, #webSecurity .panel {
+    background-color: #31964a;
+}
+
+#advancedTopics .accordion, #advancedTopics .panel {
+    background-color: #603095;
+}
+
+/* Main Content */
 main {
-    height: 500px;
-    background: blue;
-    padding: 10px;
-    background: rgb(234, 234, 234);
+    padding: 20px 30px;
+    color: #36454f;
+}
+
+main #topic-wrapper {
+    background-color: #ffff;
+    padding: 40px 60px;
+    min-height: 500px;
+}
+
+#topic-wrapper h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#topic-wrapper h2 {
+    margin: 20px 0;
+}
+
+#topic-wrapper ul {
+    margin-left: 50px;
+}
+
+#topic-wrapper li {
+    margin: 5px 0;
 }
 
 /* Footer */
 footer {
     grid-area: footer;
-    background-color: rgb(19, 129, 181);
+    background-color: #2C3A47;
     color: #ffff;
     padding: 40px;
     text-align: center;
+}
+
+.highlight {
+    background-color: #2C3A47;
 }
