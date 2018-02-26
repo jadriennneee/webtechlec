@@ -236,6 +236,17 @@ main #topic-wrapper {
     margin: 5px 0;
 }
 
+/* Status Code Wrapper */
+#status-code-wrapper {
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#status-code-wrapper ul {
+    margin-left: 20px;
+}
+
 /* Footer */
 footer {
     grid-area: footer;
