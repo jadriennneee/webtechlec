@@ -1,23 +1,42 @@
-HTML
+HTML(Hypertext Markup Language)
+-language used to mark up document(i.e webpages) in the World Wide Web
+-application of SGML(Standard Generalize Markup Language)
+-histprically, HTML was used to specify the STRUCTURE AND CONTENT of webpages as well as their presentation
+-modern web development practice, however, uses HTML solely for SEMANTIC specification of webpages structure and content, with presentational aspects being delegated to style sheets.
+
+-initially developed at CERN(European Organization for Nuclear Research), then the IETF(Internet Engineering Task Force), then W3C, and then also the WHATWG(Web Hypertext Application Technology Working Group)
+
 (version)
 -pre-standarized
-  -HTML TAGS
-  -HTML Internet draft
-  -HTML +
+  -HTML TAGS by Tim Berners-Lee in late 1991
+  -HTML Internet draft by Tim berners-Lee and Dan Cannoly published by the IETF in mid 1993
+  -HTML+(Hypertext Markup Format) Internet Draft by Dave Ragget
 
 -standarized
   -HTML 2.0
+	-Form-based File Uploaded
+	-HTML table
+	-Client-Side Image Maps
+	-Internationalization
   -HTML 3.2
   -HTML 4.0
   -HTML 4.01
-
+	-introduced deprecation of presentaional elements and attributes in favorof the style sheet
  -XHTML
+	-reformation of HTML in XML
+	-intended to facilitate the introduction of new HTML elements and/or attributes,provided
+	 interoperability between HTML and XML based system, and leverage the use of XML tools on creating, editing, and parsing HTML
+  	-to move  the internet content-development community from the days of malformed, non-standard HTML markup into the well-formed valid world of XML
   -XHTML 1.0
   -XHTML 1.1
 
  -HTML5
-  -HTML5
-  -HTML51.
+	-arose from the effort to evolve HTML(instead of replacing it) to address backward compatibility issues that hindered the asoption of HTML, as well
+	  as to address the energing needs of the modern web application
+	-HTML5 was initially undertaken by the WHATWG(led by Apple,Mozilla, and Opera) in 2004, with the W3C signifying interest to participate in the effort im 2006;
+	  the first draft of HTML5 was published in 2008(edited by Ian Hickson)
+  	-HTML5 incorporated specification from HTML4,XHTML1, and the DOM(Document Object Model), and included various extensions of existing API's.
+  -HTML5.1
   -HTML 5.2
   -HTML living Standard
 
