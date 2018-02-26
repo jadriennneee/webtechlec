@@ -31,6 +31,10 @@ header {
     padding: 20px;
 }
 
+hr {
+    margin: 40px;
+}
+
 /* Branding */
 #branding a {
     text-decoration: none;
@@ -120,6 +124,7 @@ nav a {
 #side-bar {
     color: #ffffff;
     padding: 20px;
+    min-height: 500px;
 }
 
 #side-bar .card {
@@ -161,8 +166,13 @@ nav a {
     padding: 10px;
     margin: 0;
     text-align: center;
+}
+
+#side-bar li a {
     font-weight: lighter;
     font-size: 80%;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 #overview .accordion, #overview .panel {
@@ -200,24 +210,30 @@ nav a {
 /* Main Content */
 main {
     padding: 20px 30px;
+    color: #36454f;
 }
 
 main #topic-wrapper {
     background-color: #ffff;
-    padding: 40px;
-    border-radius: 1%;
+    padding: 40px 60px;
+    min-height: 500px;
 }
 
 #topic-wrapper h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-#topic-wrapper p {
-    margin-bottom: 20px;
+#topic-wrapper h2 {
+    margin: 20px 0;
 }
 
-#topic-wrapper p:last-child {
-    margin-bottom: 0;
+#topic-wrapper ul {
+    margin-left: 50px;
+}
+
+#topic-wrapper li {
+    margin: 5px 0;
 }
 
 /* Footer */
