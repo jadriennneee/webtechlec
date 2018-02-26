@@ -310,3 +310,14 @@ footer {
 .highlight {
     background-color: #2C3A47;
 }
+
+/* Media Query */
+@media only screen and (max-width: 1199px) {
+    #section-a {
+        min-height: 500px;
+    }
+
+    #section-a h1 {
+        padding: 150px 0;
+    }
+}
