@@ -65,7 +65,7 @@ nav a {
 /* Section-A */
 #section-a {
     grid-area: section-a;
-    min-height: 550px;
+    min-height: 800px;
     background: url('img/showcase.jpg');
     background-size: cover;
     background-position: center;
@@ -75,7 +75,7 @@ nav a {
 
 #section-a h1 {
     font-size: 600%;
-    padding: 150px 0;
+    padding: 280px 0;
     text-transform: lowercase;
 }
 

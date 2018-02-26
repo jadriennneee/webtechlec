@@ -356,9 +356,139 @@
                     </div>
 
                     <hr>
-                    
-                    <h2>HTTP Headers</h2>
 
+                    <h2 id="headers">HTTP Headers</h2>
+                    <ul>
+                        <li>
+                            General
+                            <ul>
+                                <li>
+                                    Headers are applied to both the Request and
+                                    the Response
+                                </li>
+                                <li>
+                                    Headers:
+                                    <ul>
+                                        <li>Cache-Control</li>
+                                        <li>Connection</li>
+                                        <li>Date</li>
+                                        <li>Pragma</li>
+                                        <li>Trailer</li>
+                                        <li>Transfer-Encoding</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Request
+                            <ul>
+                                <li>
+                                    Contains information of the requested
+                                    resource or information about the client
+                                </li>
+                                <li>
+                                    Headers:
+                                    <ul>
+                                        <li>Accept</li>
+                                        <li>Authorization</li>
+                                        <li>Expect</li>
+                                        <li>From</li>
+                                        <li>Range</li>
+                                        <li>User-Agent</li>
+                                        <li>Accept-Language</li>
+                                        <li>Accept-Charset</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Response
+                            <ul>
+                                <li>
+                                    Contains information of the response or
+                                    information about the server
+                                </li>
+                                <li>
+                                    Headers:
+                                    <ul>
+                                        <li>
+                                            E-Tag - is only present if there is caching
+                                        </li>
+                                        <li>Accept-Range</li>
+                                        <li>WWW-Authenticate</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Entity
+                            <ul>
+                                <li>
+                                    Contains information regarding the message
+                                    body such as its content-length or the data
+                                    types such as MIME Types the content used.
+                                </li>
+                                <li>
+                                    Heades:
+                                    <ul>
+                                        <li>Allow</li>
+                                        <li>Content-Encoding</li>
+                                        <li>Content-Language</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 id="extensions">HTTP Extensions</h2>
+                    <ul>
+                        <li>
+                            Allows addition of new request methods,
+                            message headers, status codes.
+                        </li>
+                        <li>
+                            WebDAV (RFC 4918)
+                            <ul>
+                                <li>
+                                    Provision that allows method used for authoring
+                                    the website remotely
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Examples:
+                            <ul>
+                                <li>
+                                    Request Methods
+                                    <ul>
+                                        <li>
+                                            PROPFIND, MKCOL, MOVE, LOCK, UNLOCK
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Message Headers
+                                    <ul>
+                                        <li>
+                                            DAV, DEPTH, DESTINATION, IF, OVERWRITE, TIMEOUT
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Status Codes
+                                    <ul>
+                                        <li>207 - Multi-status</li>
+                                        <li>422 - Unprocessable Entity</li>
+                                        <li>423 - Locked</li>
+                                        <li>424 - Failed Dependency</li>
+                                        <li>507 - Insufficient Storage</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </main>
         </div>
