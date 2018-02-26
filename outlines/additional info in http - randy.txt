@@ -1,0 +1,48 @@
+
+Each Hypertext Transfer Protocol (HTTP) message is either a request
+   or a response.  A server listens on a connection for a request,
+   parses each message received, interprets the message semantics in
+   relation to the identified request target, and responds to that
+   request with one or more response messages.  A client constructs
+   request messages to communicate specific intentions, examines
+   received responses to see if the intentions were carried out, and
+   determines how to interpret the results. 
+
+The target of an HTTP request is called a "resource".  HTTP does not
+   limit the nature of a resource; it merely defines an interface that
+   might be used to interact with resources.
+
+For the purposes of HTTP, a "representation" is information that is
+   intended to reflect a past, current, or desired state of a given
+   resource, in a format that can be readily communicated via the
+   protocol, and that consists of a set of representation metadata and a
+   potentially unbounded stream of representation data.
+
+HTTP uses Internet media types in the Content-Type and Accept header fields in order
+   to provide open and extensible data typing and type negotiation.
+   Media types define both a data format and various processing models:
+   how to process that data in accordance with each context in which it
+   is received.
+
+https://tools.ietf.org/html/rfc7231
+
+
+HTTP (Hypertext Transfer Protocol) is the set of rules for transferring files (text, graphic images, sound, 
+video, and other multimedia files) on the World Wide Web. 
+As soon as a Web user opens their Web browser, the user is indirectly making use of HTTP. 
+HTTP is an application protocol that runs on top of the TCP/IP suite of protocols (the foundation protocols for the Internet).
+
+http://searchwindevelopment.techtarget.com/definition/HTTP
+
+
+HTTP means HyperText Transfer Protocol. HTTP is the underlying protocol used by the World Wide Web and 
+this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers 
+should take in response to various commands.
+
+For example, when you enter a URL in your browser, this actually sends an HTTP command to the Web server 
+directing it to fetch and transmit the requested Web page. The other main standard that controls 
+how the World Wide Web works is HTML, which covers how Web pages are formatted and displayed.
+
+https://www.webopedia.com/TERM/H/HTTP.html
+
+
