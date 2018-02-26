@@ -105,12 +105,27 @@ nav a {
 
 .feature img {
     width: 100px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
 }
 
 /* Section-C */
 #section-c {
     grid-area: section-c;
-    padding: 40px;
+    padding: 40px 100px;
+}
+
+#section-c h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 200%;
+}
+
+#section-c p {
+    font-size: 110%;
 }
 
 /* Two-column-container */
