@@ -1,0 +1,26 @@
+HTML Preprocessors = helps you in writing work cryptic code
+   -Slim Templates
+   -Codepen
+   -Pug
+   -Handlebars.js
+   -HAMS
+
+CSS
+-language used to specify presentation(layout,formatting,fonts,colors) of structurally marked up documents(HTML,XML,SVG,MathML and etc)
+-developed by Hakon Wium Lie (CHSS) and Bert Bos(SSP)
+
+	Version History == 1994 proposal
+	   -CSS Level 1(CSS 1,w3c Recommendation, Dec 1996)
+	   -CSS Level 2(CSS 2,w3c Recommendation,May 1998)
+	   -CSS Level 2 Revision 1(CSS 2.1,w3c Recommendation, Jun 2011)
+	   -CSS Level 3
+	     -modular approach to CSS Development
+
+HTML Stylesheets
+-sources of styles for HTML Documents
+    -author styles 
+      -external
+      -embedded
+      -inline
+    -user styles
+    -user agent styles
