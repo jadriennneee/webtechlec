@@ -1,0 +1,94 @@
+CASCADING STYLE SHEET (CSS)
+	- It is used to specify how websites/documents are displayed/presented.
+	  It is purposely used for presentation aspects such as for fonts, colors, 
+	  and screen layouts of HTML, XML, SVG, MathML documents and other documents
+	  using a markup language.
+	  	** Mark-up Language - languages used to indicate how documents are presented
+	  						  or structured. It uses tags to define the structure
+	  						  of the document.
+
+
+VERSION HISTORY (a.k.a 'The CSS Saga')
+	1994 - Hakon Wium Lee released the draft of 'Cascading HTML Style Sheets' along with
+		   Bert Bos who was, at that time, developing a browser name Argo, which supports its own
+		   stylesheet.
+		 - The proposal fo 'Cascading HTML Style Sheets' was launched.
+	1996 - CSS Level 1 was published as a W3C Recommendation
+			> CSS Level 1 supports the following fetures:
+				- font properties
+				- text attributes
+				- alignment of text
+				- tables
+				- images
+				- text colors
+				- backgrounds
+				- word spacing
+				- margins
+				- borders
+				- padding
+				- positioning
+		 - Mozilla browser was the first ever browser to support CSS
+	1998 - CSS Level 2 became a W3C Recommendation
+		 - Features which were not included in CSS Level 1 were added to CSS Level 2
+		 	> CSS Level 2 added the following fetures:
+		 		- z-index
+		 		- media types
+		 		- bidirectional text
+		 		- absolute, relative and fixed positioning
+
+		 - The new browser 'Opera' was released which supports CSS
+
+	2011 - W3C released CSS Level 2.1 which fixes errors/bugs in CSS Level 2 and fixed
+		   its browser function capabilities.
+
+	Around 2012 - CSS Level 3 was released which was a modular approach to CSS Development
+				  (as opposed to the 'monolithic' specification of CSS Level 2.1)
+				  > The following are the 4 modules which were released as formal recommendation:
+				  	- color
+				  	- selectors level 3
+				  	- namespaces
+				  	- media queries
+
+HTML Style Sheets
+
+	> Three Main source styles for HTML Documents:
+		A. Author Style
+			A.1 External
+				- a.k.a 'Linked Stylesheet' which is recommended because it provides easier caching
+				  and it can be edited easily as well as it can be used in multiple sites and documents.
+				- These are stylesheets separated from the HTML documents.
+			A.2 Embedded
+				- a.k.a 'Internal Stylesheet' which is not very much recommended because since it is internal, 
+				  it cannot be used by other sites/documents.
+				- These are style sheets defined within the HTML Document.
+			A.3 Inline
+				- These style sheets are defined within the HTML tags.
+
+		B. User Styles
+			- These are non-standard styles such that it allows users to provide their own style sheet or preferred 
+			  layout for the website. 
+			- Some browsers also provide alternative styles through plugins and extensions. For example, Chrome's
+			  extension called 'Stylish Extension' provides different themes for different websites which the users
+			  can choose from.
+
+		C. User Agent Styles
+			- Browsers provide their own/default style sheet in rendering the websites.
+
+CSS Statements
+	1. At-Rules 
+		- these are commonly denoted with an annotation '@'
+		- example:
+			> @charset
+			> @import
+			> @namespace
+			> @font-face
+				- At-Rule used for defining font-styles which are typically Google Fonts
+			> @Keyframes
+				- At-Rule used for animations
+
+		* Nested At-Rules
+			- These are At-Rules within an At-Rule
+			- example: @media
+
+	2. CSS Rule Sets
+		- a.k.a 'CSS Rules'/ 'Style Rules'
