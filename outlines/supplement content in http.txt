@@ -1,0 +1,55 @@
+GEt Method
+-means retrieved whatever information is identified by the request-uri.if request-uri refers to a data-producing process,
+ it is the produced data which shall br returned as the entity in the response and not the source tect of the proocess,
+ unless thet text happens to be the output of the proces.
+- a conditional get methos request that the entity be transferred only under the circumstances described by the conditioonal header.
+
+Post method
+- sed to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line. 
+
+Head method
+- identical to GET except that the server MUST NOT return a message-body in the response.
+- This method can be used for obtaining metainformation about the entity implied by the request without transferring the entity-body itself.
+-This method is often used for testing hypertext links for validity, accessibility, and recent modification.
+
+https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
+
+*request-uri
+- identifies the resource upon which to apply the request
+- The asterisk "*" means that the request does not apply to a particular resource, but to the server itself, 
+ and is only allowed when the method used does not necessarily apply to a resource.
+
+*request line
+- include method, a URI, protocol version and end with CRLF.
+
+https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+
+CRLF(Carriage return line feedback)
+-CRLF refers to the Carriage Return and Line Feed sequence of special characters.
+-They're used to note the termination of a line,
+
+https://www.owasp.org/index.php/CRLF_Injection
+https://www.acunetix.com/websitesecurity/crlf-injection/
+
+
+TCP 
+-is a a client socket and a server socket.
+- api uses tcp to send and recieve daat over the networks
+
+https://www.w3.org/TR/tcp-udp-sockets/
+
+TLS(transport layer security)
+- the use of TLS for transport encryption as well as applications that enable user-to-user encryption.
+
+https://www.w3.org/2001/tag/doc/encryption-finding/
+
+SSL
+-The main reason that SSL is used for authentication is that is an extremely well tested and widely supported technique for password-less login. 
+-It is embedded in every serious web browser, and it is what drives web commerce.
+
+https://www.w3.org/wiki/Foaf%2Bssl/FAQ#What_is_FOAF.2BSSL
+
+MIME
+- containing request modifiers, client information, and possible body content.
+
+https://www.w3.org/Protocols/HTTP/1.0/spec.html#RefMIME1
