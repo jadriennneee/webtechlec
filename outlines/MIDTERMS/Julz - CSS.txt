@@ -1,0 +1,30 @@
+HTML Preprocessors - write pre-cryptic HTML code (e.g., Slim, Pug, CodePen)
+
+CSS - concerned with the presentational aspects of a website
+    - Hâkon Wium Lie (CHSS) and Bert Bos (SSP)
+    - proposal for CSS was made in 1994
+    - can be rendered by various media differently
+
+Version History of CSS:
+    - CSS Level 1 (CSS 1, W3C Recommendation, December 1996)
+    - CSS Level 2 (CSS 2, W3C Recommendation, May 1998)
+    - CSS Level 2 Revision 1 (CSS 2.1, W3CC Recommendation, June 2011)
+    - CSS Level 3 (has many documentations)
+        - modular approach to CSS development (Monolithic specification)
+
+* XML documents can also make use of CSS
+* Google Chrome does not support Math ML (caniuse.com)
+
+HTML Stylesheets
+    - Sources of Styles
+        - author styles
+            - inline (not the standard)
+            - embedded (cannot be reused by other webpages)
+            - external (standard)
+                - separating content from presentational aspects
+        - user styles (creating own custom style through browser plugins)
+        - user agent styles (customizing default properties)
+
+CSS Statements
+    - CSS Rule Sets
+        - At (@) Rules (e.g., @media, @import, @keyframe)
