@@ -1,0 +1,33 @@
+Cascading Style Sheet(CSS)
+ - allows you to create structure
+ - language used to specify the presentation of structurally marked uo
+   document
+ - develop by:
+	HAKON WIUM LIE conceptualize CHSS(Cascading HTML StyleSheet)
+	BERT BOS conceptualize SSP(Stream-based StyleSheet)
+
+version:
+ - CSS Level 1 (Dec 1996)
+ - CSS level 2 (may 1998)
+ - CSS level 2 revison 1 
+ - CSS level 3 
+	- modular approach to CSS development
+
+HTML StyleSheet
+ - source of style for HTML document
+ - the source of style denotes its origin, which is used in determining its precedence in the cascade.
+kind of style:
+- Author Style
+	-external(a.ka. Linked) stylesheet
+	-embedded(a.k.a internal)
+	-Inline Style
+- user style
+	-some browser provide alternative through plugins/extension
+- user agent-style
+	-sample default user agent style sheet for CSS 2.1
+
+CSS statement
+
+CSS rule sets
+ - consist of a selector , followed by a brace-enclosed declaration block,
+which contains zero or semi-colon seperated property declaration.
