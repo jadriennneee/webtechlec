@@ -1,0 +1,5 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://en.wikipedia.org/wiki/Stylish
+https://techterms.com/definition/css
+https://www.w3.org/Style/CSS20/history.html
+https://www.w3.org/Style/CSS/Overview.en.html
