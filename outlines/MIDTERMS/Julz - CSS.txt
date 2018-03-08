@@ -28,3 +28,72 @@ HTML Stylesheets
 CSS Statements
     - CSS Rule Sets
         - At (@) Rules (e.g., @media, @import, @keyframe)
+        - Selectors
+            - there can be many possible combinations
+            - the idea is to "target" HTML elements
+            * Combinators - more than 2 elements
+            * Selector group - delimited by ','
+
+            - Simple Connectors
+                - Universal (*)
+                    - for example:
+                        * {
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                - Type selectors (element)
+                    - for example:
+                        p {
+                            color: red;
+                        }
+
+                - ID selectors (#)
+                    - for example:
+                        #branding {
+                            width: 150px;
+                        }
+
+                - Class selectors (.)
+                    - for example:
+                        .container {
+                            margin: 20px;
+                        }
+                    * Note: You can use several classes in an element (e.g., <p class="large no-indent">)
+
+                - Attribute selectors ([])
+                    =- - case sensitive
+                    ~= - wildcard
+                    *= - contains
+                    $= - suffix
+                    ^= - prefix
+                    |= - exact match with '-'
+
+                - Pseudo-classes
+
+            - Combinators
+                * Prepend - before an element
+                - Descendant combinator (whitespace)
+                    - for example:
+                        div p {
+                            color: red;
+                        }
+
+                - Child combinator (>)
+                    - for example:
+                        ul > li {
+                            padding-left: 20px;
+                        }
+
+                - Sibling Combinators
+                    - Adjacent (+)
+                        - for example:
+                            :checked + p {
+                                display: block;
+                            }
+
+                    - General (~)
+                        - for example:
+                            .card-header ~ .card-body {
+                                background-color: red;
+                            }
