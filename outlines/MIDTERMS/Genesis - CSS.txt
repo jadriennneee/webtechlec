@@ -1,27 +1,198 @@
 HTML Preprocessors = helps you in writing work cryptic code
-   -Slim Templates
-   -Codepen
-   -Pug
-   -Handlebars.js
-   -HAMS
 
 CSS
 -language used to specify presentation(layout,formatting,fonts,colors) of structurally marked up documents(HTML,XML,SVG,MathML and etc)
 -developed by Hakon Wium Lie (CHSS) and Bert Bos(SSP)
-
+-stands for "Cascading Style Sheet"
+	
 	Version History == 1994 proposal
 	   -CSS Level 1(CSS 1,w3c Recommendation, Dec 1996)
+	      -The release of CSS 1 supported:
+	         -font properties
+	         -text attributes
+	         -alignment of text
+	         -tables
+	         -images and more
+	         -colors of text and backgrounds
+	         -spacing of words
+	         -letters and lines
+	         -margins
+	         -borders
+	         -padding
+	         -positioning
 	   -CSS Level 2(CSS 2,w3c Recommendation,May 1998)
+	      -added new capabilities including:
+	         -z-index
+	         -media types
+	         -bidirectional text
+	         -absolute
+	         -relative and fixed positioning
+	         -support for aural style sheets
 	   -CSS Level 2 Revision 1(CSS 2.1,w3c Recommendation, Jun 2011)
+	      -fixed some errors and aligned capabilities better with browser
+	       functions
 	   -CSS Level 3
-	     -modular approach to CSS Development
+	      -modular approach to CSS Development
+	      -broken into four modules:
+	         1)color
+	         2)selectors level 3
+	         3)namespaces 
+	         4)media queries
 
 HTML Stylesheets
--sources of styles for HTML Documents
-    -author styles 
-      -external
-      -embedded
-      -inline
-    -user styles
-    -user agent styles
-dh
+-Style sheets represent a major breakthrough for Web page designers, expanding their ability to improve the appearance of their pages
+
+Three sources of styles for HTML Documents:
+   AUTHOR STYLES 
+        a)External
+            -are often associated with HTML documents using the <link rel="stylesheet"> element, but it is important to use the element's title attribute properly.
+            -a file that contains only CSS code and is saved with a ".css" file extension
+        
+        b)Embedded
+            -a CSS style specification method and is only used with HTML. 
+            -an entire stylesheet can be embedded in an HTML Document using the Style element in the Head block of an HTML file.
+
+            Sample code:
+            <head>
+          		<style TYPE="text/css">
+    				<!--[CSS Style Sheet]-->					
+    	  		</style>
+         	</head>
+        
+        c)Inline
+        	-style sheets that are defined within the HTML Tags
+
+     		Sample code:
+
+     		<h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+
+   USER STYLES
+        -lets you change the way your browser displays web pages
+
+        Example: 
+           Stylish
+              -an open-source browser extension that can apply a user-supplied style sheet to a web page, in addition to the Cascading Style Sheets provided by the website itself, to customize and personalize the appearance of the page.
+   
+   USER AGENT STYLES
+   		
+CSS Statements
+	
+	1. At-Rules 
+	    -a CSS statement beginning with an at(@) sign  
+	       Examples:
+	          @charset
+	          @import
+	          @namespace
+	          @media
+	
+	2. CSS Rule Sets
+	    - consists of a selector and a declaration block.
+	    -separated property declarations which in turn consists of a property name, followed by a colon.
+	       
+	       Sample code:
+	       p {
+	         color: red;
+	         text-align: center;
+	       }
+
+CSS Selectors
+
+    A. Selectors
+         -used to specify the HTML elements we want to style.
+
+         TYPES:
+
+         1. Simple Selector
+            - used to target the HTML elements on our web pages that we want to style.
+            
+            Types of Simple Selector:
+               a) Universal Selector
+                  -matches elements of any type using the (*)
+                  
+                  Syntax:
+                  * { style properties }
+                  
+                  Example:
+                  * { color: green; }
+               
+               b) Type Selector
+                  -selects all elements of the given type within a document.
+
+                  Syntax:
+                  element { style properties }
+
+                  Example:
+                  a{ color:red; }
+               
+               c) ID Selector
+                  -matches an element based on the value of its id attribute
+
+                  Syntax:
+                  #id_value { style properties }
+
+                  Example:
+                  #main{ border: red 2px solid; }
+               
+			   d) Class Selector
+			      -matches elements based on the contents of their class attribute.
+
+			      Syntax:
+			      .class_name { style properties }
+
+			      Example:
+			      .class{ margin: 2em; }
+
+               e) Attribute Selector
+                  -matches elements based on the presence or value of a given attribute.
+
+                  Example:
+
+                  a[title] { color: purple; }
+
+    	 2. Selector Group
+        	-allows you to group multiple selectors that share the same declaration
+
+        		Example:
+        			div#main {border:1px solid blue;}
+					div#article {border:1px solid blue;}
+		
+				Becomes this:
+
+					dive#main, div#article {
+    					border:1px solid blue;
+					}
+
+		 3. Combinators
+		    -a way of combining sequence of simple elements
+
+		    Types of Combinators:
+		        a) Descendant Selector
+                   -matches all elements that are descendants of a specified element.
+
+		        b) Child Selector
+		           - selects all elements that are the children of a specified element.
+
+		        c) Adjacent Sibling Selector
+		           -selects all elements that are the adjacent siblings of a specified element.
+		           -must have the same parent element
+		        
+		        d) General Sibling Selector
+		           -selects all elements that are siblings of a specified element.
+
+	     4. Pseudo-Elements
+	            -Pseudo Classes
+	                Types of Pseudo classes
+	                   a) Dynamic pseudo-class
+	                   b) Target pseudo-class
+	                   c) Language pseudo-class
+	                   d) UI Element States pseudo-class
+	                   e) Structural pseudo-class
+	                   f) Negation
+
+
+
+
+
+
+
+
