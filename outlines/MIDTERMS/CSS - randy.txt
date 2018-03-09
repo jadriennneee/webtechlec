@@ -1,0 +1,118 @@
+Cascading Style Sheet(CSS)
+ - allows you to create structure
+ - language used to specify the presentation of structurally marked uo
+   document
+ - develop by:
+	HAKON WIUM LIE conceptualize CHSS(Cascading HTML StyleSheet)
+	BERT BOS conceptualize SSP(Stream-based StyleSheet)
+
+version:
+ - CSS Level 1 (Dec 1996)
+ - CSS level 2 (may 1998)
+ - CSS level 2 revison 1 
+ - CSS level 3 
+	- modular approach to CSS development
+
+HTML StyleSheet
+ - source of style for HTML document
+ - the source of style denotes its origin, which is used in determining its precedence in the cascade.
+kind of style:
+- Author Style
+	-external(a.ka. Linked) stylesheet
+	-embedded(a.k.a internal)
+	-Inline Style
+- user style
+	-some browser provide alternative through plugins/extension
+- user agent-style
+	-sample default user agent style sheet for CSS 2.1
+
+CSS statement
+
+CSS rule sets
+ - consist of a selector , followed by a brace-enclosed declaration block,
+which contains zero or semi-colon seperated property declaration.
+
+Selector
+ - structure used as a condition in a CSS rule to determine which lements in the document tree
+  and matched by the selector.
+ - define the element to which a set of CSS rules apply.(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+ -selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, 
+ allowing for fine grained precision when selecting elements to style.(https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
+
+Selector Syntax
+ - is a chain of one or more simple selector seperated by combinators.(https://www.w3.org/TR/CSS21/selector.html#selector-syntax)
+ -chain of one or more sequence of simple selectors seperated by combinators, with one pseudo-element possibly appended
+  to the last sequence.
+
+Selector Group
+ - comma-seperated list of selector representing the union of all elements selected.
+
+Combinators
+ - These are not exactly selectors themselves, but ways of combining two or more selectors in useful ways for very 
+  specific selections. So for example, you could select only paragraphs that are direct descendants of divs, 
+  or paragraphs that come directly after headings.(https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
+
+ Child Combinator(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  -The > combinator selects nodes that are direct children of the first element.
+
+Sibling Combinator:(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+ Adjacent Sibling Combinators
+  - The + combinator selects adjacent siblings. This means that the second element directly follows the first, and both share the same parent.
+  
+ General Sibling Combinators
+   - The ~ combinator selects siblings. This means that the second element follows the first, and both share the same parent.
+
+  Simple Selector:
+
+ Universal Selector(*)
+  -selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  -The universal selector, written "*", matches the name of any element type. It matches any single element in the document tree.(https://www.w3.org/TR/CSS21/selector.html#type-selectors)
+
+ Type Selector
+  -selects all elements that match the given node name. (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  -a type selector matches the name of a document language element type. A type selector matches every instance of the element type in the document tree. (https://www.w3.org/TR/CSS21/selector.html#type-selectors)
+
+ ID Selector
+  -selects an element based on the value of its id attribute. There should be only one element with a given ID in a document.(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  - ID attribute of a document language allows authors to assign an identifier to one element instance in the document tree.(https://www.w3.org/TR/CSS21/selector.html#type-selectors)
+
+ Class Selector
+  -Selects all elements that have the given class attribute.(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  -authors may use the period (.) notation as an alternative to the ~= notation when representing the class attribute.(https://www.w3.org/TR/CSS21/selector.html#type-selectors)
+
+ Attribute Selector
+  -Selects elements based on the value of the given attribute.(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  -allows authors to specify rules that match elements which have certain attributes defined in the source document.(https://www.w3.org/TR/CSS21/selector.html#type-selectors)
+
+  Pseudo-classes
+   -preceded by a colon (:), added to the end of selectors to specify you want to style the selected elements, and only when they are in certain state. (https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements)
+   -classify elements on characteristics other than their name, attributes or content; may be dynamic, in the sense that an element 
+  may acquire or lose a pseudo-class while a user interacts with the document.(https://www.w3.org/TR/CSS21/selector.html#type-selectors)
+
+     Link pseudo classes - User agents commonly display unvisited links differently from previously visited ones. (https://www.w3.org/TR/CSS21/selector.html#type-selectors)
+       The :link pseudo-class applies for links that have not yet been visited.
+       The :visited pseudo-class applies once the link has been visited by the user.
+     
+     Dynamic pseudo classes - Interactive user agents sometimes change the rendering in response to user actions.(https://www.w3.org/TR/CSS21/selector.html#type-selectors)
+       The :hover pseudo-class could apply this pseudo-class when the cursor (mouse pointer) hovers over a box generated by the element.
+       The :active pseudo-class applies while an element is being activated by the user. For example, between the times the user presses the mouse button and releases it.
+       The :focus pseudo-class applies while an element has the focus (accepts keyboard events or other forms of text input).
+
+     target-pseudo classes - The :target CSS pseudo-class represents a unique element (the target element) with an id matching the URL's fragment. (https://developer.mozilla.org/en-US/docs/Web/CSS/:target)
+   		- The :target pseudo-class represents an element that is the target element of the referring URI.(https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:target)
+
+    language psuedo-class -The :lang() CSS pseudo-class matches elements based on the language they are determined to be in.(https://developer.mozilla.org/en-US/docs/Web/CSS/:lang)
+		- The :lang(C) pseudo-class represents an element that is in language C. Whether an element is represented by a :lang() selector is based solely on the element's 
+ 	     language value being equal to the identifier C, or beginning with the identifier C immediately followed by "-".(https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:lang)
+
+     negation pseudo-classes - The :not() CSS pseudo-class represents elements that do not match a list of selectors. Since it prevents specific items from being selected, it is known as the negation pseudo-class.(https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+		- The :not pseudo-class represents an element that is not represented by its argument.(https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:not)
+   
+     structural pseudo classes
+
+     =======SELECTOR REFERENCE THAT MA'AM MACON USING:=======
+	"https://www.w3.org/TR/2018/CR-selectors-3-20180130/#UIstates"
+
+    Pseudo elements
+ 	- very much like pseudo-classes, but they have differences. They are keywords, this time preceded by two colons (::), that can be added to the end of selectors to select a certain part of an element.(https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements)
+   	- create abstractions about the document tree beyond those specified by the document language. For instance, document languages do not offer mechanisms to access the first letter or first line of an element’s content. https://www.w3.org/TR/2018/CR-selectors-3-20180130/#UIstates
