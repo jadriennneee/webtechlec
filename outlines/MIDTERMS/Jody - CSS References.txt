@@ -2,3 +2,14 @@ https://www.w3.org/Style/CSS20/history.html
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works
 http://www.css-class.com/a-brief-history-of-css/
 https://www.w3.org/TR/html401/present/styles.html
+
+RuleSet
+https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
+
+CSS Selectors
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors
+https://www.w3.org/TR/CSS21/selector.html#selector-syntax
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+
+CSS Rule Precedence
+http://tutorials.jenkov.com/css/precedence.html#important

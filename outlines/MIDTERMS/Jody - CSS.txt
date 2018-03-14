@@ -312,3 +312,46 @@ CSS Selectors
 
 												 * content: -- It is used to include something or to add something
 												 			   in the content of the document with the use of CSS.
+
+CSS Rule Precedence
+
+	Problems addressed by the CSS Rule Precedence:
+		> When CSS Rules are targeting the same HTML elements
+		> When CSS Rules are targeting the same CSS properties
+
+
+	Resolution:
+		A. By origin and importance
+		 	- The precedence is in descending order:
+			 	1. Transition Declarations
+			 		- Transitions must be visible to the users
+			 	2. Important User Agent Declarations
+			 	3. Important User Declarations
+			 	4. Important Override Declarations
+			 	5. Important Author Declarations
+			 	6. Animation Declarations
+			 	7. Normal Override Declarations
+			 	8. Normal Author Declarations
+			 	9. Normal User Declarations
+			 	10. Normal User Agent Declarations
+
+		 	* Important Declarations 
+		 		- are indicated by the !important annotation
+		 		- it has the highest precedence among all other precedence factors
+		 	* Override Declarations are simply superceding Author Declarations
+
+		B. By Specificity
+		 	- Value associated is dependent on the way the selector is specified
+
+			 A selector's specificity is calculated as follows:
+			 	1. Count the number of ID selectors in the selector
+			 	2. Count the number of class selectors, attributes selectors, and pseudo-classes in the selector
+			 	3. Count the number of type selectors and pseudo-elements in the selector
+
+			 * An example of a website that calaculates specificity is the "Specificity Calculator"
+			 	URL: https://specificity.keegan.st/
+
+			 * Universal selectors are ignored
+
+		C. By Order
+			- Prioritizes according to the last declaration
