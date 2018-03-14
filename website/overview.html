@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>TechWeb | Welcome</title>
+</head>
+<body class="topic-grid">
+    <div class="container">
+        <header>
+            <h1 id="branding"><a href="index.html">TechWeb</a></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">Topics</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="two-column-container">
+            <aside id="side-bar">
+                <div id="overview" class="card">
+                    <button class="accordion" type="button">Overview</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                            <ul>
+                                <li><a href="#whatIsWWW">What is WWW?</a></li>
+                                <li><a href="#internet">Internet</a></li>
+                                <li><a href="#webBrowser">Web Browser</a></li>
+                                <li><a href="#history">History of the WWW</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="http" class="card">
+                    <button class="accordion" type="button">HTTP</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                            <ul>
+                                <li><a href="httpfundamentals.html#whatIsHttp">What is HTTP?</a></li>
+                                <li><a href="httpfundamentals.html#httpFundamentals">Fundamentals</a></li>
+                                <li><a href="httpfundamentals.html#httpFeatures">Features and Functionalities</a></li>
+                                <li><a href="httpFundamentals.html#httpVersions">Version History</a></li>
+                                <li><a href="httpTechnical.html#messages">Messages</a></li>
+                                <li><a href="httpTechnical.html#methods">Methods</a></li>
+                                <li><a href="httpTechnical.html#statusCodes">Status Codes</a></li>
+                                <li><a href="httpTechnical.html#headers">Headers</a></li>
+                                <li><a href="httpTechnical.html#extensions">Extensions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="url" class="card">
+                    <button class="accordion" type="button">URI</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                            <ul>
+                                <li><a href="uri.html#whatIsUri">What is URI?</a></li>
+                                <li><a href="uri.html#uriSyntax">URI Syntax</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="html" class="card">
+                    <button class="accordion" type="button">HTML</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                            <ul>
+                                <li><a href="htmldoc.html#whatIsHtml">What is HTML?</a></li>
+                                <li><a href="htmldoc.html#htmlStandards">Standards</a></li>
+                                <li><a href="htmldoc.html#htmlDocStruc">Document Basic Structure</a></li>
+                                <li><a href="htmldoc.html#htmlBasicComponents">Basic Components</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="csws" class="card">
+                    <button class="accordion" type="button">CSWS</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ssws" class="card">
+                    <button class="accordion" type="button">SSWS</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="webSecurity" class="card">
+                    <button class="accordion" type="button">Web Security</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        </div>
+                    </div>
+                </div>
+
+                <div "advancedTopics" class="card">
+                    <button class="accordion" type="button">Advanced Topics</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main>
+                <div id="topic-wrapper">
+                    <h1>Overview of the WWW</h1>
+
+                    <h2 id="whatIsWWW">What is WWW?</h2>
+                    <ul>
+                        <li>
+                            The WWW is a collection of Web resources and applications
+                            that serves as a tool for users to share and obtain
+                            information through the Internet.The Web is typically
+                            a representation of human knowledge around the globe.
+                        </li>
+                        <li>
+                            Its Web resources are Hypertext and Hypermedia based
+                            which enables resources to be linked to other resources.
+
+                            <ul>
+                                <li>
+                                    Hypertext - software system used to link one
+                                    text-based resource to another
+                                </li>
+                                <li>
+                                    Hypermedia - an extended feature of Hypertext
+                                    which enables handling of multimedia resources such
+                                    as images and videos.
+                                </li>
+                                <li>
+                                    The terms Hypermedia and Hypertext were invented
+                                    by Ted Nelson
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Applications are software tools used by users to
+                            access the Web resources.
+
+                            <ul>
+                                <li>Two forms of Application</li>
+                                <ul>
+                                    <li>
+                                        Web Server
+                                        <ul>
+                                            <li>It hosts/houses electronic resources</li>
+                                            <li>Gives response to clients’ request</li>
+                                        </ul>
+                                    </li>
+                                    <li>Web Client</li>
+                                </ul>
+                                <li>
+                                    “Spider”- A web crawler application which
+                                    performs Web Indexing to obtain all of the
+                                    information for a certain topic in the Web.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 id="internet">Internet</h2>
+                    <ul>
+                        <li>
+                            A common misconception is that the WWW is the same
+                            thing as the Internet.
+                        </li>
+                        <li>
+                            Serves as a medium between the Web and the Web browser
+                            such that it allows users to access information with the
+                            use of Web browser.
+                        </li>
+                        <li>Collection of computers connected to a network
+                            <ul>
+                                <li>
+                                    Composed of the following:
+                                    <ul>
+                                        <li>Hosts</li>
+                                        <li>Media</li>
+                                        <li>Protocol</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h2 id="webBrowser">Web Browser</h2>
+                    <ul>
+                        <li>
+                            A typical tool used to interact with the WWW
+                            <ul>
+                                <li>
+                                    Categories
+                                    <ul>
+                                        <li>
+                                            Static - Information displayed does
+                                            not change/alter
+                                        </li>
+                                        <li>
+                                            Dynamic - Generates/displays information
+                                            that varies and depends on the client
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h2 id="history">History of the WWW</h2>
+                    <ul>
+                        <li>
+                            1989
+                            <ul>
+                                <li>
+                                    The WWW was invented by Sir Tim Berners-Lee
+                                    in 1989 with the purpose of allowing scientists
+                                    to easily share scientific resources or documents
+                                    to other researchers around the world.
+
+                                    <ul>
+                                        <li>Sir Tim Berners-Lee - Father of modern Web</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    It was developed at CERN, a company sir Tim Berners-Lee works for.
+                                </li>
+                                <li>
+                                    Sir Tim Berners-Lee proposed the three Web Technologies:
+                                    <ul>
+                                        <li>HTTP</li>
+                                        <li>HTML</li>
+                                        <li>URL</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            1990
+                            <ul>
+                                <li>
+                                    CERN hosted the first website developed by
+                                    Sir Tim Berners-Lee in Switzerland
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            1993
+                            <ul>
+                                <li>
+                                    CERN made World Wide Web open source such
+                                    that users around the world can alter it
+                                    and improve it without a cost.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            1994
+                            <ul>
+                                <li>
+                                    The World Wide Web Consortium (W3C) was
+                                    founded by sir Tim Berners-Lee
+
+                                    <ul>
+                                        <li>
+                                            W3C  - is an international organization
+                                            that provides standards in developing the Web
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>IT324 Web Tech 9340A, 2018</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

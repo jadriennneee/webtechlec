@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>TechWeb | URI</title>
+</head>
+<body class="topic-grid">
+    <div class="container">
+        <header>
+            <h1 id="branding"><a href="index.html">TechWeb</a></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">Topics</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="two-column-container">
+            <aside id="side-bar">
+                <div id="overview" class="card">
+                    <button class="accordion" type="button">Overview</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                            <ul>
+                                <li><a href="overview.html#whatIsWWW">What is WWW?</a></li>
+                                <li><a href="overview.html#internet">Internet</a></li>
+                                <li><a href="overview.html#webBrowser">Web Browser</a></li>
+                                <li><a href="overview.html#history">History of the WWW</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="http" class="card">
+                    <button class="accordion" type="button">HTTP</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                            <ul>
+                                <li><a href="httpfundamentals.html#whatIsHttp">What is HTTP?</a></li>
+                                <li><a href="httpfundamentals.html#httpFundamentals">Fundamentals</a></li>
+                                <li><a href="httpfundamentals.html#httpFeatures">Features and Functionalities</a></li>
+                                <li><a href="httpFundamentals.html#httpVersions">Version History</a></li>
+                                <li><a href="httpTechnical.html#messages">Messages</a></li>
+                                <li><a href="httpTechnical.html#methods">Methods</a></li>
+                                <li><a href="httpTechnical.html#statusCodes">Status Codes</a></li>
+                                <li><a href="httpTechnical.html#headers">Headers</a></li>
+                                <li><a href="httpTechnical.html#extensions">Extensions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="url" class="card">
+                    <button class="accordion" type="button">URI</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                            <ul>
+                                <li><a href="#whatIsUri">What is URI?</a></li>
+                                <li><a href="#uriSyntax">URI Syntax</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="html" class="card">
+                    <button class="accordion" type="button">HTML</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                            <ul>
+                                <li><a href="htmldoc.html#whatIsHtml">What is HTML?</a></li>
+                                <li><a href="htmldoc.html#htmlStandards">Standards</a></li>
+                                <li><a href="htmldoc.html#htmlDocStruc">Document Basic Structure</a></li>
+                                <li><a href="htmldoc.html#htmlBasicComponents">Basic Components</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="csws" class="card">
+                    <button class="accordion" type="button">CSWS</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ssws" class="card">
+                    <button class="accordion" type="button">SSWS</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="webSecurity" class="card">
+                    <button class="accordion" type="button">Web Security</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        </div>
+                    </div>
+                </div>
+
+                <div "advancedTopics" class="card">
+                    <button class="accordion" type="button">Advanced Topics</button>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main>
+                <div id="topic-wrapper">
+                    <h1>Uniform Resource Identifier (URI)</h1>
+
+                    <h2 id="whatIsUri">What is URI?</h2>
+                    <ul>
+                        <li>
+                            It is a sequence of characters that provides a unique
+                            address to identify the path/location of a certain
+                            HTTP Resource
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 id="uriSyntax">Syntax of URI</h2>
+                    <ul>
+                        <li>
+                            Scheme - indicates the protocol used in accessing the web resource
+                        </li>
+                        <li>
+                            Authority
+                            <ul>
+                                <li>
+                                    (Deprecated) Contains the user information/authentication credentials
+                                </li>
+                                <li>
+                                    Host - associated with the domain name
+                                    <ul>
+                                        <li>
+                                            Domain Name - It is resolved into an
+                                            IP Address with the use of Domain Name System (DNS)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Port Number (optional) - indicates the
+                                    port of connection
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Path
+                            <ul>
+                                <li>
+                                    Indicates the path to the location of the resource
+                                </li>
+                                <li>
+                                    It may refer to a static or dynamic resource
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Query
+                            <ul>
+                                <li>
+                                    A question mark (?) indicates the start of a
+                                    query issued by the client
+                                </li>
+                                <li>
+                                    It serves as an additional parameter in the URI
+                                </li>
+                                <li>
+                                    It is typically provided as key=value pair
+                                </li>
+                                <li>
+                                    It may be URL-Encoded
+                                    <ul>
+                                        <li>
+                                            URL-Encoded - It is necessary so that
+                                            servers can understand the characters used in the URI
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Fragment Identifier (optional) - Identifies a specific part in the resource
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>IT324 Web Tech 9340A, 2018</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
