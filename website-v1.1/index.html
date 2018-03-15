@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="grid">
-        <h1 id="branding">TechWeb</h1>
+        <h1 id="branding"><a href="index.html">TechWeb</a></h1>
 
         <div id="navWrapper">
             <label for="navToggler">
@@ -23,10 +23,10 @@
         <input type="checkbox" id="navToggler">
         <nav id="navList">
             <ul>
-                <li>Home</li>
-                <li>Topics</li>
-                <li>Resources</li>
-                <li>About Us</li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="#">Topics</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About Us</a></li>
             </ul>
         </nav>
     </header>
@@ -35,9 +35,83 @@
         <!-- Section A -->
         <section id="section-a" class="grid">
             <div id="showcase"></div>
-            <h1>Welcome to TechWeb</h1>
-            <a href="#" class="btn">Read More</a>
+            <h1>Welcome to techweb</h1>
+            <a href="#" class="btn">Learn More</a>
         </section>
+
+        <!-- Section B -->
+        <section id="section-b" class="grid">
+            <div class="content-wrap">
+                <ul>
+                    <li>
+                        <div class="feature-icon">
+                            <img src="img/progressivelogo.png" alt="Progressive">
+                        </div>
+                        <div class="description">
+                            <h3>Progressive</h3>
+                            <p>Enables you to build a foundation and work your way up</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">
+                            <img src="img/dynamiclogo.png" alt="Dynamic">
+                        </div>
+                        <div class="description">
+                            <h3>Dynamic</h3>
+                            <p>Supports either fast or in-depth learning</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">
+                            <img src="img/responsivelogo.png" alt="Responsive">
+                        </div>
+                        <div class="description">
+                            <h3>Responsive</h3>
+                            <p>Optimized for all types of devices</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">
+                            <img src="img/userfriendlylogo.png" alt="User Friendly">
+                        </div>
+                        <div class="description">
+                            <h3>User Friendly</h3>
+                            <p>Familiar and easy to understand for either beginner or experienced users</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">
+                            <img src="img/cleanandsimplelogo.png" alt="Clean and Simple">
+                        </div>
+                        <div class="description">
+                            <h3>Clean and Simple</h3>
+                            <p>Provides a clean and simple user interface</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section C -->
+        <section id="section-c" class="grid">
+            <div class="content-wrap">
+                <h2>Why Learn Web Technologies?</h2>
+                <p>Learning Web Technologies is a way where computer can
+                communicate to one another by using markup languages and
+                multimedia packages. It involves the use of hypertext markup
+                language, cascading stylesheet, and other web technologies.
+                Learning web technologies is crucial in creating a standard and
+                well-optimized website for it teaches the fundamentals of web
+                protocol as well as security.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="grid">
+            <div class="content-wrap">
+                <p>IT 324 Web Tech 9340A, 2018</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
