@@ -131,25 +131,25 @@
                                     Elements:
                                     <ul>
                                         <li>
-                                            HTTP method - this defines the action
-                                            the client wants to happen
+                                            HTTP method - It defines the action
+                                            the Client wants to happen.
                                         </li>
                                         <li>
                                             Protocol  Version
                                         </li>
                                         <li>
-                                            Header - includes additional information
-                                            regarding the client
+                                            Header - It includes additional information
+                                            regarding the Client.
                                         </li>
                                         <li>
                                             Message Body
                                             <ul>
                                                 <li>
-                                                    “Payload” - contains the
-                                                    content the client wants to
-                                                    upload or send to the server.
+                                                    “Payload” - It contains the
+                                                    content the Client wants to
+                                                    upload or send to the server
                                                     (This is commonly used with
-                                                    the use of POST method)
+                                                    the use of POST method).
                                                 </li>
                                             </ul>
                                         </li>
@@ -167,11 +167,12 @@
                                             HTTP protocol version
                                         </li>
                                         <li>
-                                            Status code - code that indicates the
-                                            status of the client’s request
+                                            Status code - A code used to indicate the
+                                            status of the Client’s request.
                                         </li>
                                         <li>
-                                            Status message - the description of the Status Code
+                                            Status message - It displays a description of 
+                                            the status code.
                                         </li>
                                         <li>
                                             Header
@@ -194,10 +195,10 @@
 
                             <ul>
                                 <li>
-                                    GET - Retrieves data from the server
+                                    GET - It Retrieves data from the server.
                                 </li>
                                 <li>
-                                    HEAD - Similar to the GET method’s function
+                                    HEAD - It is similar to the GET method’s function
                                     but it does not display the content of the Message
                                     Body.
                                 </li>
@@ -205,42 +206,41 @@
                                     POST
                                     <ul>
                                         <li>
-                                            Creates/Adds new resources to the
-                                            collection of resources in the server
+                                            It creates/adds new resources to the
+                                            collection of Web resources in the Server.
                                         </li>
                                         <li>
-                                            The query string given by the client
-                                            is included in the Message Body
+                                            The query string given by the Client
+                                            is included in the Message Body.
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    PUT - Creates or replaces the state of target
-                                    source/origin server
+                                    PUT - It creates or replaces the state of the targeted
+                                    source/origin Server.
                                 </li>
                                 <li>
-                                    DELETE - removes the resource sent by the server
+                                    DELETE - It removes the resource sent by the Server.
                                 </li>
                                 <li>
-                                    OPTIONS - Enables clients to identify the
-                                    restricted methods or the methods that are
-                                    only allowed for the resource
+                                    OPTIONS - It enables Clients to identify the
+                                    methods that are allowed by the Server.
                                 </li>
                                 <li>
                                     TRACE
                                     <ul>
                                         <li>
-                                            Server echoes back the Client’s request
+                                            The Server echoes back the Client’s request.
                                         </li>
                                         <li>
                                             It also includes header information
-                                            and length of the message body
+                                            and length of the message body.
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    CONNECT - Method used to establish tunnel
-                                    connection between the user and the client
+                                    CONNECT - It is used to establish tunnel
+                                    connection between the user and the Client
                                     to secure connection through a proxy which
                                     can then be secured using TLS.
                                 </li>
@@ -254,10 +254,10 @@
                                     <ul>
                                         <li>
                                             Indicates no changes are done in
-                                            the state of the server
+                                            the state of the Server.
                                         </li>
                                         <li>
-                                            GET, HEAD, OPTIONS, TRACE
+                                            Example Methods: GET, HEAD, OPTIONS, TRACE
                                         </li>
                                     </ul>
                                 </li>
@@ -266,11 +266,12 @@
                                     <ul>
                                         <li>
                                             No matter how many times requests
-                                            are repeated, the server’s state
-                                            will still be the same
+                                            are repeated, the Server’s state
+                                            will still be the same.
                                         </li>
                                         <li>
-                                            GET, HEAD, OPTIONS, TRACE, PUT, DELETE
+                                            Example Methods: GET, HEAD, OPTIONS, TRACE, 
+                                            PUT, DELETE
                                         </li>
                                     </ul>
                                 </li>
@@ -278,11 +279,11 @@
                                     Cacheable Methods
                                     <ul>
                                         <li>
-                                            Allows storing of response to the
+                                            Allows respnses to be stored in the
                                             methods for future use.
                                         </li>
                                         <li>
-                                            GET, HEAD, POST
+                                            Example Methods: GET, HEAD, POST
                                         </li>
                                     </ul>
                                 </li>
@@ -374,7 +375,7 @@
                             <ul>
                                 <li>
                                     Headers are applied to both the Request and
-                                    the Response
+                                    the Response.
                                 </li>
                                 <li>
                                     Headers:
@@ -393,8 +394,9 @@
                             Request
                             <ul>
                                 <li>
-                                    Contains information of the requested
-                                    resource or information about the client
+                                    It contains information of the requested
+                                    resource. It also contains information 
+                                    about the Client.
                                 </li>
                                 <li>
                                     Headers:
@@ -415,14 +417,14 @@
                             Response
                             <ul>
                                 <li>
-                                    Contains information of the response or
-                                    information about the server
+                                    It contains information about the response. It also 
+                                    provides information about the Server.
                                 </li>
                                 <li>
                                     Headers:
                                     <ul>
                                         <li>
-                                            E-Tag - is only present if there is caching
+                                            E-Tag - It is only present if there is caching.
                                         </li>
                                         <li>Accept-Range</li>
                                         <li>WWW-Authenticate</li>
@@ -434,12 +436,11 @@
                             Entity
                             <ul>
                                 <li>
-                                    Contains information regarding the message
-                                    body such as its content-length or the data
-                                    types such as MIME Types the content used.
+                                    It contains information regarding the message
+                                    body (i.e., content-length, MIME Types).
                                 </li>
                                 <li>
-                                    Heades:
+                                    Headers:
                                     <ul>
                                         <li>Allow</li>
                                         <li>Content-Encoding</li>
@@ -455,7 +456,7 @@
                     <h2 id="extensions">HTTP Extensions</h2>
                     <ul>
                         <li>
-                            Allows addition of new request methods,
+                            It allows addition of new request methods,
                             message headers, status codes.
                         </li>
                         <li>
@@ -463,7 +464,7 @@
                             <ul>
                                 <li>
                                     Provision that allows method used for authoring
-                                    the website remotely
+                                    the website remotely.
                                 </li>
                             </ul>
                         </li>
