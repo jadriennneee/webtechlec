@@ -12,7 +12,7 @@
     <input type="checkbox" id="navToggler" onchange="toggleScroll()">
     <header>
         <div id="header-wrapper" class="grid">
-            <div id="navWrapper">
+            <div id="navTogglerWrapper">
                 <label for="navToggler">
                     <div></div>
                     <div></div>
@@ -22,130 +22,134 @@
 
             <h1 id="branding"><a href="index.html">TechWeb</a></h1>
         </div>
-    </header>
 
-    <nav id="navList">
-        <ul>
-            <li class="current">
-                <div class="icon">
-                    <img src="img/homeblue.png" alt="Home">
-                </div>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <div class="icon">
-                    <img src="img/topicswhite.png" alt="Topics">
-                </div>
-                <a href="#">Topics</a>
-            </li>
-            <li>
-                <div class="icon">
-                    <img src="img/quizwhite.png" alt="Resources">
-                </div>
-                <a href="#">Quiz</a>
-            </li>
-            <li>
-                <div class="icon">
-                    <img src="img/resourceswhite.png" alt="Resources">
-                </div>
-                <a href="#">Resources</a>
-            </li>
-            <li>
-                <div class="icon">
-                    <img src="img/aboutuswhite.png" alt="About Us">
-                </div>
-                <a href="#">About Us</a>
-            </li>
-        </ul>
-    </nav>
-
-    <main id="main">
-        <div class="offset">
-        </div>
-        <!-- Section A -->
-        <section id="section-a" class="grid">
-            <div id="showcase">
-                <div id="showcase-content">
-                    <h1>Welcome to techweb!</h1>
-                    <a href="#" class="btn">Get Started</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section B -->
-        <section id="section-b" class="grid">
-            <div class="content-wrap">
+        <div id="nav-wrapper">
+            <nav id="navList">
                 <ul>
-                    <li>
-                        <div class="feature-icon">
-                            <img src="img/progressivelogo.png" alt="Progressive">
+                    <li class="current">
+                        <div class="icon">
+                            <img src="img/homeblue.png" alt="Home">
                         </div>
-                        <div class="description">
-                            <h3>Progressive</h3>
-                            <p>Enables you to build a foundation and work your way up</p>
-                        </div>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <div class="feature-icon">
-                            <img src="img/dynamiclogo.png" alt="Dynamic">
+                        <div class="icon">
+                            <img src="img/topicswhite.png" alt="Topics">
                         </div>
-                        <div class="description">
-                            <h3>Dynamic</h3>
-                            <p>Supports either fast or in-depth learning</p>
-                        </div>
+                        <a href="#">Topics</a>
                     </li>
                     <li>
-                        <div class="feature-icon">
-                            <img src="img/responsivelogo.png" alt="Responsive">
+                        <div class="icon">
+                            <img src="img/quizwhite.png" alt="Resources">
                         </div>
-                        <div class="description">
-                            <h3>Responsive</h3>
-                            <p>Optimized for all types of devices</p>
-                        </div>
+                        <a href="#">Quiz</a>
                     </li>
                     <li>
-                        <div class="feature-icon">
-                            <img src="img/userfriendlylogo.png" alt="User Friendly">
+                        <div class="icon">
+                            <img src="img/resourceswhite.png" alt="Resources">
                         </div>
-                        <div class="description">
-                            <h3>User Friendly</h3>
-                            <p>Familiar and easy to understand for any user</p>
-                        </div>
+                        <a href="#">Resources</a>
                     </li>
                     <li>
-                        <div class="feature-icon">
-                            <img src="img/cleanandsimplelogo.png" alt="Clean and Simple">
+                        <div class="icon">
+                            <img src="img/aboutuswhite.png" alt="About Us">
                         </div>
-                        <div class="description">
-                            <h3>Clean and Simple</h3>
-                            <p>Provides a clean and simple user interface</p>
-                        </div>
+                        <a href="#">About Us</a>
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <!-- Section C -->
-        <section id="section-c">
-            <div class="content-wrap">
-                <h2>Why Learn Web Technologies?</h2>
-                <p>Learning Web Technologies is a way where computer can
-                communicate to one another by using markup languages and
-                multimedia packages. It involves the use of hypertext markup
-                language, cascading stylesheet, and other tools for web development.
-                Learning web technologies is crucial in creating a standard and
-                well-optimized website for it teaches the fundamentals of web
-                protocol as well as security.</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="content-wrap">
-            <p>IT 324 Web Tech 9340A, 2018</p>
+            </nav>
         </div>
-    </footer>
+    </header>
+
+    <div id="container">
+        <div class="offset">
+        </div>
+        <main id="main">
+            <!-- Section A -->
+            <section id="section-a" class="grid">
+                <div id="showcase">
+                    <div id="showcase-content">
+                        <h1>Welcome to techweb</h1>
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section B -->
+            <section id="section-b" class="grid">
+                <div class="content-wrap">
+                    <ul>
+                        <li>
+                            <div class="feature-icon">
+                                <img src="img/progressivelogo.png" alt="Progressive">
+                            </div>
+                            <div class="description">
+                                <h3>Progressive</h3>
+                                <p>Enables you to build a foundation and work your way up</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <img src="img/dynamiclogo.png" alt="Dynamic">
+                            </div>
+                            <div class="description">
+                                <h3>Dynamic</h3>
+                                <p>Supports either fast or in-depth learning</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <img src="img/responsivelogo.png" alt="Responsive">
+                            </div>
+                            <div class="description">
+                                <h3>Responsive</h3>
+                                <p>Optimized for all types of devices</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <img src="img/userfriendlylogo.png" alt="User Friendly">
+                            </div>
+                            <div class="description">
+                                <h3>User Friendly</h3>
+                                <p>Familiar and easy to understand for any user</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <img src="img/cleanandsimplelogo.png" alt="Clean and Simple">
+                            </div>
+                            <div class="description">
+                                <h3>Clean and Simple</h3>
+                                <p>Provides a clean and simple user interface</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section C -->
+            <section id="section-c">
+                <div class="content-wrap">
+                    <h2>Why Learn Web Technologies?</h2>
+                    <p>Learning Web Technologies is a way where computer can
+                    communicate to one another by using markup languages and
+                    multimedia packages. It involves the use of hypertext markup
+                    language, cascading stylesheet, and other tools for web development.
+                    Learning web technologies is crucial in creating a standard and
+                    well-optimized website for it teaches the fundamentals of web
+                    protocol as well as security.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="content-wrap">
+                <p>IT 324 Web Tech 9340A, 2018</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 <!-- Script test -->

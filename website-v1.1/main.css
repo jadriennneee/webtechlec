@@ -54,18 +54,19 @@ header {
     background-color: #1a2228;
     border-bottom: 1px solid #29343d;
     color: #ffffff;
-    grid-template: header;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 5;
-    overflow: hidden;
+    grid-template: header;
+    z-index: 10;
 }
 
 #header-wrapper {
+    background-color: #1a2228;
     display: grid;
     grid-template-columns: 1fr minmax(auto, 80%);
     width: 80%;
+    overflow: hidden;
 }
 
 #branding {
@@ -82,7 +83,7 @@ header {
     font-weight: 100;
 }
 
-#navWrapper {
+#navTogglerWrapper {
     display: flex;
     justify-content: center;
 }
@@ -107,25 +108,28 @@ label[for="navToggler"] > div:last-of-type {
 }
 
 /* Navigation */
-#navList {
+#nav-wrapper {
     font-size: 80%;
     background-color: #1a2228;
     position: fixed;
     left: -100%;
     transition: left 0.3s ease-out;
-    z-index: 10;
     height: 100%;
     width: 80%;
     overflow: scroll;
-    grid-area: nav;
+    z-index: 10;
 }
 
-#navToggler:checked ~ #navList {
+#navToggler:checked ~ header > #nav-wrapper {
     left: 0;
 }
 
 #navList ul {
     list-style: none;
+}
+
+#navList li:first-child {
+    border-top: 1px solid #29343d;
 }
 
 #navList li {
@@ -163,35 +167,36 @@ label[for="navToggler"] > div:last-of-type {
     text-decoration: none;
 }
 
-/* Main */
-#main {
-    color: #000000;
-    grid-area: main;
-}
-
-#main .offset {
+#container .offset {
     position: fixed;
     background-color: #000000;
     opacity: 0;
-    z-index: 1;
     width: 100%;
     height: 100%;
     transition: opacity 0.1s linear;
     overflow: hidden;
 }
 
-#navToggler:checked ~ #main > .offset {
+#navToggler:checked ~ #container > .offset {
     opacity: 0.5;
+    z-index: 1;
+}
+
+/* Main */
+#main {
+    color: #000000;
+    grid-area: main;
 }
 
 /* Section a */
 #section-a {
-    min-height: 50vh;
+    min-height: 60vh;
+    background-color: #1a2228;
     color: #ffffff;
 }
 
 #showcase {
-    min-height: 50vh;
+    min-height: 60vh;
     width: 100%;
     background: url('img/showcase.jpg') center/cover no-repeat;
     opacity: 0.9;
@@ -280,6 +285,7 @@ label[for="navToggler"] > div:last-of-type {
 #footer {
     background-color: #1a2228;
     color: #ffffff;
+    grid-area: footer;
 }
 
 #footer > .content-wrap {
@@ -417,24 +423,24 @@ label[for="navToggler"] > div:last-of-type {
     }
 
     /* Header */
-    #header-container {
+    header {
+        border-bottom: 0;
         display: grid;
         grid-template-columns: 1fr minmax(auto, 80%);
-        grid-template-areas: "header nav";
+        background-color: #1a2228;
     }
 
     #header-wrapper {
         display: block;
-        grid-area: header;
         width: 100%;
         text-align: center;
     }
 
-    #navWrapper {
+    #navTogglerWrapper {
         display: none;
     }
 
-    #navList {
+    #nav-wrapper {
         font-size: 80%;
         background-color: #1a2228;
         position: relative;
@@ -443,11 +449,19 @@ label[for="navToggler"] > div:last-of-type {
         z-index: 1;
         width: 100%;
         overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #navList li:first-child {
+        border: 0;
     }
 
     #navList li {
         display: inline-block;
         border: none;
+        padding: 0 20px;
     }
 
     /* Section A */
