@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <title>techweb | HTTP</title>
+</head>
+
+<body>
+    <header class="grid">
+        <h1 id="branding">
+            <a href="index.html">TechWeb</a>
+        </h1>
+
+        <div id="navWrapper">
+            <label for="navToggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </div>
+
+        <input type="checkbox" id="navToggler">
+        <nav id="navList">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../pages/overview.html">Topics</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-grid">
+        <label for="sidebarToggler" id="sidebarShowArrow" class="arrow">
+        
+        </label>
+        
+        <input type="checkbox" id="sidebarToggler">
+        
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div id="sidebarList">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sint molestiae dolores, non temporibus assumenda
+                    eos, repellendus quisquam in aliquam porro sunt mollitia repellat adipisci, velit asperiores nihil sed tempore
+                    error recusandae dolor, praesentium accusantium. Incidunt, natus. Necessitatibus officia, quia.</p>
+            </div>
+            <label for="sidebarToggler" id="sidebarHideArrow" class="arrow">
+        
+            </label>
+        </aside>
+        
+        <div id="main-topic-wrapper">
+        </div>
+        
+        <section id="main-topic">
+            <div id="topic-wrapper">
+                <h1>Hypertext Transfer Protocol (HTTP)</h1>
+            
+                <h2 id="whatIsHttp">What is HTTP?</h2>
+                <ul>
+                    <li>
+                        A communication protocol used to fetch the 
+                        hypertext and hypermedia resources such as 
+                        HTML documents from the Web.
+                    </li>
+                    <li>
+                        It serves as a tool that allows Web servers 
+                        and Web browsers to communicate in such a 
+                        way that Web servers are able to understand
+                        requests given by the Web browser.
+                    </li>
+                    <li>
+                        It is based on a Client-Server structure 
+                        which means that interaction between the 
+                        Web browser and the Web server is initiated
+                        by having the Web browser send requests.
+                    </li>
+                    <li>
+                        In additional, it is a set of standards in 
+                        formatting and transmitting resources such 
+                        as documents,videos and graphic within
+                        the World Wide Web.
+                    </li>
+                </ul>
+            
+                <hr>
+
+                <h2 id="httpFundamentals">HTTP Fundamentals</h2>
+                <ul>
+                    <li>
+                        HTTP is a stateless protocol which means that 
+                        the server does not need to keep the information 
+                        about the client’s request or session.
+                    </li>
+                    <li>
+                        Based on the Client-Server Architecture/Structure
+                        <ul>
+                            <li>
+                                Client (a.k.a User Agent) - A tool 
+                                (i.e., Web browser) which is used by 
+                                the users to perform certain tasks in 
+                                the Web.
+                            </li>
+                            <li>
+                                Web Server - Serves Web resources 
+                                (i.e., documents) based on the 
+                                Client's request.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Uses the Request-Response Protocol
+                        <ul>
+                            <li>
+                                A protocol wherein the client initiates 
+                                the transmission of Web resources by 
+                                sending a request to the server. After 
+                                receiving the request, the server sends 
+                                a response to the client.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        HTTP is media-dependent which means that it allows 
+                        transmission of information in various data types 
+                        as long as both the Web Server and the Client 
+                        understands the data type of the resource.
+                        <ul>
+                            <li>
+                                Both Client and Server uses 
+                                <span class="popup">MIME Types
+                                    <span class="popup-text">A standardized 
+                                    way to indicate the nature and format of 
+                                    a document.</span>
+                                </span> to identify the data type of the 
+                                information being sent.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <hr>
+
+                <h2 id="httpFeatures">HTTP Features and Functionalities</h2>
+                <ul>
+                    <li>
+                        Cache Control
+                        <ul>
+                            <li>
+                                HTTP controls caching allowing servers to indicate 
+                                or specify specific resources to be cached. 
+                                In additional, it allows the Client to choose the 
+                                actions to be done on the cached resources.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Content Media Type specification
+                        <ul>
+                            <li>
+                                Uses Multipurpose Internet Mail Extensions (MIME) 
+                                extension to specify the media types allowed.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Language and Character set specification
+                    </li>
+                    <li>
+                        Content/Transfer Codings
+                        <ul>
+                            <li>
+                                Allows Servers and Clients to specify the format 
+                                of how resources are transmitted.
+                
+                                <ul>
+                                    <li>
+                                        For example, a resource can be sent/transmitted 
+                                        in a compressed or uncompressed format.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Content Negotiation
+                        <ul>
+                            <li>
+                                Allows Clients to negotiate with the Server in such a way 
+                                that it specifies its preferred format for the resource.
+                
+                                <ul>
+                                    <li>
+                                        For example, a Client can indicate that it prefers 
+                                        a pdf format of a documentation.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Request pipelining or <span class="popup">Multiplexing
+                            <span class="popup-text">A method by which multiple 
+                                requests and responses can be sent and received 
+                                asynchronously via a single TCP connection.
+                            </span>
+                        </span>
+                    </li>
+                    <li>
+                        Authentication and Authorization
+                        <ul>
+                            <li>
+                                It allows Servers to specify who can access the 
+                                Web resources (Authentication) and the level of 
+                                privileges the Clients can do to the Website (Authorization).
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <hr>
+
+                <h2 id="httpVersions">HTTP Version History</h3>
+                    <ul>
+                        <li>
+                            HTTP 0.9 (1991)
+
+                            <ul>
+                                <li>
+                                    It only uses one request method - 
+                                    <span class="popup">GET
+                                        <span class="popup-text">
+                                             An HTTP method used to retrieve 
+                                             a Web resource from the Web server.
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    It does not allow persistent connections
+                                    which means that it can only establish one
+                                    TCP connection.
+                                </li>
+                                <li>
+                                    Server responses only comes in 
+                                    <a href="../pages/htmldoc.html">HTML</a> form.
+                                </li>
+                                <li>
+                                    Clients can only send a single ASCII form of string.
+                                </li>
+                                <li>
+                                    Client requests are terminated using 
+                                    <span class="popup">CRLF
+                                        <span class="popup-text">
+                                             Carriage Return Line Feedback (CRLF) is 
+                                             used to indicate the termination of a line.
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            HTTP 1.0
+
+                            <ul>
+                                <li>
+                                    RFC 1945, May 1996
+                                </li>
+                                <li>
+                                    Improved HTTP 0.9 by adding the following methods:
+                                    <ul>
+                                        <li>
+                                            POST - An HTTP method that allows Clients to
+                                            send an information to the Web server.
+                                        </li>
+                                        <li>
+                                            HEAD - Identical to the GET method
+                                            but it does not display the content of the
+                                            response’s body. It only displays the
+                                            headers used in the response.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    It already provides the accommodation of extensions.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            HTTP 1.1
+                            <ul>
+                                <li>RFC 2068, Jan 1997</li>
+                                <li>RFC 2616, Jun 1999</li>
+                                <li>RFC 7230-7235, Jun 2014</li>
+                                <li>HTTP 1.1 is the protocol which is used up until the present.</li>
+                                <li>
+                                    More methods are added:
+                                    <ul>
+                                        <li>
+                                            PUT - An HTTP method that allows Clients 
+                                            to replace the contents of the website 
+                                            with the data sent/uploaded by the Client.
+                                        </li>
+                                        <li>
+                                            DELETE - An HTTP method that allows Clients
+                                            to remove the content of the Web resource.
+                                        </li>
+                                        <li>
+                                            CONNECT - An HTTP method that creates 
+                                            connection to the Server identified by 
+                                            the given URI.
+                                        </li>
+                                        <li>
+                                            OPTIONS - An HTTP method that shows a list 
+                                            of HTTP methods allowed by the Server.
+                                        </li>
+                                        <li>
+                                            TRACE - An HTTP method that echoes the contend
+                                            of the Client's request.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    HTTP 1.1 can already accommodate persistent
+                                    connections such that it allows connections to be reused.
+                                </li>
+                                <li>
+                                    HTTP 1.1 already supports data compression
+                                    wherein content of the message body can
+                                    already be compressed to enhance speed.
+                                </li>
+                                <li>
+                                    Pipelining is already supported such that it
+                                    lowers the transmission delay of the communication
+                                    between the Server and the Client.
+                                </li>
+                                <li>
+                                    It added more mechanisms regarding Cache Control.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            HTTP 2.0
+                            <ul>
+                                <li>RFC 7540, May 2015</li>
+                                <li>
+                                    It is an enhanced version of HTTP 1.1.
+                                    <ul>
+                                        <li>
+                                            Parallel requests can already be
+                                            handled allowing things to be concurrent.
+                                        </li>
+                                        <li>
+                                            It can already accommodate header compression.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Added accommodation to Server push.
+                                    <ul>
+                                        <li>
+                                            Server Push - Allows the Server to
+                                            automatically send information even
+                                            if the request is not yet sent.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="content-wrap">
+            <p>IT 324 Web Tech 9340A, 2018</p>
+        </div>
+    </footer>
+</body>
+</html>
