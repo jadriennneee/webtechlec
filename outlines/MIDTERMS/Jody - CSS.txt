@@ -27,7 +27,7 @@ VERSION HISTORY (a.k.a 'The CSS Saga')
 				- borders
 				- padding
 				- positioning
-		 - Mozilla browser was the first ever browser to support CSS
+		 - Mozilla browser was the first ever browser to support CSS.
 	1998 - CSS Level 2 became a W3C Recommendation
 		 - Features which were not included in CSS Level 1 were added to CSS Level 2
 		 	> CSS Level 2 added the following fetures:
@@ -36,13 +36,13 @@ VERSION HISTORY (a.k.a 'The CSS Saga')
 		 		- bidirectional text
 		 		- absolute, relative and fixed positioning
 
-		 - The new browser 'Opera' was released which supports CSS
+		 - The new browser 'Opera' was released which supports CSS.
 
 	2011 - W3C released CSS Level 2.1 which fixes errors/bugs in CSS Level 2 and fixed
 		   its browser function capabilities.
 
 	Around 2012 - CSS Level 3 was released which was a modular approach to CSS Development
-				  (as opposed to the 'monolithic' specification of CSS Level 2.1)
+				  (as opposed to the 'monolithic' specification of CSS Level 2.1).
 				  > The following are the 4 modules which were released as formal recommendation:
 				  	- color
 				  	- selectors level 3
@@ -154,7 +154,7 @@ CSS Selectors
 					   		p.feature.quote {text-align: justify;}
 
 					e. Attribute Selector
-						- It is a generic way of associating design to the attributes of the document..
+						- It is a generic way of associating design to the attributes of the document.
 						- It is indicated by a square brackets ([]).
 
 						ex: 
@@ -163,7 +163,7 @@ CSS Selectors
 						Wildcards used in the selector:
 							1) *=
 								- This targets all attributes that contains the specified value.
-								- It also means 'contains'
+								- It also means 'contains'.
 
 							   ex: 
 							  		a[href *= google] -- this targets all href attributes that has a value
@@ -219,11 +219,11 @@ CSS Selectors
 
 			3. Combinators
 				- It is used to prepend/add another sequence of a selector.
-				- It is a way of combining sequence of simple elements
+				- It is a way of combining sequence of simple elements.
 
 				Types of Combinators:
 					a. Descendant Combinator
-						- Uses whitespace to combine selectors
+						- Uses whitespace to combine selectors.
 							* whitespaces indicated by a tab, space,linefeed, carriagge return, etc.
 						- It selects elements which are direct descendants of the element indicated 
 						  before it.
@@ -232,7 +232,7 @@ CSS Selectors
 					   	 div p -- targets all p elements which are direct descendants of the div element
 
 					b. Child Combinator
-						- Uses the greater than (>) sign to combine sequence of selectors
+						- Uses the greater than (>) sign to combine sequence of selectors.
 						- It selects elements which are direct children of the element indicated before it.
 
 					   ex: 
@@ -240,7 +240,7 @@ CSS Selectors
 
 					c. Sibling Combinators
 						1) Adjacent Sibling Combinator
-							- Uses the plus (+) sign to combine sequence of selectors
+							- Uses the plus (+) sign to combine sequence of selectors.
 							- It selects elements that are exactly after the element indicated before it.
 
 						   ex:
@@ -248,7 +248,7 @@ CSS Selectors
 						   			   div element.
 
 						2) General Sibling Combinator
-							- Uses the tilde (~) to combine sequence of selectors
+							- Uses the tilde (~) to combine sequence of selectors.
 							- It selects all elements that follows the element indicated before it as long as 
 							  they share the same parent.
 
@@ -273,37 +273,37 @@ CSS Selectors
 									:hover, :active, :focus
 
 						b. Target Pseudo-Class
-							- It is usually associated with the href attribute
+							- It is usually associated with the href attribute.
 
 							ex: 
 								:target
 
 						c. Language Pseudo-Class
-							- It specifies the way of presenting text
+							- It specifies the way of presenting text.
 
 							ex:
 								:lang()
 
 						d. UI Element States
-							- It is commonly used with forms
+							- It is commonly used with forms.
 
 							ex:
 								:enabled, :disabled, :checked, :indeterminate
 
 						e. Structural Pseudo-Class
-							- It is associated with elements in the document tree
+							- It is associated with elements in the document tree.
 
 							ex: 
 								:root, :first-child, :only-child, :nth-child()
 
 						f. Negation
-							- It negates the specified value for the pseudo-class
+							- It negates the specified value for the pseudo-class.
 
 							ex:
 								:not()
 
 					> Pseudo-Elements
-						** In CSS3, it is indicated by a double colon (::)
+						** In CSS3, it is indicated by a double colon (::).
 
 						ex:
 							:first-letter
@@ -355,3 +355,54 @@ CSS Rule Precedence
 
 		C. By Order
 			- Prioritizes according to the last declaration
+
+CSS Declarations
+	A. Properties
+		1. Shorthand properties
+			- Allows authors to specify the values of several properties with a single property.
+
+			ex: 
+				> background property can already define the following properties: 
+					-- background-color
+					-- background-image
+					-- background-position
+					-- background-repeat
+
+					INSERT IMAGE (shorthand-properties-bg-1 and shorthand-properties-bg-2)
+
+				  * background property syntax: 
+
+				  		INSERT IMAGE (shorthand-properties-bg-syntax)
+
+				> other examples of shorthand properties: margin, font, padding, and border.
+
+		2. Vendor specific extensions (a.k.a., vendor prefixes)
+			- Used by browser vendors as a prefix for the names of experimental or non-standard 
+			  CSS properties; lately, vendors are moving away from vendor prefixes in favor of 
+			  user-controlled flags/preferences.
+
+			- It may begin with a dash '-' or an underscore '_'
+
+			format:
+				'-' + vendor identifier + '-' + meaningful name
+				'_' + vendor identifier + '-' + meaningful name
+
+			ex:
+				-webkit- (Chrome, Safari, newer versions of Opera, any WebKit based browser)
+				-moz- (Firefox)
+				-o- (Old, pre-WebKit, versions of Opera)
+				-ms- (Internet Explorer and Microsoft Edge)
+
+		3. Custom properties (a.k.a., CSS Variable) - Experimental
+			- Property names prefixed with a double dash '--' represents a value that can be 
+			  reused throughout the document using the var() function.
+
+			syntax:
+				var(custom property);
+				var(custom property, alternative value);
+
+			ex:
+				INSERT IMAGE (custom-property)
+
+	B. Values
+		

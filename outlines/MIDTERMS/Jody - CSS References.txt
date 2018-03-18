@@ -13,3 +13,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
 
 CSS Rule Precedence
 http://tutorials.jenkov.com/css/precedence.html#important
+
+CSS Declarations
+https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
+https://www.w3schools.com/cssref/css3_pr_background.asp
+https://www.w3.org/TR/CSS21/syndata.html#vendor-keywords
+https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix
