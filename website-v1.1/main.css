@@ -312,16 +312,21 @@ label[for="navToggler"] > div:last-of-type {
     background-color: #ffffff;
 }
 
-#sidebarShowArrow {
-    background-color: blue;
-    grid-row: 1;
-    grid-column: 1;
+.arrow {
     align-self: center;
 }
 
-#sidebarHideArrow {
-    background-color: blue;
-    align-self: center;
+#sidebarShowArrow {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#sidebarShowArrow::after {
+    content: '▶';
+}
+
+#sidebarHideArrow::after {
+    content: '◀';
 }
 
 #sidebarToggler {
