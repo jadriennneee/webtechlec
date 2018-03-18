@@ -405,4 +405,105 @@ CSS Declarations
 				INSERT IMAGE (custom-property)
 
 	B. Values
-		
+		1. Value processing
+
+			Stages in processing values:
+			a. Declared values applied to an element are collected. There can be 0 or more 
+			   declared values per element.
+			b. Cascading yields the cascaded value. There can be at most 1 cascaded value
+			   per property per element.
+			c. Defaulting yields the specified value. Every element must have 1 specified
+			   value per property.
+			d. Resolving value dependecies yields the computed value. Every element must 
+			   have 1 computed value per property.
+			e. Formatting the document yields the used value. An element can only have a 
+			   used value per property if the property applies to the element.
+			f. Used value is transformed into the actual value. The used value may or may
+			   not have an actual value per property per element.
+
+			* The actual value is the final value of the property.
+
+			> Declared Values
+				- Value that is declared to a property of an element.
+				- Values declared are collected and undergoes Cascading.
+
+				*Cascading - process done by the cascade wherein it sorts the unordered list
+				  	 		 of Declared values according to their precedence the provides a
+				  	 		 single cascaded value.
+
+			> Cascaded Values
+				- Values that represent the result of the cascade - the declared value that won the
+				  cascade. 
+
+			> Specified Values
+				- It is the result of the cascaded value undorgoing the defaulting process.
+
+				*Defaulting - process done when the cascade does not return a value. It finds the
+							  specified value through the default values of the properties. Properties
+							  that inherit from their parent element has a default value similar to
+							  their parent element while other properties that are not inherited
+							  properties take their default value from their initial value.
+				- From defaulting process, it uses the keywords 'intial' and 'inherit'.
+
+			> Computed Values
+				- It is the result of resolving the specified value.
+				- Its value is obtained by transferring the value from the parent to the child through
+				  inheritance.
+
+			> Used Values
+				- It is the result of taking the computed value and completing remaining processes to be 
+				  able to use the value in layouting the document.
+
+			> Actual Values
+				- It is the Used Value that undergoes adjustments to make the value usable to the user's 
+				  environment.
+
+
+		2. Value Types
+			a. Keywords
+				1. CSS-wide keywords
+					> initial
+						- represents the value specified as the property’s initial value.
+					> inherit
+						- represents the computed value of the property on the element’s parent.
+					> unset
+						- acts as either inherit or initial, depending on whether the property is 
+						  inherited or not.
+
+				2. Property-specific keywords
+
+			b. numbers
+				- Integers or reals in (scientific) decimal notation.
+
+			c. dimensions
+				- Length, angle, time, frequency, resolution
+
+					> Length Units:
+						1. font-relative: em, ex, ch, rem
+						2. view-port percentage: vw, vh, vmin, vmax
+						3. absolute: cm, mm, in, pt, pc, px
+					> Angle Units:
+						- deg, grad, rad, turn
+						- used in some gradient and transform functions
+					> Duration (or time) Units:
+						- s, ms
+						- used in animation, transition and related properties
+					> Frequency Units
+						- Hz, KHz
+						- initially introduced in CSS 2 for the (obsoleted) aural medie type
+						- it was reintroduced in CSS 3 but is currently unused
+					> Resolution Units
+						- dpi, dpcm, dppx
+						- used in media queries
+
+			d. Percentages
+				- Number with a percent '%' suffix.
+				- Calculated as a percentage of some value (usually taken from the parent element).
+
+			e. URLs and URIs
+				- url() function with an absolute or relative (to the stylesheet) URL parameter.
+				- It denotes a pointer to a resource such as image or a font.
+
+			f. Colors
+				- color keywords 
+
