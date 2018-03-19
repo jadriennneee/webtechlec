@@ -1,12 +1,12 @@
 /* Universal */
 @font-face {
     font-family: Asimov;
-    src: url("fonts/Asimov.otf");
+    src: url("../fonts/Asimov.otf");
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("fonts/Roboto-Regular.ttf");
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 
 * {
@@ -108,7 +108,7 @@ label[for="navToggler"] > div:last-of-type {
 }
 
 /* Navigation */
-#nav-wrapper {
+#navWrapper {
     font-size: 80%;
     background-color: #1a2228;
     position: fixed;
@@ -116,11 +116,11 @@ label[for="navToggler"] > div:last-of-type {
     transition: left 0.3s ease-out;
     height: 100%;
     width: 80%;
-    overflow: scroll;
+    overflow: auto;
     z-index: 10;
 }
 
-#navToggler:checked ~ header > #nav-wrapper {
+#navToggler:checked ~ header > #navWrapper {
     left: 0;
 }
 
@@ -180,6 +180,7 @@ label[for="navToggler"] > div:last-of-type {
 #navToggler:checked ~ #container > .offset {
     opacity: 0.5;
     z-index: 1;
+    /* cursor: pointer; */
 }
 
 /* Main */
@@ -198,7 +199,7 @@ label[for="navToggler"] > div:last-of-type {
 #showcase {
     min-height: 60vh;
     width: 100%;
-    background: url('img/showcase.jpg') center/cover no-repeat;
+    background: url('../img/showcase.jpg') center/cover no-repeat;
     opacity: 0.9;
     display: table;
 }
@@ -279,65 +280,6 @@ label[for="navToggler"] > div:last-of-type {
     font-size: 90%;
     margin-bottom: 0;
     text-align: justify;
-}
-
-/* Sidebar */
-#sidebar {
-    grid-row: 1;
-    grid-column: 1 / 3;
-    position: relative;
-    left: -100%;
-    transition: left 0.2s ease-out;
-    display: grid;
-    grid-template-columns: 95% 5%;
-}
-
-#sidebarList {
-    background-color: #ffffff;
-}
-
-.arrow {
-    align-self: center;
-}
-
-#sidebarShowArrow {
-    grid-row: 1;
-    grid-column: 1;
-}
-
-#sidebarShowArrow::after {
-    content: '▶';
-}
-
-#sidebarHideArrow::after {
-    content: '◀';
-}
-
-#sidebarToggler {
-    display: none;
-}
-
-#sidebarToggler:checked + aside {
-    left: 0%;
-}
-
-#main-topic-wrapper {
-    opacity: 0;
-    background-color: #696969;
-    z-index: -1;
-    grid-row: 1;
-    grid-column: 1 / 4;
-    transition: opacity 0.2s ease-out;
-}
-
-#sidebarToggler:checked ~ #main-topic-wrapper {
-    opacity: 0.7;
-}
-
-/* Main-Topic */
-#main-topic {
-    grid-row: 1;
-    grid-column: 2 / 4;
 }
 
 /* Footer */
@@ -499,7 +441,7 @@ label[for="navToggler"] > div:last-of-type {
         display: none;
     }
 
-    #nav-wrapper {
+    #navWrapper {
         font-size: 80%;
         background-color: #1a2228;
         position: relative;
