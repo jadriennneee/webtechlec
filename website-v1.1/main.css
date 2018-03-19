@@ -116,7 +116,7 @@ label[for="navToggler"] > div:last-of-type {
     transition: left 0.3s ease-out;
     height: 100%;
     width: 80%;
-    overflow: scroll;
+    overflow: auto;
     z-index: 10;
 }
 
@@ -180,6 +180,7 @@ label[for="navToggler"] > div:last-of-type {
 #navToggler:checked ~ #container > .offset {
     opacity: 0.5;
     z-index: 1;
+    /* cursor: pointer; */
 }
 
 /* Main */
