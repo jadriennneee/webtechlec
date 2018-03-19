@@ -1,0 +1,101 @@
+Cascading Style Sheet(CSS)
+ - allows you to create structure
+ - language used to specify the presentation of structurally marked uo
+   document
+ - develop by:
+	HAKON WIUM LIE conceptualize CHSS(Cascading HTML StyleSheet)
+	BERT BOS conceptualize SSP(Stream-based StyleSheet)
+
+version:
+ - CSS Level 1 (Dec 1996)
+ - CSS level 2 (may 1998)
+ - CSS level 2 revison 1 
+ - CSS level 3 
+	- modular approach to CSS development
+
+HTML StyleSheet
+ - source of style for HTML document
+ - the source of style denotes its origin, which is used in determining its precedence in the cascade.
+kind of style:
+- Author Style
+	-external(a.ka. Linked) stylesheet
+	-embedded(a.k.a internal)
+	-Inline Style
+- user style
+	-some browser provide alternative through plugins/extension
+- user agent-style
+	-sample default user agent style sheet for CSS 2.1
+
+CSS statement
+
+CSS rule sets
+ - consist of a selector , followed by a brace-enclosed declaration block,
+which contains zero or semi-colon seperated property declaration.
+
+continued topic:
+
+CSS Declaration
+  ~Properties
+	-Shorthand Properties
+		-allows authors to specify values of several properties with a single property.
+		..e.g. backgroung, font, etc.
+	-vendor specific extension(a.k.a vendor prefixes)
+		-used by browser vendirs as a prefix for the names of experimental or non-experimental CSS
+		properties; lately, vendors are moving away from vendor prefixes in favor of user-controlled
+		flags or preference.
+		..e.g --webkit--,-moz-,-o-,-ms-,etc.
+	-custom properties a.k.a. CSS variable(experimental)
+		-property names prefixed with "--" ,representing a value that can be reused throughout prefixed.
+		
+  ~values
+	-value processing
+		-declared -applied to an element are collected, for each property on each element.
+		-cascaded - represents the result of the cascade: it is the declared value that wins the cascade (is sorted first in the output of the cascade).
+		-specified - the value of a given property that the style sheet authors intended for that element.
+		-computed - is the result of resolving the specified value as defined in the “Computed Value” line of the property definition table
+				  -is the value that is transferred from parent to child during inheritance.
+		-used -is the result of taking the computed value and completing any remaining calculations to make it the absolute theoretical value used in the layout of the document
+		-actual - principle ready to be used, but a user agent may not be able to make use of the value in a given environment.
+		
+		https://www.w3.org/TR/css-cascade-3/#cascaded-value
+		
+	-value types
+		-keyword
+			-CSS-wide keyword
+				-initial, inherit, unset
+			-property specific keywords
+		-numbers
+			-integer or real in (scientific) decimal notation
+		-dimension
+			-length, angle, duration(or time), frequency, resolution
+			-length units:
+				-font-relative: em, ex, ch, rem
+				-viewport-percentage: vw, vh, vmin, vmax
+				-absolute: cm, mm, in, pt, pc, px
+				
+			https://www.w3.org/TR/css-values-3/#lengths
+			
+			-angle units
+				-deg, grad, rad, turn
+				-used in some gradient and transform function
+				
+			-duration(or time) units:
+				-s, ms
+				-used ni animation, transition and related properties
+				
+			-frequency units:
+				-Hz, kHz
+				-initially introduces in CSS2 for the (obselete):
+			
+			-resolution units:
+				-dpi, dpcm, dppx
+				-used in media queries
+		
+		-percentage
+			-number with a % suffix
+			-calculated as a percentage of some values
+		
+		-URL's anf URI's
+			-url() function with ans absolute or relative
+			-denotes a pointer to resource such as an image or a font.
+			

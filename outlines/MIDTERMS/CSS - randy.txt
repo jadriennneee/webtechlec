@@ -116,3 +116,71 @@ Sibling Combinator:(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selecto
     Pseudo elements
  	- very much like pseudo-classes, but they have differences. They are keywords, this time preceded by two colons (::), that can be added to the end of selectors to select a certain part of an element.(https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements)
    	- create abstractions about the document tree beyond those specified by the document language. For instance, document languages do not offer mechanisms to access the first letter or first line of an element’s content. https://www.w3.org/TR/2018/CR-selectors-3-20180130/#UIstates
+
+continued topic:
+
+CSS Declaration
+  ~Properties
+	-Shorthand Properties
+		-allows authors to specify values of several properties with a single property.
+		..e.g. backgroung, font, etc.
+	-vendor specific extension(a.k.a vendor prefixes)
+		-used by browser vendirs as a prefix for the names of experimental or non-experimental CSS
+		properties; lately, vendors are moving away from vendor prefixes in favor of user-controlled
+		flags or preference.
+		..e.g --webkit--,-moz-,-o-,-ms-,etc.
+	-custom properties a.k.a. CSS variable(experimental)
+		-property names prefixed with "--" ,representing a value that can be reused throughout prefixed.
+		
+  ~values
+	-value processing
+		-declared -applied to an element are collected, for each property on each element.
+		-cascaded - represents the result of the cascade: it is the declared value that wins the cascade (is sorted first in the output of the cascade).
+		-specified - the value of a given property that the style sheet authors intended for that element.
+		-computed - is the result of resolving the specified value as defined in the “Computed Value” line of the property definition table
+				  -is the value that is transferred from parent to child during inheritance.
+		-used -is the result of taking the computed value and completing any remaining calculations to make it the absolute theoretical value used in the layout of the document
+		-actual - principle ready to be used, but a user agent may not be able to make use of the value in a given environment.
+		
+		https://www.w3.org/TR/css-cascade-3/#cascaded-value
+		
+	-value types
+		-keyword
+			-CSS-wide keyword
+				-initial, inherit, unset
+			-property specific keywords
+		-numbers
+			-integer or real in (scientific) decimal notation
+		-dimension
+			-length, angle, duration(or time), frequency, resolution
+			-length units:
+				-font-relative: em, ex, ch, rem
+				-viewport-percentage: vw, vh, vmin, vmax
+				-absolute: cm, mm, in, pt, pc, px
+				
+			https://www.w3.org/TR/css-values-3/#lengths
+			
+			-angle units
+				-deg, grad, rad, turn
+				-used in some gradient and transform function
+				
+			-duration(or time) units:
+				-s, ms
+				-used ni animation, transition and related properties
+				
+			-frequency units:
+				-Hz, kHz
+				-initially introduces in CSS2 for the (obselete):
+			
+			-resolution units:
+				-dpi, dpcm, dppx
+				-used in media queries
+		
+		-percentage
+			-number with a % suffix
+			-calculated as a percentage of some values
+		
+		-URL's anf URI's
+			-url() function with ans absolute or relative
+			-denotes a pointer to resource such as an image or a font.
+			
