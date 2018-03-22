@@ -505,5 +505,44 @@ CSS Declarations
 				- It denotes a pointer to a resource such as image or a font.
 
 			f. Colors
-				- color keywords 
+				- color keywords
+					ex: red, blue, black
+				- RGB hexadecimal notation
+					ex: #ffffff
+				- RGB functions
+					ex: rgb(255,0,0)
+				- HSL functions
+				- Currentcolor, transparent
 
+			g. Strings
+				- determined by single quotes (') or double quotes (")
+
+			h. functions
+			i. miscellaneous types
+
+
+CSS Preprocessrs, Frameworks and Polyfills
+	
+	1. CSS Preprocessors
+		- generates CSS using a custom language syntax that typically includes features that don't exist
+		  in pure CSS (e.g., variables, control flows, nesting, mixins, functions, etc.).
+
+		ex:
+			a. SASS
+				ex:
+					@include
+					@mixin
+					@extend
+			b. lesscss
+			c. stylus
+
+	2. CSS Frameworks
+		- provides functionality without having to write CSS.
+
+		ex:
+			a. bootstrap
+			b. foundation
+			c. materialize
+
+	3. Polyfills
+		- allows users/developers to make use of the features of the browsers.
