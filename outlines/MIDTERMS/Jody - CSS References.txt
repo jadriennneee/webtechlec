@@ -22,3 +22,9 @@ https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix
 https://developer.mozilla.org/en-US/docs/Web/CSS/--*
 https://www.w3.org/TR/css-cascade-3/#value-stages
 https://www.w3.org/TR/css3-values/#common-keywords
+
+CSS Preprocessors
+https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus
+
+CSS Frameworks
+https://faculty.washington.edu/dlsinfo/tutorials/css-frameworks/

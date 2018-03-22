@@ -529,12 +529,49 @@ CSS Preprocessrs, Frameworks and Polyfills
 
 		ex:
 			a. SASS
+				- curly braces can already be omitted.
+
 				ex:
 					@include
 					@mixin
 					@extend
+
 			b. lesscss
+				
 			c. stylus
+				- semi-colons can already be omitted.
+
+		> Features:
+			1. Variables
+				- Variables store values of attributes which can be reused in any element minimizing
+				  the need to rewrite the same code everytime.
+
+				  INSERT IMAGE (css-preprocessors-variables)
+				  INSERT REFERENCE (https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus)
+
+			2. Nesting
+				- Nesting provides a hierarchical structure for developers similar to the HTML code which enables them
+				  to easily understand and read the CSS code.
+
+				  INSERT IMAGE (css-preprocessors-nesting)
+				  INSERT REFERENCE (https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus)
+
+			3. Mixins
+				- Accepts parameters which can then be used to set the values of the attributes.
+				- It uses @include to indlue the mixins within the CSS code.
+
+				INSERT IMAGE (css-preprocessors-mixins)
+				INSERT REFERENCE(https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus)
+
+			4. Extends
+				- Used in sharing the same code with other elements which makes it easier rather than copying the 
+				  entire code.
+				  - It uses @extend to extend the code within a block of CSS code.
+
+				  INSERT IMAGE (css-preprocessors-extends)
+				  INSERT REFERENCE(https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus)
+				  
+			5. Control Flows
 
 	2. CSS Frameworks
 		- provides functionality without having to write CSS.
