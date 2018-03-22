@@ -62,7 +62,7 @@
     </header>
 
     <div id="container">
-        <div class="offset">
+        <div class="offset" onclick="collapseSideBar()">
         </div>
         <main id="main">
             <!-- Section A -->
@@ -162,6 +162,11 @@
             document.getElementsByTagName("body")[0].style.position = "relative";
             document.getElementsByTagName("body")[0].style.overflow = "scroll";
         }
+    }
+
+    function collapseSideBar() {
+        document.getElementById("navToggler").checked = false;
+        toggleScroll();
     }
 </script>
 </html>
