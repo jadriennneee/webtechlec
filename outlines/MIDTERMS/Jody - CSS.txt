@@ -582,3 +582,8 @@ CSS Preprocessrs, Frameworks and Polyfills
 
 	3. Polyfills
 		- allows users/developers to make use of the features of the browsers.
+		- provides features that developers expect browsers to provide natively.
+
+		ex:
+			a. Modernizer
+			b. Selectivizer
