@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <title>techweb | HTTP</title>
+</head>
+
+<body>
+    <header class="grid">
+        <h1 id="branding">
+            <a href="../index.html">TechWeb</a>
+        </h1>
+
+        <div id="navWrapper">
+            <label for="navToggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </div>
+
+        <input type="checkbox" id="navToggler">
+        <nav id="navList">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../pages/overview.html">Topics</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-grid">
+        <label for="sidebarToggler" id="sidebarShowArrow" class="arrow">
+        
+        </label>
+        
+        <input type="checkbox" id="sidebarToggler">
+        
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div id="sidebarList">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sint molestiae dolores, non temporibus assumenda
+                    eos, repellendus quisquam in aliquam porro sunt mollitia repellat adipisci, velit asperiores nihil sed tempore
+                    error recusandae dolor, praesentium accusantium. Incidunt, natus. Necessitatibus officia, quia.</p>
+            </div>
+            <label for="sidebarToggler" id="sidebarHideArrow" class="arrow">
+        
+            </label>
+        </aside>
+        
+        <div id="main-topic-wrapper">
+        </div>
+        
+        <section id="main-topic">
+            <div id="topic-wrapper">
+                 <h1>Hypertext Markup Language (HTML)</h1>
+
+                <h2 id="whatIsHtml">What is HTML?</h2>
+                <ul>
+                    <li>
+                        It is a language used to mark-up documents in the
+                        World Wide Web which is initially used for structure
+                        and content but in the modern Web, HTML is solely used
+                        for semantics and content. 
+                    </li>
+                    <li>
+                        It allows users to obtain
+                        and share resources in different forms such as video,
+                        graphics, documents, etc.
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h2 id="htmlStandards">HTML Standards</h2>
+                <ul>
+                    <li>
+                        HTML 1.0
+                        <ul>
+                            <li>
+                                It was the first release of HTML.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        HTML 2.0 (<a href="https://tools.ietf.org/html/rfc1866">RFC 1866</a>)
+                        <ul>
+                            <li>
+                                Became the standard for website design
+                                and added core features to HTML.
+                            </li>
+                            <li>
+                                It became standardized as a Request for Comments (RFC).
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        HTML 3.2 (W3C Recommendation)
+                        <ul>
+                            <li>
+                                Provided a set of extension to the previous
+                                version of HTML.
+                            </li>
+                            <li>
+                                W3C has been founded such that it provides
+                                standards in developing the Web with the
+                                use of HTML.
+                            </li>
+                            <li>
+                                Became the official standard for the developers.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        HTML 4.01 (W3C Recommendation)
+                        <ul>
+                            <li>
+                                It provided a richer interface.
+                            </li>
+                            <li>
+                                Introduced the proper usage of HTML
+                                making it solely for semantics
+                                and content and opted for stylesheet in
+                                structuring the website.
+                            </li>
+                            <li>
+                                Introduced deprecation of presentational elements.
+                            </li>
+                            <li>
+                                Versions
+                                <ul>
+                                    <li>
+                                        Strict - It forbids the use of
+                                        deprecated elements.
+                                    </li>
+                                    <li>
+                                        Transitional - It allows deprecated
+                                        elements for backward compatibility.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        XHTML
+                        <ul>
+                            <li>
+                                It is strictly formatted as XML.
+                                <ul>
+                                    <li>
+                                        XML - An easily parsed structure
+                                        that allows users to create their
+                                        own tags.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                XML defined rules and ways on how
+                                HTML 4.01 tags and attributes are used.
+                            </li>
+                            <li>
+                                XHTML vs. HTML 4.0
+                                <ul>
+                                    <li>
+                                        XHTML supports nested elements.
+                                    </li>
+                                    <li>
+                                        XHTML attribute names and
+                                        elements must be in lower case format.
+                                    </li>
+                                    <li>
+                                        End tags are required in XHTML.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        HTML5
+                        <ul>
+                            <li>
+                                The first draft was edited by Ian Hickson (2008).
+                            </li>
+                            <li>
+                                W3C Recommendations:
+                                <ul>
+                                    <li>October 2014 (HTML5)</li>
+                                    <li>November 2016 (HTML 5.1)</li>
+                                    <li>December 2017 (HTML 5.2)</li>
+                                    <li>HTML Living Standard (WHATWG)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Became the specification the developers
+                                must follow in developing for the Web and
+                                provided additional elements, attributes
+                                and tags that can be used by developers.
+                                <ul>
+                                    <li>
+                                        Semantic Tags Added:
+                                        <ul>
+                                            <li>Header</li>
+                                            <li>Main</li>
+                                            <li>Nav</li>
+                                            <li>Article</li>
+                                            <li>Section</li>
+                                            <li>Aside</li>
+                                            <li>Address</li>
+                                            <li>Footer</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h2>HTML Document Basic Structure</h2>
+
+                <ul>
+                    <li>Version Information (i.e DOCTYPE)</li>
+                    <li>
+                        Basic Components
+                        <ul>
+                            <li>
+                                Document Type Declaration (DOCTYPE)
+                                <ul>
+                                    <li>HTML 4.01</li>
+                                    <li>XHTML</li>
+                                    <li>HTML5</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Elements
+                                <ul>
+                                    <li>
+                                        Tags
+                                        <ul>
+                                            <li>
+                                                Content Models:
+                                                <ul>
+                                                    <li class="li">Flow</li>
+                                                    <li class="li">Metadata</li>
+                                                    <li class="li">Sectioning</li>
+                                                    <li class="li">Phrasing</li>
+                                                    <li class="li">Embedded</li>
+                                                    <li class="li">Interactive</li>
+                                                    <li class="li">Heading</li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                Void Elements
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Attributes and Attribute Values
+                                        <ul>
+                                            <li>
+                                                Global Attributes - Attributes
+                                                can be used by any HTML element.
+                                            </li>
+                                            <li>
+                                                Custom Non-visible Data Attributes -
+                                                It can be used in creating own
+                                                attributes which is then referenced
+                                                to a script.
+                                            </li>
+                                            <li>
+                                                WAI-ARIA attributes -
+                                                It is intended for providing accessibility.
+                                            </li>
+                                            <li>
+                                                Element-specific Attributes -
+                                                Elements used if attributes are not global.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>MathML, SVG</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Character References
+                                <ul>
+                                    <li>
+                                        It provide ways by which developers can display 
+                                        something literally.
+                                    </li>
+                                    <li>
+                                        It is commonly used as an escape sequence.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="content-wrap">
+            <p>IT 324 Web Tech 9340A, 2018</p>
+        </div>
+    </footer>
+</body>
+</html>
