@@ -570,11 +570,10 @@ CSS Preprocessrs, Frameworks and Polyfills
 
 				  INSERT IMAGE (css-preprocessors-extends)
 				  INSERT REFERENCE(https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus)
-				  
-			5. Control Flows
 
 	2. CSS Frameworks
 		- provides functionality without having to write CSS.
+		- Set of codes already provided by other users which other developers can use in developing their website.
 
 		ex:
 			a. bootstrap
