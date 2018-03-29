@@ -256,9 +256,9 @@
                 <hr>
 
                 <h2 id="cssStatements">CSS Statements</h2>
-                <ul>
+                <ol>
                     <li>
-                        1. At-Rules 
+                        At-Rules 
                         <ul>
                             <li>these are commonly denoted with an annotation '@'</li>
                             <li> 
@@ -294,7 +294,7 @@
                         </ul>
                     </li>
                     <li>
-                        2. CSS Rule Sets
+                        CSS Rule Sets
                         <ul>
                             <li>a.k.a 'CSS Rules'/ 'Style Rules'</li>
                             <li>
@@ -302,7 +302,128 @@
                                 declaration block that contains 0 or more declarations 
                                 that end in semi-colon(;).
                             </li>
+                            <li>
+                                Sytax:
+                                <img src="../assets/css-ruleset-syntax.png" alt="CSS Rule Set Syntax">
+                            </li>
                         </ul>
+                    </li>
+                </ol>
+
+                <hr>
+
+                <h2 id="cssSelectors">CSS Selectors</h2>
+                <h3>Selector</h3>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>Structure used as a condition in a CSS Rule</li>
+                            <li>It is used to specify the HTML elements we want to style.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        TYPES OF SELECTOR:
+                        <ol>
+                            <li>
+                                Simple Selector
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                It does not contain any combinators which means that 
+                                                it cannot contain other types of selectors or Universal 
+                                                selectors.
+                                            </li>
+                                            <li>
+                                                It starts with a type selector (HTML element) or a 
+                                                Universal Selector.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Example:
+                                        <p>h1 {text-align: center;}</p>
+                                    </li>
+                                    <li>
+                                        Types of Simple Selectors:
+                                        <ul>
+                                            <li>
+                                                a. Universal Selector
+                                                <ul>
+                                                    <li>It is denoted by an asterisk (*) symbol.</li>
+                                                    <li>
+                                                        It means that it targets any element or 
+                                                        component of the document.
+                                                    </li>
+                                                    <li>
+                                                        Example:
+                                                        <p>* {font-size: 20px;}</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                b. Type Selector
+                                                <ul>
+                                                    <li>
+                                                        It specifies the element type specifically the 
+                                                        HTML element allowing all elements that matches the 
+                                                        indicated type Selector to be styled.
+                                                    </li>
+                                                    <li>
+                                                        Example:
+                                                        <p>p {color: red;}</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                c. ID Selector
+                                                <ul>
+                                                    <li>It is always introduced by the pound (#) sign.</li>
+                                                    <li>
+                                                        This type of selector targets elements that has 
+                                                        an attribute called 'id' and the values of the 
+                                                        attributes matches the specified ID selector.
+                                                    </li>
+                                                    <li>
+                                                        Example:
+                                                        <p>#main {padding: 10px;}</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                d. Class Selector
+                                                <ul>
+                                                    <li>It is always introduced by the period (.).</li>
+                                                    <li>
+                                                        It is somewhat similar to the ID Selector but it 
+                                                        uses the values of the 'class' attribute instead.
+                                                        <ul>
+                                                            <li>
+                                                                Example:
+                                                                <p>.container {margin-bottom: 10px;}</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        It can also target class attributes with 2 or more values.
+                                                        <ul>
+                                                            <li>
+                                                                Example:
+                                                                <p>p.feature.quote {text-align: justify;}</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Attribute Selector</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Selector Group</li>
+                            <li>Combinators</li>
+                            <li>Pseudo-Classes</li>
+                        </ol>
                     </li>
                 </ul>
             </div>
