@@ -1,0 +1,35 @@
+JAVASCRIPT Execution Environment
+
+JavaScript - It provides code in which users can interact with the webpage.
+		   - It is a programming language that allows the implementation of 
+		     complex functionalities on websites.
+		   - It is well-known as the scripting language for Web pages.
+		   - It is standardized at Ecma International (http://www.ecma-international.org/)
+		   		* Ecma International -  the European association for standardizing 
+		   		  						information and communication systems to 
+		   		  						deliver a standardized, international 
+		   		  						programming language based on JavaScript.
+
+		   - The standardized version of JavaScript is ECMAScript.
+		   		* ECMAScript Standard - ECMA-262 Specification 
+		   		  (https://www.ecma-international.org/publications/standards/Ecma-262.htm)	
+		   		  					  - It was approved by ISO as ISO-16262
+		   		  (https://www.iso.org/obp/ui/#iso:std:iso-iec:16262:ed-3:v1:en)
+
+
+	DIFFERENT WAYS OF JavaScript PLACEMENT
+		1. External - Standard approach
+			* defer - execution is deferred when script has been downloaded.
+			* async - JS can execute while HTML is parsing
+
+		2. Embedded/Internal - codes outside the function is automatically executed.
+
+		3. Inline
+
+			ex:
+				<p><button onclick = 'alert("You Clicked Me!");'> Click Me! </button></p>
+
+			*<noscript> - alternative the browser will have if scripting is not supported
+	> (Traditional) Browser Object Model(BOM) API (non-standardized)
+		- Window, Navigator, Screen, Location, History
+		- 

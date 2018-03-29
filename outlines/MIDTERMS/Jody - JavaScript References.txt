@@ -1,0 +1,3 @@
+https://developer.mozilla.org/bm/docs/Web/JavaScript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#JavaScript_and_Java
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript
