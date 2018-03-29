@@ -1,0 +1,65 @@
+Overview ng WWW (10 Objectives), 
+	1)It is a Web crawler application which performs Web Indexing to obtain all of the 
+	information for a certain topic in the Web.
+	2)It hosts/houses electronic resources.
+	3)Who invented the World Wide Web?
+	4)It is a typical tool used to interact with the Web.
+	5&6) What are the the two forms of Application?
+	7)It is a collection of Web resources and applications that serves as a tool for users to share and obtain information through
+	the Internet
+	8)It serves nas a medium between the Web and the Web browser.
+	9)A type of website that generates or displays information that varies and dependes on the client.
+	10)A type of website where the information that is displayed does not change or alter.
+
+HTTP(15 objectives)
+	1)It serves as a tool that allows Web Servers and Web browsers to communicate in such a way that Web Servers are able to
+	understand requests given by the Web Browser.
+	2)A protocol wherein the Client initiates the transmission of Web resources by sending a request to the server.
+	3)It is used to identify the data type of the information being sent.
+	4)It allows Servers to specify who can access the Web resources (Authentication) and the level of privileges the 
+	Clients can do to the Website (Authorization).
+	5)An HTTP method that echoes the contend of the Client's request.
+	6)An HTTP method that allows Clients to send an information to the Web Server.
+	7)An HTTP method that creates connection to the Server identified by the given URI.
+	8)It already supports data compression wherein content of the message body 
+	can already be compressed to enhance speed.
+	9)A method property that indicates no changes are done in the state of the Server.
+	10)Allows respnses to be stored in the methods for future use.
+	11)It contains information regarding the message body (i.e., content-length, MIME Types).
+	12)It contains information of the requested resource.
+	13)It includes additional information regarding the Client.
+	14)It contains the content the Client wants to upload or send to the server 
+	(This is commonly used with the use of POST method).
+	15)A code used to indicate the status of the Client’s request.
+	
+HTML (10 objectives, 5 coding)
+	1)A language used to mark-up documents in the World Wide Web.
+	2)An easily parsed structure that allows users to create their own tags.
+	3)Who edited the first draft of HTML 5?
+	4)It is intended for providing accessibility.
+	5)Attributes can be used by any HTML element.
+	6)It is commonly used as an escape sequence.
+	7)It forbids the use of deprecated elements.
+	8)It allows deprecated elements for backward compatibility.
+	9)It can be used in creating own attributes which is then referenced to a script. 
+	10)It is strictly formatted as XML.
+	
+	
+	Coding:
+	1)Using the body element,add the following code between your opening and closing body tags.
+			<p>TechWeb!</p>
+	2)Add the following list items to the ordered list:
+		-HTML
+		-CSS
+		-JavaScript
+		-PHP
+	3)Add the following list items to the unordered list:
+		-HTML
+		-CSS
+		-JavaScript
+		-PHP
+	4)HTML DOCTYPE Declaration.
+	5)Basic structure of an HTML Document.
+	
+CSS (5 objectives, 10 coding - kahit yung iba, fill in the blanks), 
+JS (10 objectives, 5 coding)
