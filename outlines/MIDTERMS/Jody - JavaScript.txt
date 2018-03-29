@@ -30,6 +30,7 @@ JavaScript - It provides code in which users can interact with the webpage.
 				<p><button onclick = 'alert("You Clicked Me!");'> Click Me! </button></p>
 
 			*<noscript> - alternative the browser will have if scripting is not supported
+
 	> (Traditional) Browser Object Model(BOM) API (non-standardized)
 		- It is a set of objects that comprises various elements of the browser.
 
@@ -101,3 +102,61 @@ JavaScript - It provides code in which users can interact with the webpage.
 		F. Document
 			- It represents the current Web page of its entire contents.
 			- It comprises the Document Object Model (DOM).
+
+	> Document Object Model (DOM) API
+		- An API that allows access to the HTML document from within scripts associated
+		  with the Web page.
+		- It is represented by the DOM tree which contains nodes.
+		- It defines how documents are accessed and manipulated as well as its logical structure.
+		- Standards such as W3C DOM and WHATWG DOM are implemented in most modern browsers.
+			* W3C DOM - https://www.w3.org/DOM/
+			* WHATWG DOM - https://dom.spec.whatwg.org/
+
+		- It is also accessed via the Document Object Property of the global window object.
+
+		FUNCTIONALITIES:
+			A. Retrieve references to nodes (or node collection) in the DOM
+
+				ex:
+					1. getElementById()
+					2. getElementsByTagName(). getElementsByClassName()
+					3. querySelector(), querySelectorAll()
+
+			B. Traverse the DOM type (from a given node)
+
+				ex:
+					1. parentNode, parentElement
+					2. childNodes, children
+					3. firstChild, lastChild
+
+			C. Copy or construct nodes
+
+				ex:
+					1. createElement(), createTextNode(), etc.
+					2. cloneNode(), importNode()
+						* cloneNode() - creates a copy of node
+
+							TYPES OF CLONING:
+								a. deep cloning - clone is set to true.
+												- It creates a copy of the
+												  entire structure.
+
+								b. shallow cloning - clone is set to false.
+												   - It creates a copy of the 
+												     outer structure only.
+
+			D. Manipulate the DOm tree
+
+				ex:
+					1. appendChild()
+					2. insertBefore()
+					3. replaceChild()
+					4. removeChild()
+					5. adoptNode()
+
+			E. miscellaneous attributes and methods
+
+				ex:
+					1. nodeType
+					2. nodeName
+					3. nodeValue
