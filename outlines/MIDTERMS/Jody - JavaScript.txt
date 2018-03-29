@@ -31,5 +31,73 @@ JavaScript - It provides code in which users can interact with the webpage.
 
 			*<noscript> - alternative the browser will have if scripting is not supported
 	> (Traditional) Browser Object Model(BOM) API (non-standardized)
-		- Window, Navigator, Screen, Location, History
-		- 
+		- It is a set of objects that comprises various elements of the browser.
+
+		BOM Hierarchy
+		A. Window
+			- It is the top-level object of the hierarchy.
+
+			Methods:
+				1. alert() - A method of the browser's window that posts a message dialog.
+				2. open() - A method of the browser's window that opens a new browser window.
+				3. close() - A method f the browser's window that closes the window.
+
+			Properties:
+				1. name - It refers to the name of the window.
+				2. defaultStatus - It refers to the text in the status bar.
+				3. outerwidth and outerheight - It refers to the window extents.
+
+		B. Navigator
+			- It represents information about the browser and the underlying Operating System.
+
+			Methods:
+				1. javaEnabled() - It returns true or false.
+
+			Properties:
+				1. appCodeName - It refers to the code name of the browser.
+				2. appName - It refers to the name of the browser.
+				3. appVersion - It refers to the platform and version of the browser.
+
+		C. Screen
+			- It is the information about the display capabilities of the Client PC running the Browser.
+
+			Properties:
+				1. availHeight, availWidth, height, width 
+					– It refers to the metrics of the display screen size.
+
+				2. bufferDepth, colorDepth, pixelDepth 
+					– It refers to the metrics of the color palette.
+
+				3. deviceXDPI, deviceYDPI, logicalXDPI, logicalYDPI 
+					- It refers to the number of dots per inch of the display screen.
+
+		D. History
+			- It contains information of the recently visited sites.
+
+			Methods: 
+				1. back() - It loads the previous URL in the history list.
+				2. forward() - It loads the next URL in the history list.
+				3. go() - It loads a specific page in the history list.
+
+			Properties:
+				1. length - It refers to the number of elements in the history list.
+
+		E. Location
+			- It contains information about the current URL.
+
+			Methods:
+				1. assign() - It loads a new document.
+				2. reload() - It reloads the current document.
+				3. replace() - It replaces the current document with a new document.
+
+			Properties:
+				1. host, hostname, href, pathname, port 
+					– It refers to the hostname/port number/path/port/URL information.
+				2. protocol 
+					– It refers to the protocol of the current URL.
+				3. hash, search 
+					– It refers to the URL from the hash sign/question mark.
+
+		F. Document
+			- It represents the current Web page of its entire contents.
+			- It comprises the Document Object Model (DOM).
