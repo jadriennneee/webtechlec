@@ -1,0 +1,46 @@
+Overview of WWW(answers)
+1. Hypertext
+2. Hypermedia
+3. Ted Nelson
+4. Web Server
+5. 1990
+6-9. HTTP, HTML, URL
+10. W3C
+
+HTTP
+1. HTTP
+2-3. Formatting , transmitting
+4. User/ User Agent
+5. Cache Control
+6. Multimedia-Purpose Internet Mail Extensions
+7. GET
+8. CONNECT
+9-13. Information, Success, Redirection, Client Error, Server Error
+14. HTTP Extensions
+15. WebDAV
+
+HTML
+1. Hypertext Mark-up Language
+2. HTML 1.0
+3. HTML 5.2
+4. Character reference
+5-8. Header, Main, Nav, Article, Section, Asise, Address, Footer
+9. WAI-ARAI
+10. HTML 3.2
+
+coding:
+1. <!DOCTYPE html>
+2. <title> , </title>
+3. <h1> hello world </h1>
+4. <h6> goodbye </h6>
+5. <div class="class name">
+
+CSS
+1.
+2. .class name{}
+3. #idname{}
+4. *{}
+5. p{}
+6. p:first-child
+7. p:nth-child("number what nth-child of parent do you want to select")
+8. 

@@ -1,0 +1,69 @@
+Overview of WWW(10 objectives)
+ 1. A software system used to link one text-based to another?
+ 2. An extended features of hypertext that handling multimedia?
+ 3. Who invented the Hypermedia and Hypertext?
+ 4. The one who gives response to client request?
+ 5. When the first websites hosted by Tim-Berners-Lee.
+ 6-9. What are the Three proposed web technologies by Tim-berners-lee?
+ 10. it is an international organization that provides standard in developing the web?
+
+HTTP(15 objectives)
+ 1. A Stateless protocol which means that the server does not need to keep the information about 
+ the client request?
+ 2-3. A set of standard in _________ and  _________ resources such as documents,videos, and graphics
+ within the world wide web.
+ 4. A tool which used by the user to perform task in the web?
+ 5. It allows the client to choose the actions to be done on the cached resources?
+ 6. What is the meaning MIME?
+ 7. It is a HTTP methods used to retrieve a web resource from the Web Server?
+ 8. It is a HTTP methods that used to establish a tunnel connection that is secure between th user and client?
+ 9-13. What are the HTTP status codes?
+ 14. It allows addition of new request method, message, header, and status codes.
+ 15. Provision that alloes methos used for authoring the websites remotely.
+
+HTML(10 objectives, 5 coding)
+ 1. What is the meaning HTML?
+ 2. What version is the first HTML?
+ 3. What is the latest version of HTML?
+ 4. A way which the developer can display something literally?
+ 5-8. Give atleast four semantics tags that added in HTML4?
+ 9. It is intended for providing accessibility.
+ 10. What version which it's provided a set of extension to the previous version of HTML?
+
+coding:
+1. fill in the blank?
+   ____???____
+   <html>
+    .......
+   </html>
+
+2. Put a tag on the blank
+   <html>
+	<head>
+	   <______> ..... </_____>
+	</head>
+   </html>
+
+3. Display "hello world" in the biggest heading of html?
+4. Display "goodbye" in the smallest heading of html?
+5. how to declared a class in the element div?
+
+CSS ( 5 objectives, 10 coding - khit yung iba, fill in the blanks)
+
+coding:
+1. <!DOCTYPE html>
+   <html>
+      <head>
+	<title> EXAMPLE </title>
+      </head>
+      <body>
+	<p> hello</p>
+      </body>
+   </html>
+
+2. how to code and select the class using css?
+3. how to code and select id using css?
+4  how to select all element using css?
+5. how to select all <p> using css?
+6. how you select the first-child of <p>?
+7. how you select the nth-child of <p>
