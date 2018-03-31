@@ -145,7 +145,7 @@ JavaScript - It provides code in which users can interact with the webpage.
 												   - It creates a copy of the 
 												     outer structure only.
 
-			D. Manipulate the DOm tree
+			D. Manipulate the DOM tree
 
 				ex:
 					1. appendChild()

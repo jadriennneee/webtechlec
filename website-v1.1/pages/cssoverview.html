@@ -194,12 +194,12 @@
                 <h2 id="htmlStyleSheets">HTML Style Sheets</h2>
                 <ul>
                     <li>Three Main source styles for HTML Documents:</li>
-                    <ul>
+                    <ol type="A">
                         <li>
-                            A. Author Style
-                            <ul>
+                            Author Style
+                            <ol type="i">
                                 <li>
-                                    A.1 External
+                                    External
                                     <ul>
                                         <li>
                                             a.k.a 'Linked Stylesheet' which is recommended 
@@ -211,7 +211,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    A.2 Embedded
+                                    Embedded
                                     <ul>
                                         <li>
                                             a.k.a 'Internal Stylesheet' which is not very much 
@@ -222,15 +222,15 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    A.3 Inline
+                                    Inline
                                     <ul>
                                         <li>These style sheets are defined within the HTML tags.</li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ol>
                         </li>
                         <li>
-                            B. User Styles
+                            User Styles
                             <ul>
                                 <li>
                                     These are non-standard styles such that it allows users to provide 
@@ -245,12 +245,12 @@
                             </ul>
                         </li>
                         <li>
-                            C. User Agent Styles
+                            User Agent Styles
                             <ul>
                                 <li>Browsers provide their own/default style sheet in rendering the websites.</li>
                             </ul>
                         </li>
-                    </ul>
+                    </ol>
                 </ul>
 
                 <hr>
@@ -309,123 +309,6 @@
                         </ul>
                     </li>
                 </ol>
-
-                <hr>
-
-                <h2 id="cssSelectors">CSS Selectors</h2>
-                <h3>Selector</h3>
-                <ul>
-                    <li>
-                        <ul>
-                            <li>Structure used as a condition in a CSS Rule</li>
-                            <li>It is used to specify the HTML elements we want to style.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        TYPES OF SELECTOR:
-                        <ol>
-                            <li>
-                                Simple Selector
-                                <ul>
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                It does not contain any combinators which means that 
-                                                it cannot contain other types of selectors or Universal 
-                                                selectors.
-                                            </li>
-                                            <li>
-                                                It starts with a type selector (HTML element) or a 
-                                                Universal Selector.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        Example:
-                                        <p>h1 {text-align: center;}</p>
-                                    </li>
-                                    <li>
-                                        Types of Simple Selectors:
-                                        <ul>
-                                            <li>
-                                                a. Universal Selector
-                                                <ul>
-                                                    <li>It is denoted by an asterisk (*) symbol.</li>
-                                                    <li>
-                                                        It means that it targets any element or 
-                                                        component of the document.
-                                                    </li>
-                                                    <li>
-                                                        Example:
-                                                        <p>* {font-size: 20px;}</p>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                b. Type Selector
-                                                <ul>
-                                                    <li>
-                                                        It specifies the element type specifically the 
-                                                        HTML element allowing all elements that matches the 
-                                                        indicated type Selector to be styled.
-                                                    </li>
-                                                    <li>
-                                                        Example:
-                                                        <p>p {color: red;}</p>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                c. ID Selector
-                                                <ul>
-                                                    <li>It is always introduced by the pound (#) sign.</li>
-                                                    <li>
-                                                        This type of selector targets elements that has 
-                                                        an attribute called 'id' and the values of the 
-                                                        attributes matches the specified ID selector.
-                                                    </li>
-                                                    <li>
-                                                        Example:
-                                                        <p>#main {padding: 10px;}</p>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                d. Class Selector
-                                                <ul>
-                                                    <li>It is always introduced by the period (.).</li>
-                                                    <li>
-                                                        It is somewhat similar to the ID Selector but it 
-                                                        uses the values of the 'class' attribute instead.
-                                                        <ul>
-                                                            <li>
-                                                                Example:
-                                                                <p>.container {margin-bottom: 10px;}</p>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        It can also target class attributes with 2 or more values.
-                                                        <ul>
-                                                            <li>
-                                                                Example:
-                                                                <p>p.feature.quote {text-align: justify;}</p>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>Attribute Selector</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Selector Group</li>
-                            <li>Combinators</li>
-                            <li>Pseudo-Classes</li>
-                        </ol>
-                    </li>
-                </ul>
             </div>
         </section>
     </main>

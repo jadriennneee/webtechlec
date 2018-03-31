@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <title>techweb | CSS</title>
+</head>
+
+<body>
+    <header class="grid">
+        <h1 id="branding">
+            <a href="../index.html">TechWeb</a>
+        </h1>
+
+        <div id="navWrapper">
+            <label for="navToggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </div>
+
+        <input type="checkbox" id="navToggler">
+        <nav id="navList">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../pages/overview.html">Topics</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-grid">
+        <label for="sidebarToggler" id="sidebarShowArrow" class="arrow">
+        
+        </label>
+        
+        <input type="checkbox" id="sidebarToggler">
+        
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div id="sidebarList">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sint molestiae dolores, non temporibus assumenda
+                    eos, repellendus quisquam in aliquam porro sunt mollitia repellat adipisci, velit asperiores nihil sed tempore
+                    error recusandae dolor, praesentium accusantium. Incidunt, natus. Necessitatibus officia, quia.</p>
+            </div>
+            <label for="sidebarToggler" id="sidebarHideArrow" class="arrow">
+        
+            </label>
+        </aside>
+        
+        <div id="main-topic-wrapper">
+        </div>
+        
+        <section id="main-topic">
+            <div id="topic-wrapper">
+                <h1>Cascading Style Sheet (CSS)</h1>
+
+                <h2 id="cssSelectors">CSS Selectors</h2>
+                <h3>Selector</h3>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>Structure used as a condition in a CSS Rule</li>
+                            <li>It is used to specify the HTML elements we want to style.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        TYPES OF SELECTOR:
+                        <ol>
+                            <li>
+                                Simple Selector
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                It does not contain any combinators which means that it cannot contain other 
+                                                types of selectors or Universal selectors.
+                                            </li>
+                                            <li>It starts with a type selector (HTML element) or a Universal Selector.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Example:<p>h1 {text-align: center;}</p></li>
+                                    <li>
+                                        Types of Simple Selectors:
+                                        <ol type="a">
+                                            <li>
+                                                Universal Selector
+                                                <ul>
+                                                    <li>It is denoted by an asterisk (*) symbol.</li>
+                                                    <li>It means that it targets any element or component of the document.</li>
+                                                    <li>Example:<p>* {font-size: 20px;}</p></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Type Selector
+                                                <ul>
+                                                    <li>
+                                                        It specifies the element type specifically the HTML element allowing all elements 
+                                                        that matches the indicated type Selector to be styled.
+                                                    </li>
+                                                    <li>Example:<p>p {color: red;}</p></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                ID Selector
+                                                <ul>
+                                                    <li>It is always introduced by the pound (#) sign.</li>
+                                                    <li>
+                                                        This type of selector targets elements that has an attribute called 'id' and the values 
+                                                        of the attributes matches the specified ID selector.
+                                                    </li>
+                                                    <li>Example:<p>#main {padding: 10px;}</p></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Class Selector
+                                                <ul>
+                                                    <li>It is always introduced by the period (.).</li>
+                                                    <li>
+                                                        It is somewhat similar to the ID Selector but it uses the values of the 'class' attribute instead.
+                                                        <ul>
+                                                            <li>Example:<p>.container {margin-bottom: 10px;}</p></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        It can also target class attributes with 2 or more values.
+                                                        <ul>
+                                                            <li>Example:<p>p.feature.quote {text-align: justify;}</p></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Attribute Selector
+                                                <ul>
+                                                    <li>It is a generic way of associating design to the attributes of the document.</li>
+                                                    <li>It is indicated by a square brackets ([]).</li>
+                                                    <li>Example:<p>img[alt] {border: 1px solid green;}</p></li>
+                                                    <li>
+                                                        Wildcards used in the selector:
+                                                        <ol>
+                                                            <li>
+                                                                *=
+                                                                <ul>
+                                                                    <li>This targets all attributes that contains the specified value.
+                                                                    </li>
+                                                                    <li>It also means 'contains'.</li>
+                                                                    <li>
+                                                                        Example:
+                                                                        <p><span class="popup">a[href *= google]
+                                                                            <span class="popup-text">
+                                                                                this targets all href attributes that has a value containing the word 'google'
+                                                                            </span>
+                                                                        </span></p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                $=
+                                                                <ul>
+                                                                    <li> 
+                                                                        This targets all attributes with values having asuffix similar to the value indicated in the selector.
+                                                                    </li>
+                                                                    <li>
+                                                                        Example:
+                                                                        <p><span class="popup">a[href $= '.png']
+                                                                            <span class="popup-text">
+                                                                                this targets all href attributes that has a value with a suffix of '.png'
+                                                                            </span>
+                                                                        </span></p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                ^=
+                                                                <ul>
+                                                                    <li>
+                                                                        Instead of suffix, similar to No. 2, it targets all attrbutes with values having a prefix similar to the value indicated in the selector.
+                                                                    </li>
+                                                                    <li>
+                                                                        Example:
+                                                                        <p><span class="popup">a[href ^= https]
+                                                                            <span class="popup-text">
+                                                                                this targets all a elements with href attributes that has a value starting with 'https'
+                                                                            </span>
+                                                                        </span></p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                |=
+                                                                <ul>
+                                                                    <li>
+                                                                        This targets attributes who has a value that has either an 
+                                                                        exact match or exact match with a hyphen/dash (-).
+                                                                    </li>
+                                                                    <li>
+                                                                        Example:
+                                                                        <p><span class="popup">p[lang |= en]
+                                                                            <span class="popup-text">
+                                                                                this targets all p elements with attributes having the values either 'en' or 'en-'
+                                                                            </span>
+                                                                        </span></p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                ~=
+                                                                <ul>
+                                                                    <li>
+                                                                        This targets all attributes who has a value of one or more such that either of the values matches the indicated value for the selector.
+                                                                    </li>
+                                                                    <li>
+                                                                        Example:
+                                                                        <p><span class="popup">p[class ~= warn]
+                                                                            <span class="popup-text">
+                                                                                this targets all p elements with a class having either one of the values match the value indicated in the selector.
+                                                                            </span>
+                                                                        </span></p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Selector Group
+                                <ul>
+                                    <li>
+                                        It is a comma-separated list of selectors to represent the union of all selectors which 
+                                        has a similar declaration.
+                                    </li>
+                                    <li> Example: <br><img src="../assets/selector-group-css.PNG" alt="selector-group-example"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                Combinators
+                                <ul>
+                                    <li>It is used to prepend/add another sequence of a selector.</li>
+                                    <li>It is a way of combining sequence of simple elements.</li>
+                                    <li>
+                                        Types of Combinators:
+                                        <ol type="a">
+                                            <li>
+                                                Descendant Combinator
+                                                <ul>
+                                                    <li> Uses 
+                                                        <span class="popup">whitespace
+                                                            <span class="popup-text">indicated by a tab, space,linefeed, carriagge return, etc.</span>
+                                                        </span>
+                                                        to combine selectors.
+                                                    </li>
+                                                    <li>It selects elements which are direct descendants of the element indicated before it.</li>
+                                                    <li>
+                                                        Example:
+                                                        <p><span class="popup">div p
+                                                            <span class="popup-text">targets all p elements which are direct descendants of the div element</span>
+                                                        </span></p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Child Combinator
+                                                <ul>
+                                                    <li>Uses the greater than (>) sign to combine sequence of selectors.</li>
+                                                    <li>It selects elements which are direct children of the element indicated before it.</li>
+                                                    <li>
+                                                        Example:
+                                                        <p><span class="popup">div > p
+                                                            <span class="popup-text">
+                                                                targets all p elements who are direct children of the div element.
+                                                            </span>
+                                                        </span></p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Sibling Combinators
+                                                <ol>
+                                                    <li>
+                                                        Adjacent Sibling Combinator
+                                                        <ul>
+                                                            <li>Uses the plus (+) sign to combine sequence of selectors.</li>
+                                                            <li>It selects elements that are exactly after the element indicated before it.</li>
+                                                            <li>
+                                                                Example:
+                                                                <p><span class="popup">div + p
+                                                                    <span class="popup-text">targets all p elements which are exactly after the ending tag of thediv element.</span>
+                                                                </span></p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        General Sibling Combinator
+                                                        <ul>
+                                                            <li>Uses the tilde (~) to combine sequence of selectors.</li>
+                                                            <li>
+                                                                It selects all elements that follows the element indicated before it as long as 
+                                                                they share the same parent.
+                                                            </li>
+                                                            <li>
+                                                                Example:
+                                                                <p><span class="popup">div ~ p
+                                                                    <span class="popup-text">targets all p elements that follows after the div element even if they are not exactly after the div element.</span>
+                                                                </span></p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Pseudo-Classes
+                                <ul>
+                                    <li>These are used to target elements that has a changed state typically from a user interaction.</li>
+                                    <li>It is indicated by a colon (:)</li>
+                                    <li>
+                                        Types of Pseudo-Classes:
+                                        <ol type="a">
+                                            <li>Dynamic Pseudo-Class
+                                                <ol type="i">
+                                                    <li>
+                                                        link-pseudo-class
+                                                        <ul><li>Example: :link, :visited</li></ul>
+                                                    </li>
+                                                    <li>
+                                                        user action pseudo-class
+                                                        <ul><li>Example: :hover, :active, :focus</li></ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>Target Pseudo-Class
+                                                <ul>
+                                                    <li>It is usually associated with the href attribute.</li>
+                                                    <li>Example: :target</li>
+                                                </ul>
+                                            </li>
+                                            <li>Language Pseudo-Class
+                                                <ul>
+                                                    <li>It specifies the way of presenting text.</li>
+                                                    <li>Example: :lang()</li>
+                                                </ul>
+                                            </li>
+                                            <li>UI Element States
+                                                <ul>
+                                                    <li>It is commonly used with forms.</li>
+                                                    <li>Example: :enabled, :disabled, :checked, :indeterminate</li>
+                                                </ul>
+                                            </li>
+                                            <li>Structural Pseudo-Class
+                                                <ul>
+                                                    <li>It is associated with elements in the document tree.</li>
+                                                    <li>Example: :root, :first-child, :only-child, :nth-child()</li>
+                                                </ul>
+                                            </li>
+                                            <li>Negation
+                                                <ul>
+                                                    <li>It negates the specified value for the pseudo-class.</li>
+                                                    <li>Example: :not()</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Pseudo-Elements
+                                        <ul>
+                                            <li>In CSS3, it is indicated by a double colon (::).</li>
+                                            <li>
+                                                Example:
+                                                <ul>
+                                                    <li>:first-letter</li>
+                                                    <li>::before, ::after</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="content-wrap">
+            <p>IT 324 Web Tech 9340A, 2018</p>
+        </div>
+    </footer>
+</body>
+</html>
