@@ -1,0 +1,13 @@
+JavaScript
+MDN web docs. (2005 - 2018). JavaScript. Retrieved from https://developer.mozilla.org/bm/docs/Web/JavaScript
+MDN web docs. (2005 - 2018). JavaScript and Java. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#JavaScript_and_Java
+MDN web docs. (2005 - 2018). JavaScript - Learn Web Development. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+
+BOM
+Urbain, Ph.D., J. (n.d.). Browser Object Model BOM. Retrieved from http://jayurbain.com/msoe/se2840/slides/bom.pdf
+MDN web docs. (2005 - 2018). JavaScript Reference. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+MDN web docs. (2005 - 2018). JavaScript Guide. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+
+DOM
+Robie, J. (n.d.). What is the Document Object Model. Retrieved from https://www.w3.org/TR/WD-DOM/introduction.html
+
