@@ -62,4 +62,59 @@ HTML (10 objectives, 5 coding)
 	5)Basic structure of an HTML Document.
 	
 CSS (5 objectives, 10 coding - kahit yung iba, fill in the blanks), 
+	1) Stylesheets separated from the HTML documents.
+	2) Consists of a selector followed by a brace-enclosed declaration block that contains
+	   0 or more declarations that end in semi-colon(;).
+	3) It is a type of selector that does not contain any combinators which means that it cannot contain other types of 
+	   selectors or Universal selectors.
+	4) These are used to target elements that has a changed state typically from a user interaction.
+	5) Allows authors to specify the values of several properties with a single property.
+
+	Coding:
+	1) Fill in the blank to apply white text color to the paragraph.
+		p {____#FFF;}
+	2) Fill in the blanks to call an external stylesheet called "test.css":
+		<head>
+			<___ rel="stylesheet" href="test.css">
+		</head>
+	3) Fill in the blanks to give yellow background color to the element with id="intro", and black text color to the class="mytext":
+ 		____{
+   			background-color: yellow;
+		}
+  
+		____{
+ 			color: black;
+		}
+	4) Turn the text into a comment:
+  		__This is a comment__
+	5) Set the font-size of the paragraph to 20px
+		p { font-size:___;}
+	6) How do you select all p elements inside a div element?(Provide an example)
+	7) How do you group selectors? (Provide an example)
+	8) Match the first <i> element in all <p> elements
+	9) Match all <i> elements in all first child <p> elements
+	10) Provide the basic syntax of vendor specific extensions.
+
+
 JS (10 objectives, 5 coding)
+	1) It is a programming language that allows the implementation of 
+	   complex functionalities on websites.
+	2) codes outside the function is automatically executed.
+	3) It is a set of objects that comprises various elements of the browser.
+	4) A method of the browser's window that opens a new browser window.
+	5) It represents information about the browser and the underlying Operating System.
+	6) It refers to the name of the browser.
+	7) It contains information of the recently visited sites.
+	8) It refers to the number of elements in the history list.
+	9) It creates a copy of the entire structure.
+	10) An API that allows access to the HTML document from within scripts associated
+		with the Web page.
+
+	Coding:
+	1) How to print "Hello World" to the browser?
+	2) What attribute and what value is used along with the script tag?
+		<script  ___="text/_____">
+	3) How does the single line comment look like?
+	4) Use the corresponding keyword to complete the statement.
+		___ my_variable = 32;
+	5) How to declare variables in JavaScript?
