@@ -52,3 +52,22 @@ CSS
 8. list-style-type: none
 9. font-size: 50px;
 10. display: inline-block;
+
+JS
+1.Javascript
+2.alert()
+3.Document
+4.assign()
+5.go()
+6.deep cloning
+7.Document Object Model(DOM)
+8.Location
+9.shallow cloning
+10.Screen
+
+coding:
+1.write
+2./* comment section */
+3.getElementById(idname)
+4.<script src=""></script>
+5.var, var

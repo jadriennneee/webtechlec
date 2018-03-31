@@ -134,20 +134,23 @@ coding:
    </html>
 
 js(10 objectives, 5 coding)
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
+1.It is well-known as the scripting language for websites?
+2.It is a method of the browswe's windows that post a messgae dialog box?
+3.It represent the current Web Page of its entire contents?
+4.It is a method that loads a new document?
+5.It is a method that loads a specific page in the history list?
+6.A type of cloning that set the clone into true?
+7.Defines how documents are accessed anf manipulated in most modern browser?
+8.It is contains information about the current URL?
+9.A type of cloning that set the clone into false?
+10.It is the information about the display capabilities of the Client PC running the browser?
 
 coding
-1.
-2.
-3.
-4.
-5.
+1. Fill in the blanks?
+   document._______("Anya ngay lubong");
+2. Write down how to create multiple comment?
+3. What method do you use in getting an Id element in HTML?
+4.how do you link you javascript file in html?
+5.Fill in the blank, complete the statement below?
+   _____ cars = "porche";
+   _____ nums = 99;
