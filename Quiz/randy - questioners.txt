@@ -49,12 +49,23 @@ coding:
 5. how to declared a class in the element div?
 
 CSS ( 5 objectives, 10 coding - khit yung iba, fill in the blanks)
+1.It is used for presentationaspects such as for fonts, color, and screen layout?
+2.Commonly denoted with a annotation "@"?
+3.It is used to specify the HTML elements we want to style?
+4.It provides functionalityh without having to write CSS?
+5.It is a way of combining sequence of simple elements?
 
 coding:
-1. <!DOCTYPE html>
+1. Fill in the blank, Change the color of p tags in blue?
+   <!DOCTYPE html>
    <html>
       <head>
 	<title> EXAMPLE </title>
+      <style>
+	p{
+	  __________
+	}
+      </style>
       </head>
       <body>
 	<p> hello</p>
@@ -66,4 +77,77 @@ coding:
 4  how to select all element using css?
 5. how to select all <p> using css?
 6. how you select the first-child of <p>?
-7. how you select the nth-child of <p>
+7. how you select the nth-child of <p>?
+8. Fill in the blank, removing the bullet each items?
+   <!DOCTYPE html>
+   <html>
+      <head>
+	<title> EXAMPLE </title>
+      <style>
+	ul{
+	  _________________;
+	}
+      </style>
+      </head>
+      <body>
+	<ul>
+    	  <li>Home</li>
+	  <li>Away</li>
+	  <li>Result</li>
+        </ul>
+      </body>
+   </html>
+9. Fill in the blank, Resize the element <p> into size 50px?
+   <!DOCTYPE html>
+   <html>
+      <head>
+	<title> EXAMPLE </title>
+      <style>
+	p{
+	  _________________;
+	}
+      </style>
+      </head>
+      <body>
+	<p> Anya Ngay Lubong</p>
+      </body>
+   </html>
+10. Fill in the blank, display the list item in one line?
+   <!DOCTYPE html>
+   <html>
+      <head>
+	<title> EXAMPLE </title>
+      <style>
+	ul{
+	  list-style-type: none;
+	  ____________________;
+	}
+      </style>
+      </head>
+      <body>
+	<ul>
+    	  <li>Home</li>
+	  <li>Away</li>
+	  <li>Result</li>
+        </ul>
+      </body>
+   </html>
+
+js(10 objectives, 5 coding)
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+coding
+1.
+2.
+3.
+4.
+5.
