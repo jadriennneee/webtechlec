@@ -1,0 +1,50 @@
+WWW
+BBC. (2018). What is World Wide Web. Retrieved from http://www.bbc.co.uk/guides/z2nbgk7#zxfrcdm
+CERN Accelerating Science. (2018). The Birth of the Web. Retrieved from https://home.cern/topics/birth-web
+W3C. (2001, January 24). About The World Wide Web. Retrieved from https://www.w3.org/WWW/
+World Wide Web Foundation. (2008-2018). History of the Web. Retrieved from https://webfoundation.org/about/vision/history-of-the-web/
+World Wide Web. (n.d.). Retrieved from https://www.ou.edu/research/electron/internet/www.htm
+HTTP
+HPBN. (2013). Brief History of HTTP. Retrieved from https://hpbn.co/brief-history-of-http/
+MDN web docs. (2005 - 2018). An Overview of an HTTP. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+MDN web docs. (2005 - 2018). Evolution of HTTP. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP
+MDN web docs. (2005 - 2018). HTTP Headers. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+RESTfulAPI. (n.d.). HTTP Methods. Retrieved from https://restfulapi.net/http-methods/
+W3C. (n.d.). HTTP 1.1 Header Field Definitions. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
+W3C. (n.d.). HTTP 1.1 Method Definitions. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
+W3C. (n.d.). HTTP 1.1 Status Code Definitions. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+
+HTML
+MDN web docs. (2005 - 2018). Introduction to HTML. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML
+Shannon, R. (2012, August 21). The History of HTML. Retrieved from http://www.yourhtmlsource.com/starthere/historyofhtml.html
+W3C. (2016). HTML & CSS. Retrieved from https://www.w3.org/standards/webdesign/htmlcss
+W3C. (2018). W3C HTML. Retrieved from https://www.w3.org/html/
+
+CSS
+Cinarli, B. (2014, March 21). An Introdcution to CSS Pre-Processors: SSAS, LESS and Stylus. Retrieved from https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus
+Jenkov, J. (2014, June 15). CSS Precedence. Retrieved from http://tutorials.jenkov.com/css/precedence.html#important
+MDN web docs. (2005 - 2018). CSS Selectors. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+MDN web docs. (2005 - 2018). Custom properties. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+MDN web docs. (2005 - 2018). How CSS works. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works
+MDN web docs. (2005 - 2018). Selector. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors
+MDN web docs. (2005 - 2018). Shorthand properties. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
+MDN web docs. (2005 - 2018). Syntax - CSS. Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
+MDN web docs. (2005 - 2018). Vendor Prefixes. Retrieved from https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix
+Stearns, D. (2016). CSS Frameworks. Retrieved from https://faculty.washington.edu/dlsinfo/tutorials/css-frameworks/
+VictorV. (2016, April 11). A Brief History of CSS. Retrieved from http://www.css-class.com/a-brief-history-of-css/
+W3C, & Bos, B. (2016, December 17). A Brief history of CSS until 2016. Retrieved from https://www.w3.org/Style/CSS20/history.html
+W3C. (2016, May 19). CSS Cascading and inhenritance Level 3. Retrieved from https://www.w3.org/TR/css-cascade-3/#value-stages
+W3C. (2016, Septmenber 29). CSS Values and Units Module Level 3. Retrieved from https://www.w3.org/TR/css3-values/#common-keywords
+W3C. (n.d.). Selectors. Retrieved from https://www.w3.org/TR/CSS21/selector.html#selector-syntax
+W3C. (n.d.). Style Sheet in HTML Documents. Retrieved from https://www.w3.org/TR/html401/present/styles.html
+W3C. (n.d.). Syntax and basic data types. Retrieved from https://www.w3.org/TR/CSS21/syndata.html#vendor-keywords
+W3Schools, & Data, R. (1999 - 2018). CSS Background Property. Retrieved from https://www.w3schools.com/cssref/css3_pr_background.asp
+
+JavaScript
+MDN web docs. (2005 - 2018). JavaScript - Learn Web Development. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+MDN web docs. (2005 - 2018). JavaScript and Java. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#JavaScript_and_Java
+MDN web docs. (2005 - 2018). JavaScript Guide. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+MDN web docs. (2005 - 2018). JavaScript Reference. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+MDN web docs. (2005 - 2018). JavaScript. Retrieved from https://developer.mozilla.org/bm/docs/Web/JavaScript
+Robie, J. (n.d.). What is the Document Object Model. Retrieved from https://www.w3.org/TR/WD-DOM/introduction.html
+Urbain, Ph.D., J. (n.d.). Browser Object Model BOM. Retrieved from http://jayurbain.com/msoe/se2840/slides/bom.pdf
