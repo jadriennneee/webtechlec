@@ -4,6 +4,7 @@ CERN Accelerating Science. (2018). The Birth of the Web. Retrieved from https://
 W3C. (2001, January 24). About The World Wide Web. Retrieved from https://www.w3.org/WWW/
 World Wide Web Foundation. (2008-2018). History of the Web. Retrieved from https://webfoundation.org/about/vision/history-of-the-web/
 World Wide Web. (n.d.). Retrieved from https://www.ou.edu/research/electron/internet/www.htm
+
 HTTP
 HPBN. (2013). Brief History of HTTP. Retrieved from https://hpbn.co/brief-history-of-http/
 MDN web docs. (2005 - 2018). An Overview of an HTTP. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
