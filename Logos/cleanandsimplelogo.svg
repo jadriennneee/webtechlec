@@ -1,0 +1,16 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="130" height="130" id="canvas_background" fill="#ffffff"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000000" id="svg_42" height="64.485892" width="98.597994" y="31.757053" x="14.701004" stroke-width="5" fill="#ffffff"/>
+  <rect id="svg_45" height="32.242946" width="24.299032" y="44.140217" x="25.915948" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_46" height="24.299032" width="18.691563" y="44.373862" x="59.560761" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+  <path stroke="#000000" id="svg_51" d="m96.785102,35.338557l-8.232025,5.958937l3.146776,-9.639185l-8.230172,-5.958937l10.173278,0.001847l2.703855,-8.288406l0.441068,-1.346162l3.141216,9.632722l10.176058,0l-8.233878,5.958937l3.147702,9.641955l-8.233878,-5.961707l0,0z" fill-opacity="null" stroke-opacity="null" stroke-width="3" fill="#ffffff"/>
+  <rect stroke="#000000" id="svg_52" height="4.672891" width="38.784994" y="79.233624" x="63.299074" fill-opacity="null" stroke-opacity="null" stroke-width="4" fill="#ffffff"/>
+ </g>
+</svg>
