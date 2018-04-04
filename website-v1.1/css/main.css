@@ -17,16 +17,16 @@
 
 body {
     background-color: #eaeaea;
-    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
     margin-bottom: 10px;
-    font-size: 100%;
+    font-size: 16px;
 }
 
 p {
-    font-size: 100%;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -39,7 +39,7 @@ p {
     display: inline-block;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 100%;
+    font-size: 16px;
     border: 2px solid #30ad63;
 }
 
@@ -82,14 +82,14 @@ header {
 .nav-toggler {
     background-color: transparent;
     border: none;
-    font-size: inherit;
+    font-size: 26px;
     color: #ffffff;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 #branding, #navHeader h1 {
     margin-bottom: 0;
-    font-size: 180%;
     text-transform: lowercase;
 }
 
@@ -98,6 +98,7 @@ header {
     text-decoration: none;
     font-family: Asimov;
     font-weight: 100;
+    font-size: 26px;
 }
 
 /* Navigation */
@@ -120,7 +121,7 @@ header {
 
 #nav ul {
     list-style: none;
-    font-size: 80%;
+    font-size: 12px;
 }
 
 #nav li:first-child {
@@ -128,7 +129,7 @@ header {
 }
 
 #nav li {
-    padding: 10px 15px;
+    padding: 10px 17px;
     border-bottom: 1px solid #29343d;
 }
 
@@ -144,7 +145,6 @@ header {
 #nav li > a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 130%;
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -184,7 +184,7 @@ header {
 }
 
 #section-a h1 {
-    font-size: 250%;
+    font-size: 46px;
     margin-bottom: 20px;
 }
 
@@ -224,12 +224,12 @@ header {
 
 #section-b .description h3 {
     margin-bottom: 5px;
-    font-size: 100%;
+    font-size: 16px;
 }
 
 #section-b .description p {
     margin-bottom: 0;
-    font-size: 90%;
+    font-size: 14px;
     padding-right: 5px;
     line-height: normal;
 }
@@ -244,14 +244,14 @@ header {
 }
 
 #section-c h2 {
-    font-size: 110%;
+    font-size: 24px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #section-c p {
-    font-size: 90%;
+    font-size: 16px;
     margin-bottom: 0;
-    text-align: justify;
 }
 
 /* Footer */
@@ -268,8 +268,130 @@ header {
 #footer p {
     text-align: center;
     margin-bottom: 0;
-    font-size: 90%;
+    font-size: 16px;
 }
 
 /* Media queries */
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #branding a, #navHeader a, .nav-toggler {
+        font-size: 32px;
+    }
+
+    #nav {
+        width: 45%;
+    }
+
+    #nav li {
+        padding: 10px 19px;
+    }
+
+    #nav img {
+        margin-right: 19px;
+    }
+
+    #section-b li {
+        grid-template-columns: minmax(auto, 15%) 1fr;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #nav {
+        width: 40%;
+    }
+
+    #section-a h1 {
+        font-size: 52px;
+    }
+
+    #section-b {
+        background-color: #ffffff;
+    }
+
+    #section-b ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #section-b li {
+        background-color: #ffffff;
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    #section-b .feature-icon {
+        margin-bottom: 5px;
+    }
+
+    #section-b > .content-wrap {
+        padding: 15px 0;
+    }
+
+    #section-b .feature-icon img {
+        width: 60px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #nav {
+        width: 30%;
+    }
+
+    .btn {
+        padding: 16px 38px;
+        font-size: 22px;
+    }
+
+    #headerWrapper, #navHeader {
+        padding: 10px 15px;
+    }
+
+    #branding a, #navHeader a, .nav-toggler {
+        font-size: 36px;
+    }
+
+    .nav-toggler {
+        margin-right: 10px;
+    }
+
+    #section-a {
+        min-height: 85vh;
+    }
+
+    #showcase {
+        min-height: 85vh;
+    }
+
+    #section-a h1 {
+        font-size: 72px;
+    }
+
+    #section-b > .content-wrap {
+        padding: 45px;
+    }
+
+    #section-b .feature-icon img {
+        width: 80px;
+    }
+
+    #section-b .description h3 {
+        font-size: 18px;
+    }
+
+    #section-c h2 {
+        font-size: 36px;
+    }
+
+    #section-c > .content-wrap {
+        padding: 70px 150px;
+    }
+
+    #section-c p {
+        font-size: 18px;
+        width: 60%;
+        line-height: 2;
+    }
+}
