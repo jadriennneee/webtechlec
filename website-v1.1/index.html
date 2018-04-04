@@ -31,7 +31,21 @@
                 <a href="index.html"><img src="img/homeblue.png" alt="Home">Home</a>
             </li>
             <li>
-                <a href="#"><img src="img/topicswhite.png" alt="Topics">Topics</a>
+                <a href="#" class="list-header">
+                    <img src="img/topicswhite.png" alt="Topics" class="collapse-header">Topics
+                </a>
+                <div class="list-body">
+                    <ul>
+                        <li>Overview</li>
+                        <li>HTTP</li>
+                        <li>URI</li>
+                        <li>HTML</li>
+                        <li>CSWS</li>
+                        <li>SSWS</li>
+                        <li>Web Security</li>
+                        <li>Advanced Topics</li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <a href="#"><img src="img/quizwhite.png" alt="Resources">Quiz</a>
@@ -150,6 +164,19 @@
             document.getElementById('nav').classList.remove('active');
             document.getElementById('overlay').classList.remove('active');
         });
+
+        var collapsables = document.getElementsByClassName("list-header");
+
+        for (var i = 0; i < collapsables.length; i++) {
+            collapsables[i].addEventListener("click", function() {
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
     </script>
 </body>
 </html>
