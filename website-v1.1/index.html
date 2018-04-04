@@ -9,41 +9,43 @@
     <title>techweb | Welcome</title>
 </head>
 <body>
-    <input type="checkbox" id="navToggler" onchange="toggleScroll()">
     <header>
-        <div id="headerWrapper" class="grid">
+        <div id="headerWrapper">
             <h1 id="branding">
-                <label for="navToggler">&#9776;</label>
+                <button class="nav-toggler">&#9776;</button>
+                <a href="index.html">TechWeb</a>
+            </h1>
+        </div>
+    </header>
+
+    <nav id="nav">
+        <div id="navHeader">
+            <h1>
+                <button class="nav-toggler">&#9776;</button>
                 <a href="index.html">TechWeb</a>
             </h1>
         </div>
 
-        <div id="navWrapper">
-            <nav id="navList">
-                <ul>
-                    <li class="current">
-                        <a href="index.html"><img src="img/homeblue.png" alt="Home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/topicswhite.png" alt="Topics">Topics</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/quizwhite.png" alt="Resources">Quiz</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/resourceswhite.png" alt="Resources">Resources</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/aboutuswhite.png" alt="About Us">About Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <ul>
+            <li class="current">
+                <a href="index.html"><img src="img/homeblue.png" alt="Home">Home</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/topicswhite.png" alt="Topics">Topics</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/quizwhite.png" alt="Resources">Quiz</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/resourceswhite.png" alt="Resources">Resources</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/aboutuswhite.png" alt="About Us">About Us</a>
+            </li>
+        </ul>
+    </nav>
 
     <div id="container">
-        <div class="offset" onclick="collapseSideBar()">
-        </div>
         <main id="main">
             <!-- Section A -->
             <section id="section-a" class="grid">
@@ -130,23 +132,24 @@
             </div>
         </footer>
     </div>
-</body>
 
-<!-- Script test -->
-<script>
-    function toggleScroll() {
-        if (document.getElementById("navToggler").checked) {
-            document.getElementsByTagName("body")[0].style.position = "fixed";
-            document.getElementsByTagName("body")[0].style.overflow = "hidden";
-        } else {
-            document.getElementsByTagName("body")[0].style.position = "relative";
-            document.getElementsByTagName("body")[0].style.overflow = "scroll";
+    <div id="overlay"></div>
+
+    <!-- Custom Script -->
+    <script>
+        var navToggler = document.getElementsByClassName("nav-toggler");
+
+        for (var i = 0; i < navToggler.length; i++) {
+            navToggler[i].addEventListener("click", function() {
+                document.getElementById('nav').classList.toggle("active");
+                document.getElementById('overlay').classList.toggle('active');
+            });
         }
-    }
 
-    function collapseSideBar() {
-        document.getElementById("navToggler").checked = false;
-        toggleScroll();
-    }
-</script>
+        document.getElementById('overlay').addEventListener("click", function() {
+            document.getElementById('nav').classList.remove('active');
+            document.getElementById('overlay').classList.remove('active');
+        });
+    </script>
+</body>
 </html>
