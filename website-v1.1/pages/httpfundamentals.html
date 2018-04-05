@@ -7,64 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/content.css">
     <title>techweb | HTTP</title>
 </head>
 
 <body>
-    <header class="grid">
-        <h1 id="branding">
-            <a href="../index.html">TechWeb</a>
-        </h1>
-
-        <div id="navWrapper">
-            <label for="navToggler">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
+    <progress id="progressBar" value="0" max="100"></progress>
+    <header>
+        <div id="headerWrapper">
+            <h1 id="branding">
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
         </div>
-
-        <input type="checkbox" id="navToggler">
-        <nav id="navList">
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="../pages/overview.html">Topics</a>
-                </li>
-                <li>
-                    <a href="#">Resources</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
-    <main id="main-grid">
-        <label for="sidebarToggler" id="sidebarShowArrow" class="arrow">
-        
-        </label>
-        
-        <input type="checkbox" id="sidebarToggler">
-        
-        <!-- Sidebar -->
-        <aside id="sidebar">
-            <div id="sidebarList">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sint molestiae dolores, non temporibus assumenda
-                    eos, repellendus quisquam in aliquam porro sunt mollitia repellat adipisci, velit asperiores nihil sed tempore
-                    error recusandae dolor, praesentium accusantium. Incidunt, natus. Necessitatibus officia, quia.</p>
-            </div>
-            <label for="sidebarToggler" id="sidebarHideArrow" class="arrow">
-        
-            </label>
-        </aside>
-        
-        <section id="main-topic">
-            <div id="topic-wrapper">
+    <nav id="nav">
+        <div id="navHeader">
+            <h1>
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
+        </div>
+
+        <ul>
+            <li>
+                <a href="../index.html"><img src="../img/homewhite.png" alt="Home">Home</a>
+            </li>
+            <li>
+                <a href="#" class="list-header">
+                    <img src="../img/topicswhite.png" alt="Topics" class="collapse-header">Topics
+                </a>
+                <div class="list-body">
+                    <ul>
+                        <li>Overview</li>
+                        <li>HTTP</li>
+                        <li>URI</li>
+                        <li>HTML</li>
+                        <li>CSWS</li>
+                        <li>SSWS</li>
+                        <li>Web Security</li>
+                        <li>Advanced Topics</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="../img/quizwhite.png" alt="Resources">Quiz</a>
+            </li>
+            <li>
+                <a href="#"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
+            </li>
+            <li>
+                <a href="#"><img src="../img/aboutuswhite.png" alt="About Us">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <main id="main" class="grid">
+            <section id="mainContent">
                 <h1>Hypertext Transfer Protocol (HTTP)</h1>
             
                 <h2 id="whatIsHttp">What is HTTP?</h2>
@@ -232,174 +232,188 @@
                 <hr>
 
                 <h2 id="httpVersions">HTTP Version History</h3>
-                    <ul>
-                        <li>
-                            HTTP 0.9 (1991)
+                <ul>
+                    <li>
+                        HTTP 0.9 (1991)
 
-                            <ul>
-                                <li>
-                                    It only uses one request method - 
-                                    <span class="popup">GET
-                                        <span class="popup-text">
-                                             An HTTP method used to retrieve 
-                                             a Web resource from the Web server.
-                                        </span>
+                        <ul>
+                            <li>
+                                It only uses one request method - 
+                                <span class="popup">GET
+                                    <span class="popup-text">
+                                         An HTTP method used to retrieve 
+                                         a Web resource from the Web server.
                                     </span>
-                                </li>
-                                <li>
-                                    It does not allow persistent connections
-                                    which means that it can only establish one
-                                    TCP connection.
-                                </li>
-                                <li>
-                                    Server responses only comes in 
-                                    <a href="../pages/htmldoc.html">HTML</a> form.
-                                </li>
-                                <li>
-                                    Clients can only send a single ASCII form of string.
-                                </li>
-                                <li>
-                                    Client requests are terminated using 
-                                    <span class="popup">CRLF
-                                        <span class="popup-text">
-                                             Carriage Return Line Feedback (CRLF) is 
-                                             used to indicate the termination of a line.
-                                        </span>
+                                </span>
+                            </li>
+                            <li>
+                                It does not allow persistent connections
+                                which means that it can only establish one
+                                TCP connection.
+                            </li>
+                            <li>
+                                Server responses only comes in 
+                                <a href="../pages/htmldoc.html">HTML</a> form.
+                            </li>
+                            <li>
+                                Clients can only send a single ASCII form of string.
+                            </li>
+                            <li>
+                                Client requests are terminated using 
+                                <span class="popup">CRLF
+                                    <span class="popup-text">
+                                         Carriage Return Line Feedback (CRLF) is 
+                                         used to indicate the termination of a line.
                                     </span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            HTTP 1.0
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        HTTP 1.0
 
-                            <ul>
-                                <li>
-                                    <a href="http://www.ietf.org/rfc/rfc1945.txt">RFC 1945</a>
-                                </li>
-                                <li>
-                                    Improved HTTP 0.9 by adding the following methods:
-                                    <ul>
-                                        <li>
-                                            POST - An HTTP method that allows Clients to
-                                            send an information to the Web Server.
-                                        </li>
-                                        <li>
-                                            HEAD - Identical to the GET method
-                                            but it does not display the content of the
-                                            response’s body. It only displays the
-                                            headers used in the response.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    It already provides the accommodation of extensions.
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            HTTP 1.1
-                            <ul>
-                                <li><a href="https://www.ietf.org/rfc/rfc2068.txt">RFC 2068</a></li>
-                                <li><a href="https://www.ietf.org/rfc/rfc2616.txt">RFC 2616</a></li>
-                                <li><span class="popup">RFC 7230-7235
-                                        <span class="popup-text">
-                                            <ul>
-                                                <li><a href="https://tools.ietf.org/html/rfc7230">RFC 7230</a></li>
-                                                <li><a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a></li>
-                                                <li><a href="https://tools.ietf.org/html/rfc7232">RFC 7232</a></li>
-                                                <li><a href="https://tools.ietf.org/html/rfc7233">RFC 7233</a></li>
-                                                <li><a href="https://tools.ietf.org/html/rfc7234">RFC 7234</a></li>
-                                                <li><a href="https://tools.ietf.org/html/rfc7235">RFC 7235</a></li>
-                                            </ul>
-                                        </span>
+                        <ul>
+                            <li>
+                                <a href="http://www.ietf.org/rfc/rfc1945.txt">RFC 1945</a>
+                            </li>
+                            <li>
+                                Improved HTTP 0.9 by adding the following methods:
+                                <ul>
+                                    <li>
+                                        POST - An HTTP method that allows Clients to
+                                        send an information to the Web Server.
+                                    </li>
+                                    <li>
+                                        HEAD - Identical to the GET method
+                                        but it does not display the content of the
+                                        response’s body. It only displays the
+                                        headers used in the response.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                It already provides the accommodation of extensions.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        HTTP 1.1
+                        <ul>
+                            <li><a href="https://www.ietf.org/rfc/rfc2068.txt">RFC 2068</a></li>
+                            <li><a href="https://www.ietf.org/rfc/rfc2616.txt">RFC 2616</a></li>
+                            <li><span class="popup">RFC 7230-7235
+                                    <span class="popup-text">
+                                        <ul>
+                                            <li><a href="https://tools.ietf.org/html/rfc7230">RFC 7230</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7232">RFC 7232</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7233">RFC 7233</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7234">RFC 7234</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7235">RFC 7235</a></li>
+                                        </ul>
                                     </span>
-                                </li>
-                                <li>HTTP 1.1 is the protocol which is used up until the present.</li>
-                                <li>
-                                    More methods are added:
-                                    <ul>
-                                        <li>
-                                            PUT - An HTTP method that allows Clients 
-                                            to replace the contents of the website 
-                                            with the data sent/uploaded by the Client.
-                                        </li>
-                                        <li>
-                                            DELETE - An HTTP method that allows Clients
-                                            to remove the content of the Web resource.
-                                        </li>
-                                        <li>
-                                            CONNECT - An HTTP method that creates 
-                                            connection to the Server identified by 
-                                            the given URI.
-                                        </li>
-                                        <li>
-                                            OPTIONS - An HTTP method that shows a list 
-                                            of HTTP methods allowed by the Server.
-                                        </li>
-                                        <li>
-                                            TRACE - An HTTP method that echoes the contend
-                                            of the Client's request.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    HTTP 1.1 can already accommodate persistent
-                                    connections such that it allows connections to be reused.
-                                </li>
-                                <li>
-                                    HTTP 1.1 already supports data compression
-                                    wherein content of the message body can
-                                    already be compressed to enhance speed.
-                                </li>
-                                <li>
-                                    Pipelining is already supported such that it
-                                    lowers the transmission delay of the communication
-                                    between the Server and the Client.
-                                </li>
-                                <li>
-                                    It added more mechanisms regarding Cache Control.
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            HTTP 2.0
-                            <ul>
-                                <li><a href="https://tools.ietf.org/html/rfc7540">RFC 7540</a></li>
-                                <li>
-                                    It is an enhanced version of HTTP 1.1.
-                                    <ul>
-                                        <li>
-                                            Parallel requests can already be
-                                            handled allowing things to be concurrent.
-                                        </li>
-                                        <li>
-                                            It can already accommodate header compression.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Added accommodation to 
-                                    <span class="popup">Server push
-                                        <span class="popup-text">
-                                            Allows the Server to
-                                            automatically send information even
-                                            if the request is not yet sent.
-                                        </span>
-                                    </span>.
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                                </span>
+                            </li>
+                            <li>HTTP 1.1 is the protocol which is used up until the present.</li>
+                            <li>
+                                More methods are added:
+                                <ul>
+                                    <li>
+                                        PUT - An HTTP method that allows Clients 
+                                        to replace the contents of the website 
+                                        with the data sent/uploaded by the Client.
+                                    </li>
+                                    <li>
+                                        DELETE - An HTTP method that allows Clients
+                                        to remove the content of the Web resource.
+                                    </li>
+                                    <li>
+                                        CONNECT - An HTTP method that creates 
+                                        connection to the Server identified by 
+                                        the given URI.
+                                    </li>
+                                    <li>
+                                        OPTIONS - An HTTP method that shows a list 
+                                        of HTTP methods allowed by the Server.
+                                    </li>
+                                    <li>
+                                        TRACE - An HTTP method that echoes the contend
+                                        of the Client's request.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                HTTP 1.1 can already accommodate persistent
+                                connections such that it allows connections to be reused.
+                            </li>
+                            <li>
+                                HTTP 1.1 already supports data compression
+                                wherein content of the message body can
+                                already be compressed to enhance speed.
+                            </li>
+                            <li>
+                                Pipelining is already supported such that it
+                                lowers the transmission delay of the communication
+                                between the Server and the Client.
+                            </li>
+                            <li>
+                                It added more mechanisms regarding Cache Control.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        HTTP 2.0
+                        <ul>
+                            <li><a href="https://tools.ietf.org/html/rfc7540">RFC 7540</a></li>
+                            <li>
+                                It is an enhanced version of HTTP 1.1.
+                                <ul>
+                                    <li>
+                                        Parallel requests can already be
+                                        handled allowing things to be concurrent.
+                                    </li>
+                                    <li>
+                                        It can already accommodate header compression.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Added accommodation to 
+                                <span class="popup">Server push
+                                    <span class="popup-text">
+                                        Allows the Server to
+                                        automatically send information even
+                                        if the request is not yet sent.
+                                    </span>
+                                </span>.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="tableOfContents">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="content-wrap">
+                <p>IT 324 Web Tech 9340A, 2018</p>
             </div>
-            <button type="button">take quiz</button>
-        </section>
-    </main>
+        </footer>
+    </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="content-wrap">
-            <p>IT 324 Web Tech 9340A, 2018</p>
-        </div>
-    </footer>
+    <div id="overlay"></div>
+
+    <!-- Custom Script -->
+    <script src="../script/myScript.js"></script>
 </body>
 </html>

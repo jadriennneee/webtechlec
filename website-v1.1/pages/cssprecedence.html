@@ -7,64 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/content.css">
     <title>techweb | CSS</title>
 </head>
 
 <body>
-    <header class="grid">
-        <h1 id="branding">
-            <a href="../index.html">TechWeb</a>
-        </h1>
-
-        <div id="navWrapper">
-            <label for="navToggler">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
+    <progress id="progressBar" value="0" max="100"></progress>
+    <header>
+        <div id="headerWrapper">
+            <h1 id="branding">
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
         </div>
-
-        <input type="checkbox" id="navToggler">
-        <nav id="navList">
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="../pages/overview.html">Topics</a>
-                </li>
-                <li>
-                    <a href="#">Resources</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
-    <main id="main-grid">
-        <label for="sidebarToggler" id="sidebarShowArrow" class="arrow">
-        
-        </label>
-        
-        <input type="checkbox" id="sidebarToggler">
-        
-        <!-- Sidebar -->
-        <aside id="sidebar">
-            <div id="sidebarList">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sint molestiae dolores, non temporibus assumenda
-                    eos, repellendus quisquam in aliquam porro sunt mollitia repellat adipisci, velit asperiores nihil sed tempore
-                    error recusandae dolor, praesentium accusantium. Incidunt, natus. Necessitatibus officia, quia.</p>
-            </div>
-            <label for="sidebarToggler" id="sidebarHideArrow" class="arrow">
-        
-            </label>
-        </aside>
-        
-        <section id="main-topic">
-            <div id="topic-wrapper">
+    <nav id="nav">
+        <div id="navHeader">
+            <h1>
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
+        </div>
+
+        <ul>
+            <li>
+                <a href="../index.html"><img src="../img/homewhite.png" alt="Home">Home</a>
+            </li>
+            <li>
+                <a href="#" class="list-header">
+                    <img src="../img/topicswhite.png" alt="Topics" class="collapse-header">Topics
+                </a>
+                <div class="list-body">
+                    <ul>
+                        <li>Overview</li>
+                        <li>HTTP</li>
+                        <li>URI</li>
+                        <li>HTML</li>
+                        <li>CSWS</li>
+                        <li>SSWS</li>
+                        <li>Web Security</li>
+                        <li>Advanced Topics</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="../img/quizwhite.png" alt="Resources">Quiz</a>
+            </li>
+            <li>
+                <a href="#"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
+            </li>
+            <li>
+                <a href="#"><img src="../img/aboutuswhite.png" alt="About Us">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <main id="main" class="grid">
+            <section id="mainContent">
                 <h1>Cascading Style Sheet (CSS)</h1>
 
                 <h2 id="cssPrecedence">CSS Rule Precedence</h2>
@@ -338,14 +338,32 @@
                         </ol>
                     </li>
                 </ol>
+            </section>
+            
+            <section id="tableOfContents">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="content-wrap">
+                <p>IT 324 Web Tech 9340A, 2018</p>
             </div>
-        </section>
-    </main>
+        </footer>
+    </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="content-wrap">
-            <p>IT 324 Web Tech 9340A, 2018</p>
+    <div id="overlay"></div>
+
+    <!-- Custom Script -->
+    <script src="../script/myScript.js"></script>
+    </footer>
         </div>
     </footer>
 </body>
