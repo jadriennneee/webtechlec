@@ -69,6 +69,7 @@ header {
     border-bottom: 1px solid #29343d;
     color: #ffffff;
     top: 0;
+    position: -webkit-sticky;
     position: sticky;
     z-index: 1;
 }
