@@ -140,8 +140,8 @@ header {
     margin-right: 15px;
 }
 
-#nav > ul > li.current > a {
-    color: #00a8f8;
+#nav > ul > li.current {
+    background-color: #222f3e;
 }
 
 #nav ul > li > a {
@@ -153,7 +153,6 @@ header {
 }
 
 #nav ul > li > a:hover {
-    color: #00a8f8;
     text-decoration: none;
 }
 
@@ -174,8 +173,74 @@ header {
 /* Main */
 #main {
     color: #000000;
-    grid-area: main;
+    background-color: #ffffff;
 }
+
+#progressBar {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    color: #30ad63;
+    width: 100vw;
+    height: 5px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+#tableOfContents {
+    display: none;
+}
+
+#mainContent {
+    padding: 15px;
+}
+
+#mainContent h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mainContent h2 {
+    font-size: 20px;
+}
+
+#mainContent ul {
+    margin-left: 30px;
+}
+
+#mainContent ul > li {
+    margin-bottom: 10px;
+}
+
+#mainContent hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.popup {
+    color: blueviolet;
+}
+
+.popup-text {
+    display: none;
+    width: 40vw;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.popup:hover .popup-text{
+    display: inline-block;
+}
+
 
 /* Section a */
 #section-a {

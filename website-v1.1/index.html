@@ -28,7 +28,7 @@
 
         <ul>
             <li class="current">
-                <a href="index.html"><img src="img/homeblue.png" alt="Home">Home</a>
+                <a href="index.html"><img src="img/homewhite.png" alt="Home">Home</a>
             </li>
             <li>
                 <a href="#" class="list-header">
@@ -150,33 +150,6 @@
     <div id="overlay"></div>
 
     <!-- Custom Script -->
-    <script>
-        var navToggler = document.getElementsByClassName("nav-toggler");
-
-        for (var i = 0; i < navToggler.length; i++) {
-            navToggler[i].addEventListener("click", function() {
-                document.getElementById('nav').classList.toggle("active");
-                document.getElementById('overlay').classList.toggle('active');
-            });
-        }
-
-        document.getElementById('overlay').addEventListener("click", function() {
-            document.getElementById('nav').classList.remove('active');
-            document.getElementById('overlay').classList.remove('active');
-        });
-
-        var collapsables = document.getElementsByClassName("list-header");
-
-        for (var i = 0; i < collapsables.length; i++) {
-            collapsables[i].addEventListener("click", function() {
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
+    <script src="script/myScript.js"></script>
 </body>
 </html>
