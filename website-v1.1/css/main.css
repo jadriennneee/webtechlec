@@ -18,16 +18,16 @@
 body {
     background-color: #eaeaea;
     font-size: 16px;
+    line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, li {
     margin-bottom: 10px;
     font-size: 16px;
 }
 
 p {
     font-size: 16px;
-    line-height: 1.5;
 }
 
 .btn {
@@ -61,6 +61,10 @@ p {
 
 #overlay.active {
     display: block;
+}
+
+a {
+    color: #30ad63;
 }
 
 /* Header */
@@ -186,7 +190,7 @@ header {
     height: 5px;
     background-color: transparent;
     position: fixed;
-    top: 0;
+    bottom: 0;
     z-index: 100;
 }
 
@@ -221,25 +225,26 @@ header {
     margin-bottom: 20px;
 }
 
-.popup {
-    color: blueviolet;
+.pop-up {
+    color: red;
 }
 
-.popup-text {
-    display: none;
-    width: 40vw;
+.pop-up-content {
+    /* display: none;
+    margin: 0 auto;
     background-color: #ffffff;
-    color: black;
+    color: #000000;
     border-radius: 6px;
     border: 1px solid;
     padding: 5px 10px;
-    position: absolute;
-    z-index: 1;
+    z-index: 0;
     transition: 0.3s;
+    position: absolute; */
+    display: none;
 }
 
-.popup:hover .popup-text{
-    display: inline-block;
+.pop-up:hover + .pop-up-content {
+    /* display: inline-block; */
 }
 
 
@@ -387,8 +392,67 @@ header {
         width: 40%;
     }
 
+    #mainContent {
+        padding: 25px 50px;
+    }
+
+    #mainContent h1 {
+        text-align: left;
+    }
+
+    #mainContent hr {
+        margin: 35px 0;
+    }
+
     #section-a h1 {
         font-size: 52px;
+    }
+
+    #tableOfContents {
+        display: block;
+        padding: 20px 10px;
+        position: fixed;
+        right: 0;
+        width: 30%;
+        height: 100%;
+    }
+
+    #tableOfContents h5 {
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    #tableOfContents ol {
+        list-style-position: inside;
+        list-style-type: none;
+        border-left: 3px solid #30ad63;
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+
+    #tableOfContents ol li {
+        margin-bottom: 5px;
+    }
+
+    #tableOfContents ol li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #tableOfContents a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    #tableOfContents .current-section {
+        color: #30ad63;
+    }
+
+    #main.grid {
+        display: grid;
+        grid-template-columns: minmax(auto, 65%) 1fr;
+        grid-column-gap: 20px;
     }
 
     #section-b {

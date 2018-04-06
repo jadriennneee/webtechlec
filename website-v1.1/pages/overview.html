@@ -9,7 +9,6 @@
     <title>techweb | Overview</title>
 </head>
 <body>
-    <progress id="progressBar" value="0" max="100"></progress>
     <header>
         <div id="headerWrapper">
             <h1 id="branding">
@@ -17,6 +16,7 @@
                 <a href="../index.html">TechWeb</a>
             </h1>
         </div>
+        <progress id="progressBar" value="0" max="100"></progress>
     </header>
 
     <nav id="nav">
@@ -65,23 +65,23 @@
             <section id="mainContent">
                 <h1>Overview of the World Wide Web</h1>
 
-                <h2 id="whatIsWWW">What is the World Wide Web?</h2>
+                <h2 id="whatIsWWW" class="topic-title">What is the World Wide Web?</h2>
                 <ul>
                     <li>
                         The World Wide Web is a collection of Web resources and applications
                         that serves as a tool for users to share and obtain
-                        information through the Internet.It is typically known as
+                        information through the Internet. It is typically known as
                         a representation of human knowledge around the globe.
                     </li>
                     <li>
                         Its Web resources are
-                        <span class="popup">Hypertext
-                            <span class="popup-text">A software system used to link one
+                        <span class="pop-up">Hypertext
+                            <span class="pop-up-content">A software system used to link one
                             text-based resource to another.</span>
                         </span>
                         and
-                        <span class="popup">Hypermedia
-                            <span class="popup-text">An extended feature of Hypertext
+                        <span class="pop-up">Hypermedia
+                            <span class="pop-up-content">An extended feature of Hypertext
                                 which enables handling of multimedia resources
                                 such as images and videos.</span>
                         </span>
@@ -120,7 +120,7 @@
 
                 <hr>
 
-                <h2 id="internet">Internet</h2>
+                <h2 id="internet" class="topic-title">Internet</h2>
                 <ul>
                     <li>
                         A common misconception is that the Web is the same thing as the Internet.
@@ -145,7 +145,7 @@
 
                 <hr>
 
-                <h2 id="webBrowser">Web Browser</h2>
+                <h2 id="webBrowser" class="topic-title">Web Browser</h2>
                 <ul>
                     <li>
                         A typical tool used to interact with the Web.
@@ -167,15 +167,15 @@
 
                 <hr>
 
-                <h2 id="history">History of the World Wide Web</h2>
+                <h2 id="history" class="topic-title">History of the World Wide Web</h2>
                 <ul>
                     <li>
                         1989
                         <ul>
                             <li>
                                 The World Wide Web was invented by
-                                <span class="popup">Sir Tim Berners-Lee
-                                    <span class="popup-text">Father of modern Web</span>
+                                <span class="pop-up">Sir Tim Berners-Lee
+                                    <span class="pop-up-content">Father of modern Web</span>
                                 </span>
                                 in 1989 with the main purpose of allowing scientists to
                                 easily share scientific resources or documents to other
@@ -218,8 +218,8 @@
                         1994
                         <ul>
                             <li>
-                                The <span class="popup"> <a href="https://www.w3.org/">Web Consortium (W3C)</a>
-                                    <span class="popup-text">An international organization that
+                                The <span class="pop-up"><a href="https://www.w3.org/">Web Consortium (W3C)</a>
+                                    <span class="pop-up-content">An international organization that
                                     provides standards in developing the Web </span>
                                 </span>
                                 was founded by Sir Tim Berners-Lee.
@@ -230,13 +230,13 @@
             </section>
 
             <section id="tableOfContents">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <ol>
+                    <h5>Contents</h5>
+                    <li data-target="#whatIsWWW" class="content-list">What is WWW?</li>
+                    <li data-target="#internet" class="content-list">Internet</li>
+                    <li data-target="#webBrowser" class="content-list">Web Browser</li>
+                    <li data-target="#history" class="content-list">History of the WWW</li>
+                </ol>
             </section>
         </main>
 
