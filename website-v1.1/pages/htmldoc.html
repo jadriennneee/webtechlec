@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <progress id="progressBar" value="0" max="100"></progress>
     <header>
         <div id="headerWrapper">
             <h1 id="branding">
@@ -19,6 +18,7 @@
                 <a href="../index.html">TechWeb</a>
             </h1>
         </div>
+        <progress id="progressBar" value="0" max="100"></progress>
     </header>
 
     <nav id="nav">
@@ -67,7 +67,7 @@
             <section id="mainContent">
                 <h1>Hypertext Markup Language (HTML)</h1>
 
-                <h2 id="whatIsHtml">What is HTML?</h2>
+                <h2 id="whatIsHtml" class="topic-title">What is HTML?</h2>
                 <ul>
                     <li>
                         It is a language used to mark-up documents in the
@@ -84,7 +84,7 @@
 
                 <hr>
 
-                <h2 id="htmlStandards">HTML Standards</h2>
+                <h2 id="htmlStandards" class="topic-title">HTML Standards</h2>
                 <ul>
                     <li>
                         HTML 1.0
@@ -229,7 +229,7 @@
 
                 <hr>
 
-                <h2>HTML Document Basic Structure</h2>
+                <h2 id="basicStructure" class="topic-title">HTML Document Basic Structure</h2>
                 <ul>
                     <li>Version Information (i.e DOCTYPE)</li>
                     <li>
@@ -311,13 +311,12 @@
             </section>
             
             <section id="tableOfContents">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <ol>
+                    <h5>Contents</h5>
+                    <li data-target="#whatIsHtml" class="content-list" onclick="location.href='#whatIsHtml';">What is HTML?</li>
+                    <li data-target="#htmlStandards" class="content-list" onclick="location.href='#htmlStandards';">HTML Standards</li>
+                    <li data-target="#basicStructure" class="content-list" onclick="location.href='#basicStructure';">HTML Document Basic Structure</li>
+                </ol>
             </section>
         </main>
         

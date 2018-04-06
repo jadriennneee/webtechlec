@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <progress id="progressBar" value="0" max="100"></progress>
     <header>
         <div id="headerWrapper">
             <h1 id="branding">
@@ -19,6 +18,7 @@
                 <a href="../index.html">TechWeb</a>
             </h1>
         </div>
+        <progress id="progressBar" value="0" max="100"></progress>
     </header>
 
     <nav id="nav">
@@ -67,77 +67,46 @@
             <section id="mainContent">
                 <h1>Uniform Resource Identifier (URI)</h1>
 
-                <h2 id="whatIsUri">What is URI?</h2>
+                <h2 id="whatIsUri" class="topic-title">What is URI?</h2>
                 <ul>
-                    <li>
-                        It is a sequence of characters that provides a unique
-                        address to identify the path/location of a certain
-                        HTTP Resource.
-                    </li>
+                    <li>It is a sequence of characters that provides a uniqueaddress to identify the path/location of a certain HTTP Resource.</li>
                 </ul>
 
                 <hr>
 
-                <h2 id="uriSyntax">Syntax of URI</h2>
+                <h2 id="uriSyntax" class="topic-title">Syntax of URI</h2>
                 <ul>
-                    <li>
-                        Scheme - It indicates the protocol used 
-                        in accessing the web resource.
-                    </li>
+                    <li>Scheme - It indicates the protocol usedin accessing the web resource.</li>
                     <li>
                         Authority
                         <ul>
-                            <li>
-                                (Deprecated) It contains the user
-                                information/authentication credentials
+                            <li>(Deprecated) It contains the user information/authentication credentials</li>
+                            <li>Host - It is associated with a 
+                                <span class="pop-up">domain name
+                                    <span class="pop-up-content">It is resolved into an IP Address with the use of Domain Name System (DNS).</span>
+                                </span>.
                             </li>
-                            <li>
-                                Host - It is associated with a domain name.
-                                <ul>
-                                    <li>
-                                        Domain Name - It is resolved into an
-                                        IP Address with the use of 
-                                        Domain Name System (DNS).
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Port Number (optional) - It indicates the
-                                port of connection.
-                            </li>
+                            <li>Port Number (optional) - It indicates the port of connection.</li>
                         </ul>
                     </li>
                     <li>
                         Path
                         <ul>
-                            <li>
-                                Indicates the path to the location of the resource.
-                            </li>
-                            <li>
-                                It may refer to a static or dynamic resource.
-                            </li>
+                            <li>Indicates the path to the location of the resource.</li>
+                            <li>It may refer to a static or dynamic resource.</li>
                         </ul>
                     </li>
                     <li>
                         Query
                         <ul>
-                            <li>
-                                A question mark (?) indicates the start of a
-                                query issued by the client.
-                            </li>
-                            <li>
-                                It serves as an additional parameter in the URI.
-                            </li>
-                            <li>
-                                It is typically provided as a key=value pair.
-                            </li>
+                            <li>A question mark (?) indicates the start of a query issued by the client.</li>
+                            <li>It serves as an additional parameter in the URI.</li>
+                            <li>It is typically provided as a key=value pair.</li>
                             <li>
                                 It may be 
-                                <span class="popup">URL-Encoded
-                                    <span class="popup-text">
-                                        It is necessary so that
-                                        servers can understand the characters 
-                                        used in the URI.
+                                <span class="pop-up">URL-Encoded
+                                    <span class="pop-up-content">
+                                        It is necessary so that servers can understand the characters used in the URI.
                                     </span>
                                 </span>.
                             </li>
@@ -150,13 +119,11 @@
             </section>
             
             <section id="tableOfContents">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <ol>
+                    <h5>Contents</h5>
+                    <li data-target="#whatIsUri" class="content-list" onclick="location.href='#whatIsUri';">What is URI?</li>
+                    <li data-target="#uriSyntax" class="content-list" onclick="location.href='#uriSyntax';">Syntax of URI</li>
+                </ol>
             </section>
         </main>
         

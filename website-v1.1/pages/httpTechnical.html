@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <progress id="progressBar" value="0" max="100"></progress>
     <header>
         <div id="headerWrapper">
             <h1 id="branding">
@@ -19,6 +18,7 @@
                 <a href="../index.html">TechWeb</a>
             </h1>
         </div>
+        <progress id="progressBar" value="0" max="100"></progress>
     </header>
 
     <nav id="nav">
@@ -67,7 +67,7 @@
             <section id="mainContent">
                 <h1>Hypertext Transfer Protocol (HTTP)</h1>
 
-                <h2 id="messages">HTTP Messages</h2>
+                <h2 id="messages" class="topic-title">HTTP Messages</h2>
                 <ul>
                     <li>
                         Request Messages
@@ -133,7 +133,7 @@
 
                 <hr>
 
-                <h2 id="methods">HTTP Methods</h2>
+                <h2 id="methods" class="topic-title">HTTP Methods</h2>
                 <ul>
                     <li>
                         Request Methods (Standard Methods)
@@ -238,7 +238,7 @@
 
                 <hr>
 
-                <h2 id="statusCodes">HTTP Status Codes</h2>
+                <h2 id="statusCodes" class="topic-title">HTTP Status Codes</h2>
 
                 <div id="status-code-wrapper">
                     <div id="informational">
@@ -313,7 +313,7 @@
 
                 <hr>
 
-                <h2 id="headers">HTTP Headers</h2>
+                <h2 id="headers" class="topic-title">HTTP Headers</h2>
                 <ul>
                     <li>
                         General
@@ -398,7 +398,7 @@
 
                 <hr>
 
-                <h2 id="extensions">HTTP Extensions</h2>
+                <h2 id="extensions" class="topic-title">HTTP Extensions</h2>
                 <ul>
                     <li>
                         It allows addition of new request methods,
@@ -448,13 +448,18 @@
             </section>
 
             <section id="tableOfContents">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <ol>
+                    <h5>Contents</h5>
+                    <li data-target="#whatIsHttp" class="content-list" onclick="location.href='httpFundamentals.html #whatIsHttp';">What is HTTP?</li>
+                    <li data-target="#httpFundamentals" class="content-list" onclick="location.href='httpFundamentals.html #httpFundamentals';">HTTP Fundamentals</li>
+                    <li data-target="#httpFeatures" class="content-list" onclick="location.href='httpFundamentals.html #httpFeatures';">HTTP Features and Functionalities</li>
+                    <li data-target="#httpVersions" class="content-list" onclick="location.href='httpFundamentals.html #httpVersions';">HTTP Version History</li>
+                    <li data-target="#messages" class="content-list" onclick="location.href='httpTechnical.html #messages';">HTTP Messages</li>
+                    <li data-target="#methods" class="content-list" onclick="location.href='httpTechnical.html #methods';">HTTP Methods</li>
+                    <li data-target="#statusCodes" class="content-list" onclick="location.href='httpTechnical.html #statusCodes';">HTTP Status Codes</li>
+                    <li data-target="#headers" class="content-list" onclick="location.href='httpTechnical.html #headers';">HTTP Headers</li>
+                    <li data-target="#extensions" class="content-list" onclick="location.href='httpTechnical.html #extensions';">HTTP Extensions</li>
+                </ol>
             </section>
         </main>
 

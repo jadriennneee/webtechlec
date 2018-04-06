@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <progress id="progressBar" value="0" max="100"></progress>
     <header>
         <div id="headerWrapper">
             <h1 id="branding">
@@ -19,6 +18,7 @@
                 <a href="../index.html">TechWeb</a>
             </h1>
         </div>
+        <progress id="progressBar" value="0" max="100"></progress>
     </header>
 
     <nav id="nav">
@@ -67,7 +67,7 @@
             <section id="mainContent">
                 <h1>Hypertext Transfer Protocol (HTTP)</h1>
             
-                <h2 id="whatIsHttp">What is HTTP?</h2>
+                <h2 id="whatIsHttp" class="topic-title">What is HTTP?</h2>
                 <ul>
                     <li>
                         A communication protocol used to fetch the 
@@ -96,7 +96,7 @@
             
                 <hr>
 
-                <h2 id="httpFundamentals">HTTP Fundamentals</h2>
+                <h2 id="httpFundamentals" class="topic-title">HTTP Fundamentals</h2>
                 <ul>
                     <li>
                         HTTP is a stateless protocol which means that 
@@ -139,8 +139,8 @@
                         <ul>
                             <li>
                                 Both Client and Server uses 
-                                <span class="popup">MIME Types
-                                    <span class="popup-text">A standardized 
+                                <span class="pop-up">MIME Types
+                                    <span class="pop-up-content">A standardized 
                                     way to indicate the nature and format of 
                                     a document.</span>
                                 </span> to identify the data type of the 
@@ -152,7 +152,7 @@
                 
                 <hr>
 
-                <h2 id="httpFeatures">HTTP Features and Functionalities</h2>
+                <h2 id="httpFeatures" class="topic-title">HTTP Features and Functionalities</h2>
                 <ul>
                     <li>
                         Cache Control
@@ -210,8 +210,8 @@
                         </ul>
                     </li>
                     <li>
-                        Request pipelining or <span class="popup">Multiplexing
-                            <span class="popup-text">A method by which multiple 
+                        Request pipelining or <span class="pop-up">Multiplexing
+                            <span class="pop-up-content">A method by which multiple 
                                 requests and responses can be sent and received 
                                 asynchronously via a single TCP connection.
                             </span>
@@ -231,7 +231,7 @@
                 
                 <hr>
 
-                <h2 id="httpVersions">HTTP Version History</h3>
+                <h2 id="httpVersions" class="topic-title">HTTP Version History</h3>
                 <ul>
                     <li>
                         HTTP 0.9 (1991)
@@ -239,8 +239,8 @@
                         <ul>
                             <li>
                                 It only uses one request method - 
-                                <span class="popup">GET
-                                    <span class="popup-text">
+                                <span class="pop-up">GET
+                                    <span class="pop-up-content">
                                          An HTTP method used to retrieve 
                                          a Web resource from the Web server.
                                     </span>
@@ -260,8 +260,8 @@
                             </li>
                             <li>
                                 Client requests are terminated using 
-                                <span class="popup">CRLF
-                                    <span class="popup-text">
+                                <span class="pop-up">CRLF
+                                    <span class="pop-up-content">
                                          Carriage Return Line Feedback (CRLF) is 
                                          used to indicate the termination of a line.
                                     </span>
@@ -301,8 +301,8 @@
                         <ul>
                             <li><a href="https://www.ietf.org/rfc/rfc2068.txt">RFC 2068</a></li>
                             <li><a href="https://www.ietf.org/rfc/rfc2616.txt">RFC 2616</a></li>
-                            <li><span class="popup">RFC 7230-7235
-                                    <span class="popup-text">
+                            <li><span class="pop-up">RFC 7230-7235
+                                    <span class="pop-up-content">
                                         <ul>
                                             <li><a href="https://tools.ietf.org/html/rfc7230">RFC 7230</a></li>
                                             <li><a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a></li>
@@ -379,8 +379,8 @@
                             </li>
                             <li>
                                 Added accommodation to 
-                                <span class="popup">Server push
-                                    <span class="popup-text">
+                                <span class="pop-up">Server push
+                                    <span class="pop-up-content">
                                         Allows the Server to
                                         automatically send information even
                                         if the request is not yet sent.
@@ -393,13 +393,18 @@
             </section>
 
             <section id="tableOfContents">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <ol>
+                    <h5>Contents</h5>
+                    <li data-target="#whatIsHttp" class="content-list" onclick="location.href='httpFundamentals.html #whatIsHttp';">What is HTTP?</li>
+                    <li data-target="#httpFundamentals" class="content-list" onclick="location.href='httpFundamentals.html #httpFundamentals';">HTTP Fundamentals</li>
+                    <li data-target="#httpFeatures" class="content-list" onclick="location.href='httpFundamentals.html #httpFeatures';">HTTP Features and Functionalities</li>
+                    <li data-target="#httpVersions" class="content-list" onclick="location.href='httpFundamentals.html #httpVersions';">HTTP Version History</li>
+                    <li data-target="#messages" class="content-list" onclick="location.href='httpTechnical.html #messages';">HTTP Messages</li>
+                    <li data-target="#methods" class="content-list" onclick="location.href='httpTechnical.html #methods';">HTTP Methods</li>
+                    <li data-target="#statusCodes" class="content-list" onclick="location.href='httpTechnical.html #statusCodes';">HTTP Status Codes</li>
+                    <li data-target="#headers" class="content-list" onclick="location.href='httpTechnical.html #headers';">HTTP Headers</li>
+                    <li data-target="#extensions" class="content-list" onclick="location.href='httpTechnical.html #extensions';">HTTP Extensions</li>
+                </ol>
             </section>
         </main>
         
