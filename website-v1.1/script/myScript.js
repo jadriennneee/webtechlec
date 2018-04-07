@@ -53,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
         var previousIndicator;
 
         function updateCurrentTopic() {
-            console.log("Scrolled...");
-
             for (var i = 0; i < topicTitles.length; i++) {
                 if (topicTitles[i].getBoundingClientRect().top < 10) {
                     currentSectionIndex = i;
@@ -73,18 +71,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 contentIndicators[i].classList.remove("current-section");
             }
 
-            currentIndicator = document.querySelector(`[data-target=${topicTitles[currentSectionIndex].id}]`);
+            currentIndicator = document.querySelector(`[data-target="#${topicTitles[currentSectionIndex].id}"]`);
             currentIndicator.classList.add("current-section");
 
             if (currentSectionIndex != previousSectionIndex && previousSectionIndex >= 0) {
-                previousIndicator = document.querySelector(`[data-target=${topicTitles[previousSectionIndex].id}]`);
+                previousIndicator = document.querySelector(`[data-target="#${topicTitles[previousSectionIndex].id}"]`);
                 previousIndicator.classList.remove("current-section");
             }
 
             lastScrollTop = window.scrollY;
-
-            console.log(`Current Index: ${currentSectionIndex}`);
-            console.log(`Previous Index: ${previousSectionIndex}`);
         }
 
         window.addEventListener("scroll", updateCurrentTopic);
@@ -93,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (document.querySelector("#tableOfContents > ol")) {
             document.querySelector("#tableOfContents > ol").addEventListener("click", function(e) {
                 if (e.target && e.target.nodeName == "LI") {
-                    window.location.href = `#${e.target.getAttribute("data-target")}`;
+                    window.location.href = `${e.target.getAttribute("data-target")}`;
                 }
             });
         }
