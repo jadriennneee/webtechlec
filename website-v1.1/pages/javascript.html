@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <progress id="progressBar" value="0" max="100"></progress>
     <header>
         <div id="headerWrapper">
             <h1 id="branding">
@@ -19,6 +18,7 @@
                 <a href="../index.html">TechWeb</a>
             </h1>
         </div>
+        <progress id="progressBar" value="0" max="100"></progress>
     </header>
 
     <nav id="nav">
@@ -67,14 +67,14 @@
             <section id="mainContent">
                 <h1>JavaScript (JS) Execution Environment</h1>
 
-                <h2 id="whatIsJS">What is JavaScript?</h2>
+                <h2 id="whatIsJS" class="topic-title">What is JavaScript?</h2>
                 <ul>
                     <li>It provides code in which users can interact with the webpage.</li>
                     <li>It is a programming language that allows the implementation of complex functionalities on websites.</li>
                     <li>It is well-known as the scripting language for Web pages.</li>
                     <li>It is standardized at 
-                        <span class="popup"><a href="http://www.ecma-international.org/">Ecma International</a>
-                            <span class="popup-text">the European association for standardizing information and communication systems to deliver a standardized, international programming language based on JavaScript.</span>
+                        <span class="pop-up"><a href="http://www.ecma-international.org/">Ecma International</a>
+                            <span class="pop-up-content">the European association for standardizing information and communication systems to deliver a standardized, international programming language based on JavaScript.</span>
                         </span>
                     </li>
                     <li>The standardized version of JavaScript is ECMAScript.
@@ -91,7 +91,7 @@
 
                 <hr>
 
-                <h2 id="javaScriptPlacement">DIFFERENT WAYS OF JavaScript PLACEMENT</h2>
+                <h2 id="javaScriptPlacement" class="topic-title">Different Ways of JavaScript Placement</h2>
                 <ol>
                     <li>External
                         <ul>
@@ -118,7 +118,7 @@
 
                 <hr>
 
-                <h2 id="bom">(Traditional) Browser Object Model(BOM) API (non-standardized)</h2>
+                <h2 id="bom" class="topic-title">(Traditional) Browser Object Model(BOM) API (non-standardized)</h2>
                 <ul>
                     <li>It is a set of objects that comprises various elements of the browser.</li>
                     <li>BOM Hierarchy
@@ -227,7 +227,7 @@
 
                 <hr>
 
-                <h2 id="dom">Document Object Model (DOM) API</h2>
+                <h2 id="dom" class="topic-title">Document Object Model (DOM) API</h2>
                 <ul>
                     <li>An API that allows access to the HTML document from within scripts associated with the Web page.</li>
                     <li>It is represented by the DOM tree which contains nodes.</li>
@@ -316,15 +316,17 @@
                     </li>
                 </ul>
             </section>
-            
+
             <section id="tableOfContents">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <ol>
+                    <h5>Contents</h5>
+                    <ol>
+                        <li data-target="#whatIsJS" class="content-list">What is JavaScript?</li>
+                        <li data-target="#javaScriptPlacement" class="content-list">Different Ways of JavaScript Placement</li>
+                        <li data-target="#bom" class="content-list">Browser Object Model(BOM) API</li>
+                        <li data-target="#dom" class="content-list">Document Object Model (DOM) API</li>
+                    </ol>
+                </ol>
             </section>
         </main>
         

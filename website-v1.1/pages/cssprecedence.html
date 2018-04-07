@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <progress id="progressBar" value="0" max="100"></progress>
     <header>
         <div id="headerWrapper">
             <h1 id="branding">
@@ -19,6 +18,7 @@
                 <a href="../index.html">TechWeb</a>
             </h1>
         </div>
+        <progress id="progressBar" value="0" max="100"></progress>
     </header>
 
     <nav id="nav">
@@ -67,7 +67,7 @@
             <section id="mainContent">
                 <h1>Cascading Style Sheet (CSS)</h1>
 
-                <h2 id="cssPrecedence">CSS Rule Precedence</h2>
+                <h2 id="cssPrecedence" class="topic-title">CSS Rule Precedence</h2>
                 <ul>
                     <li>Problems addressed by the CSS Rule Precedence:
                         <ul>
@@ -82,8 +82,8 @@
                                 <ul>
                                     <li>The precedence is in descending order:</li>
                                     <li><ol>
-                                        <li><span class="popup">Transition
-                                            <span class="popup-text">Transitions must be visible to the users</span>
+                                        <li><span class="pop-up">Transition
+                                            <span class="pop-up-content">Transitions must be visible to the users</span>
                                         </span> Declarations</li>
                                         <li>Important User Agent Declarations</li>
                                         <li>Important User Declarations</li>
@@ -129,7 +129,7 @@
 
                 <hr>
 
-                <h2 id="cssdeclarations">CSS Declarations</h2>
+                <h2 id="cssdeclarations" class="topic-title">CSS Declarations</h2>
                 <ol type="A">
                     <li>Properties
                         <ol>
@@ -246,14 +246,14 @@
                                         <ol>
                                             <li>CSS-wide keywords
                                                 <ul>
-                                                    <li><span class="popup">initial
-                                                        <span class="popup-text">represents the value specified as the property’s initial value.</span>
+                                                    <li><span class="pop-up">initial
+                                                        <span class="pop-up-content">represents the value specified as the property’s initial value.</span>
                                                     </span></li>
-                                                    <li><span class="popup">inherit
-                                                        <span class="popup-text">represents the computed value of the property on the element’s parent.</span>
+                                                    <li><span class="pop-up">inherit
+                                                        <span class="pop-up-content">represents the computed value of the property on the element’s parent.</span>
                                                     </span></li>
-                                                    <li><span class="popup">unset
-                                                        <span class="popup-text">acts as either inherit or initial, depending on whether the property is inherited or not.</span>
+                                                    <li><span class="pop-up">unset
+                                                        <span class="pop-up-content">acts as either inherit or initial, depending on whether the property is inherited or not.</span>
                                                     </span></li>
                                                 </ul>
                                             </li>
@@ -338,16 +338,38 @@
                         </ol>
                     </li>
                 </ol>
+
+                <div class="page-button-container" data-pages="4" data-currentPage="3">
+                    <button id="backPageButton" class="page-button" data-target="cssselectors.html">&#9112; Previous</button>
+                    <h5>Page 3 out of 4</h5>
+                    <button id="nextPageButton" class="page-button" data-target="csspreprocessors.html">Next &#9112;</button>
+                </div>
             </section>
-            
+
             <section id="tableOfContents">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <ol>
+                    <h5>Contents</h5>
+
+                    <h6>Page 1</h6>
+                    <ol>
+                        <li data-target="cssoverview.html #whatIsCss" class="content-list">What is CSS?</li>
+                        <li data-target="cssoverview.html #cssVersionHistory" class="content-list">Version History</li>
+                        <li data-target="cssoverview.html #htmlStyleSheets" class="content-list">HTML Stylesheets</li>
+                        <li data-target="cssoverview.html #cssStatements" class="content-list">CSS Statements</li>
+                    </ol>
+
+                    <h6>Page 2</h6>
+                    <ol><li data-target="cssselectors.html #cssSelectors" class="content-list">CSS Selectors</li></ol>
+
+                    <h6 class="current-page-header">Page 3</h6>
+                    <ol>
+                        <li data-target="#cssPrecedence" class="content-list">CSS Rule Precedence</li>
+                        <li data-target="#cssdeclarations" class="content-list">CSS Declarations</li>
+                    </ol>
+
+                    <h6>Page 4</h6>
+                    <ol><li data-target="csspreprocessors.html #cssPreprocessors" class="content-list">CSS Preprocessors, Frameworks and Polyfills</li></ol>
+                </ol>
             </section>
         </main>
         

@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <progress id="progressBar" value="0" max="100"></progress>
     <header>
         <div id="headerWrapper">
             <h1 id="branding">
@@ -19,6 +18,7 @@
                 <a href="../index.html">TechWeb</a>
             </h1>
         </div>
+        <progress id="progressBar" value="0" max="100"></progress>
     </header>
 
     <nav id="nav">
@@ -75,8 +75,8 @@
                         presentation aspects such as for fonts, colors,
                         and screen layouts of HTML, XML, SVG, MathML documents
                         and other documents using a
-                        <span class="popup">markup language
-                            <span class="popup-text">
+                        <span class="pop-up">markup language
+                            <span class="pop-up-content">
                                 languages used to indicate how documents are presented
                                 or structured. It uses tags to define the structure
                                 of the document.
@@ -306,15 +306,37 @@
                         </ul>
                     </li>
                 </ol>
+
+                <div class="page-button-container" data-pages="4" data-currentPage="1">
+                    <button id="backPageButton" class="page-button">&#9112; Previous</button>
+                    <h5>Page 1 out of 4</h5>
+                    <button id="nextPageButton" class="page-button" data-target="cssselectors.html">Next &#9112;</button>
+                </div>
             </section>
 
             <section id="tableOfContents">
                 <ol>
                     <h5>Contents</h5>
-                    <li data-target="whatIsCss" class="content-list">What is CSS?</li>
-                    <li data-target="cssVersionHistory" class="content-list">Version History</li>
-                    <li data-target="htmlStyleSheets" class="content-list">HTML Stylesheets</li>
-                    <li data-target="cssStatements" class="content-list">CSS Statements</li>
+
+                    <h6 class="current-page-header">Page 1</h6>
+                    <ol>
+                        <li data-target="#whatIsCss" class="content-list">What is CSS?</li>
+                        <li data-target="#cssVersionHistory" class="content-list">Version History</li>
+                        <li data-target="#htmlStyleSheets" class="content-list">HTML Stylesheets</li>
+                        <li data-target="#cssStatements" class="content-list">CSS Statements</li>
+                    </ol>
+
+                    <h6>Page 2</h6>
+                    <ol><li data-target="cssselectors.html #cssSelectors" class="content-list">CSS Selectors</li></ol>
+
+                    <h6>Page 3</h6>
+                    <ol>
+                        <li data-target="cssprecedence.html #cssPrecedence" class="content-list">CSS Rule Precedence</li>
+                        <li data-target="cssprecedence.html #cssdeclarations" class="content-list">CSS Declarations</li>
+                    </ol>
+
+                    <h6>Page 4</h6>
+                    <ol><li data-target="csspreprocessors.html #cssPreprocessors" class="content-list">CSS Preprocessors, Frameworks and Polyfills</li></ol>
                 </ol>
             </section>
         </main>
