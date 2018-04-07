@@ -220,12 +220,30 @@ header {
     font-size: 20px;
 }
 
-#mainContent ul {
-    margin-left: 30px;
+#mainContent ul, #mainContent ol {
+    margin-left: 20px;
 }
 
-#mainContent ul > li {
-    margin-bottom: 10px;
+#mainContent ul li, #mainContent ol li {
+    margin: 5px 0;
+}
+
+#mainContent > ul > li, #mainContent > ol > li {
+    margin-bottom: 15px;
+}
+
+#mainContent ul[data-type="checkmark"] {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+#mainContent ul[data-type="checkmark"] > li::before {
+    content: '✓ ';
+}
+
+#mainContent ul[data-type="none"] {
+    list-style-type: none;
+    margin-left: 0;
 }
 
 #mainContent hr {
@@ -275,7 +293,53 @@ header {
     font-size: 16px;
     text-align: center;
     cursor: pointer;
-    min-width: 100px;
+    min-width: 99px;
+}
+
+h6.code-title {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.syntax-list {
+    list-style-type: disc;
+    padding-left: 10px;
+}
+
+.code-container {
+    border: 1px solid #eaeaea;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border-left: 3px solid #30ad63;
+}
+
+code, span.code {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+span.highlight {
+    background-color: #eaeaea;
+}
+
+span.misc {
+    color: #a626a6;
+}
+
+span.element {
+    color: #e45649;
+}
+
+span.value, span.class {
+    color: #987d4b;
+}
+
+span.input-value {
+    color: #50A14F;
+}
+
+span.id {
+    color: #4078f2;
 }
 
 /* Section a */
@@ -587,5 +651,9 @@ header {
         font-size: 18px;
         width: 60%;
         line-height: 2;
+    }
+
+    #mainContent h1 {
+        font-size: 36px;
     }
 }

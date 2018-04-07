@@ -112,7 +112,7 @@
                                 <ul>
                                     <li>
                                         CSS Level 1 supports the following features:
-                                        <ul>
+                                        <ul data-type="checkmark">
                                             <li>font properties</li>
                                             <li>text attributes</li>
                                             <li>alignment of text</li>
@@ -140,8 +140,8 @@
                                 Features which were not included in CSS Level 1 were added to CSS Level 2
                                 <ul>
                                     <li>
-                                        CSS Level 2 added the following fetures:
-                                        <ul>
+                                        CSS Level 2 added the following features:
+                                        <ul data-type="checkmark">
                                             <li>z-index</li>
                                             <li>media types</li>
                                             <li>bidirectional text</li>
@@ -173,7 +173,7 @@
                                     <li>
                                         The following are the 4 modules which were released as
                                         formal recommendation:
-                                        <ul>
+                                        <ul data-type="checkmark">
                                             <li>color</li>
                                             <li>selectors level 3</li>
                                             <li>namespaces</li>
@@ -261,12 +261,12 @@
                             <li>
                                 Example:
                                 <ul>
-                                    <li>@charset</li>
-                                    <li>@import</li>
-                                    <li>@namespace</li>
+                                    <li><span class="code highlight misc">@charset</span></li>
+                                    <li><span class="code highlight misc">@import</span></li>
+                                    <li><span class="code highlight misc">@namespace</span></li>
                                     <li>
-                                        @font-face
-                                        <ul>
+                                        <span class="code highlight misc">@font-face</span>
+                                        <ul type="none">
                                             <li>
                                                 At-Rule used for defining font-styles
                                                 which are typically Google Fonts
@@ -274,8 +274,8 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        @Keyframes
-                                        <ul>
+                                        <span class="code highlight misc">@keyframes</span>
+                                        <ul type="none">
                                             <li>At-Rule used for animations</li>
                                         </ul>
                                     </li>
@@ -283,9 +283,9 @@
                             </li>
                             <li>
                                 <em>* Nested At-Rules</em>
-                                <ul>
+                                <ul type="none">
                                     <li>These are At-Rules within an At-Rule</li>
-                                    <li>Example: @media</li>
+                                    <li>Example: <span class="code highlight misc">@media</span></li>
                                 </ul>
                             </li>
                         </ul>
@@ -299,17 +299,29 @@
                                 declaration block that contains 0 or more declarations
                                 that end in semi-colon(;).
                             </li>
-                            <li>
-                                Sytax:
-                                <img src="../assets/css-ruleset-syntax.png" alt="CSS Rule Set Syntax">
-                            </li>
                         </ul>
+
+                        <div class="code-topic">
+                            <h6 class="code-title">Syntax:</h6>
+                            <ul class="syntax-list">
+                                <li><span class="code highlight element">body</span> - selector<br></li>
+                                <li><span class="code highlight">background-color: <span class="code value">#f4f4f4</span>;</span> - declaration block</li>
+                            </ul>
+                            <div class="code-container">
+                                <code>
+                                    <span class="code element">body</span> { <br>
+                                        &nbsp;&nbsp;font-family: <span class="code value">Arial</span>, <span class="code value"> sans-serif</span>;<br>
+                                        &nbsp;&nbsp;background-color: <span class="code value">#f4f4f4</span>; <br>
+                                    }
+                                </code>
+                            </div>
+                        </div>
                     </li>
                 </ol>
 
                 <div class="page-button-container" data-pages="4" data-currentPage="1">
                     <button id="backPageButton" class="page-button">&#9112; Previous</button>
-                    <h5>Page 1 out of 4</h5>
+                    <h5>Page 1 of 4</h5>
                     <button id="nextPageButton" class="page-button" data-target="cssselectors.html">Next &#9112;</button>
                 </div>
             </section>
@@ -327,16 +339,16 @@
                     </ol>
 
                     <h6>Page 2</h6>
-                    <ol><li data-target="cssselectors.html #cssSelectors" class="content-list">CSS Selectors</li></ol>
+                    <ol><li data-target="cssselectors.html#cssSelectors" class="content-list">CSS Selectors</li></ol>
 
                     <h6>Page 3</h6>
                     <ol>
-                        <li data-target="cssprecedence.html #cssPrecedence" class="content-list">CSS Rule Precedence</li>
-                        <li data-target="cssprecedence.html #cssdeclarations" class="content-list">CSS Declarations</li>
+                        <li data-target="cssprecedence.html#cssPrecedence" class="content-list">CSS Rule Precedence</li>
+                        <li data-target="cssprecedence.html#cssdeclarations" class="content-list">CSS Declarations</li>
                     </ol>
 
                     <h6>Page 4</h6>
-                    <ol><li data-target="csspreprocessors.html #cssPreprocessors" class="content-list">CSS Preprocessors, Frameworks and Polyfills</li></ol>
+                    <ol><li data-target="csspreprocessors.html#cssPreprocessors" class="content-list">CSS Preprocessors, Frameworks and Polyfills</li></ol>
                 </ol>
             </section>
         </main>

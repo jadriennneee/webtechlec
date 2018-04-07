@@ -102,10 +102,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var lastPage = parseInt(pageButtonContainer.getAttribute("data-pages"));
 
         if (currentPage == 1) {
-            document.querySelector("#backPageButton").style.visibility = "hidden";
+            document.querySelector("#backPageButton").style.display = "none";
         } else if (currentPage == lastPage) {
-            document.querySelector("#backPageButton").style.visibility = "visible";
-            document.querySelector("#nextPageButton").style.visibility = "hidden";
+            document.querySelector("#backPageButton").style.visibility = "block";
+            document.querySelector("#nextPageButton").style.display = "none";
         }
 
         function redirect() {
