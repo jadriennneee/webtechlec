@@ -42,14 +42,12 @@
                 </a>
                 <div class="list-body">
                     <ul>
-                        <li>Overview</li>
-                        <li>HTTP</li>
-                        <li>URI</li>
-                        <li>HTML</li>
-                        <li>CSWS</li>
-                        <li>SSWS</li>
-                        <li>Web Security</li>
-                        <li>Advanced Topics</li>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="httpfundamentals.html">HTTP</a></li>
+                        <li><a href="htmldoc.html">HTML</a></li>
+                        <li><a href="uri.html">URI</a></li>
+                        <li><a href="cssoverview.html">CSS</a></li>
+                        <li><a href="javascript.html">JavaScript</li>
                     </ul>
                 </div>
             </li>
@@ -57,7 +55,7 @@
                 <a href="#"><img src="../img/quizwhite.png" alt="Resources">Quiz</a>
             </li>
             <li>
-                <a href="#"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
+                <a href="resources.html"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
             </li>
             <li>
                 <a href="#"><img src="../img/aboutuswhite.png" alt="About Us">About Us</a>
@@ -72,83 +70,33 @@
 
                 <h2 id="whatIsHttp" class="topic-title">What is HTTP?</h2>
                 <ul>
-                    <li>
-                        A communication protocol used to fetch the
-                        hypertext and hypermedia resources such as
-                        HTML documents from the Web.
-                    </li>
-                    <li>
-                        It serves as a tool that allows Web Servers
-                        and Web browsers to communicate in such a
-                        way that Web Servers are able to understand
-                        requests given by the Web browser.
-                    </li>
-                    <li>
-                        It is based on a Client-Server structure
-                        which means that interaction between the
-                        Web browser and the Web Server is initiated
-                        by having the Web browser send requests.
-                    </li>
-                    <li>
-                        In additional, it is a set of standards in
-                        formatting and transmitting resources such
-                        as documents,videos and graphic within
-                        the World Wide Web.
-                    </li>
+                    <li>A communication protocol used to fetch the hypertext and hypermedia resources such as HTML documents from the Web.</li>
+                    <li>It serves as a tool that allows Web Servers and Web browsers to communicate in such a way that Web Servers are able to understand requests given by the Web browser.</li>
+                    <li>It is based on a Client-Server structure which means that interaction between the Web browser and the Web Server is initiated by having the Web browser send requests.</li>
+                    <li>In additional, it is a set of standards in formatting and transmitting resources such as documents,videos and graphic within the World Wide Web.</li>
                 </ul>
 
                 <hr>
 
                 <h2 id="httpFundamentals" class="topic-title">HTTP Fundamentals</h2>
                 <ul>
-                    <li>
-                        HTTP is a stateless protocol which means that
-                        the Server does not need to keep the information
-                        about the Client’s request or session.
-                    </li>
-                    <li>
-                        Based on the Client-Server Architecture/Structure
+                    <li>HTTP is a stateless protocol which means that the Server does not need to keep the information about the Client’s request or session.</li>
+                    <li>Based on the Client-Server Architecture/Structure
                         <ul>
-                            <li>
-                                Client (a.k.a User Agent) - A tool
-                                (i.e., Web browser) which is used by
-                                the users to perform certain tasks in
-                                the Web.
+                            <li>Client (a.k.a User Agent) - A tool (i.e., Web browser) which is used by the users to perform certain tasks in the Web.
                             </li>
-                            <li>
-                                Web Server - Serves Web resources
-                                (i.e., documents) based on the
-                                Client's request.
-                            </li>
+                            <li>Web Server - Serves Web resources (i.e., documents) based on the Client's request.</li>
                         </ul>
                     </li>
-                    <li>
-                        Uses the Request-Response Protocol
+                    <li>Uses the Request-Response Protocol
                         <ul>
-                            <li>
-                                A protocol wherein the Client initiates
-                                the transmission of Web resources by
-                                sending a request to the server. After
-                                receiving the request, the server sends
-                                a response to the Client.
-                            </li>
+                            <li>A protocol wherein the Client initiates the transmission of Web resources by sending a request to the server. After receiving the request, the server sends a response to the Client.</li>
                         </ul>
                     </li>
-                    <li>
-                        HTTP is media-dependent which means that it allows
-                        transmission of information in various data types
-                        as long as both the Web Server and the Client
-                        understands the data type of the resource.
+                    <li>HTTP is media-dependent which means that it allows transmission of information in various data types as long as both the Web    
+                        Server and the Client understands the data type of the resource.
                         <ul>
-                            <li>
-                                Both Client and Server uses
-                                <span class="pop-up">MIME Types
-                                    <span class="pop-up-content">A standardized
-                                    way to indicate the nature and format of
-                                    a document.</span>
-                                </span> to identify the data type of the
-                                information being sent.
-                            </li>
+                            <li>Both Client and Server uses <span class="pop-up">MIME Types<span class="pop-up-content">A standardized way to indicate the nature and format of a document.</span></span> to identify the data type of the information being sent.</li>
                         </ul>
                     </li>
                 </ul>
@@ -157,77 +105,35 @@
 
                 <h2 id="httpFeatures" class="topic-title">HTTP Features and Functionalities</h2>
                 <ul>
-                    <li>
-                        Cache Control
+                    <li>Cache Control
                         <ul>
-                            <li>
-                                HTTP controls caching allowing Servers to indicate
-                                or specify specific resources to be cached.
-                                In additional, it allows the Client to choose the
-                                actions to be done on the cached resources.
+                            <li>HTTP controls caching allowing Servers to indicate or specify specific resources to be cached. In additional, it allows the Client to choose the actions to be done on the cached resources.</li>
+                        </ul>
+                    </li>
+                    <li>Content Media Type specification
+                        <ul>
+                            <li>Uses Multipurpose Internet Mail Extensions (MIME) extension to specify the media types allowed.</li>
+                        </ul>
+                    </li>
+                    <li>Language and Character set specification</li>
+                    <li>Content/Transfer Codings
+                        <ul>
+                            <li>Allows Servers and Clients to specify the format of how resources are transmitted.
+                                <ul><li>For example, a resource can be sent/transmitted in a compressed or uncompressed format.</li></ul>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        Content Media Type specification
+                    <li>Content Negotiation
                         <ul>
-                            <li>
-                                Uses Multipurpose Internet Mail Extensions (MIME)
-                                extension to specify the media types allowed.
+                            <li>Allows Clients to negotiate with the Server in such a way that it specifies its preferred format for the resource.
+                                <ul><li>For example, a Client can indicate that it prefers a pdf format of a documentation.</li></ul>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        Language and Character set specification
-                    </li>
-                    <li>
-                        Content/Transfer Codings
+                    <li>Request pipelining or <span class="pop-up">Multiplexing<span class="pop-up-content">A method by which multiple requests and responses can be sent and received asynchronously via a single TCP connection.</span></span></li>
+                    <li>Authentication and Authorization
                         <ul>
-                            <li>
-                                Allows Servers and Clients to specify the format
-                                of how resources are transmitted.
-
-                                <ul>
-                                    <li>
-                                        For example, a resource can be sent/transmitted
-                                        in a compressed or uncompressed format.
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        Content Negotiation
-                        <ul>
-                            <li>
-                                Allows Clients to negotiate with the Server in such a way
-                                that it specifies its preferred format for the resource.
-
-                                <ul>
-                                    <li>
-                                        For example, a Client can indicate that it prefers
-                                        a pdf format of a documentation.
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        Request pipelining or <span class="pop-up">Multiplexing
-                            <span class="pop-up-content">A method by which multiple
-                                requests and responses can be sent and received
-                                asynchronously via a single TCP connection.
-                            </span>
-                        </span>
-                    </li>
-                    <li>
-                        Authentication and Authorization
-                        <ul>
-                            <li>
-                                It allows Servers to specify who can access the
-                                Web resources (Authentication) and the level of
-                                privileges the Clients can do to the Website (Authorization).
-                            </li>
+                            <li>It allows Servers to specify who can access the Web resources (Authentication) and the level of privileges the Clients can do to the Website (Authorization).</li>
                         </ul>
                     </li>
                 </ul>
@@ -236,159 +142,75 @@
 
                 <h2 id="httpVersions" class="topic-title">HTTP Version History</h3>
                 <ul>
-                    <li>
-                        HTTP 0.9 (1991)
-
+                    <li>HTTP 0.9 (1991)
                         <ul>
-                            <li>
-                                It only uses one request method -
+                            <li>It only uses one request method -
                                 <span class="pop-up">GET
-                                    <span class="pop-up-content">
-                                         An HTTP method used to retrieve
-                                         a Web resource from the Web server.
-                                    </span>
+                                    <span class="pop-up-content">An HTTP method used to retrieve a Web resource from the Web server.</span>
                                 </span>
                             </li>
-                            <li>
-                                It does not allow persistent connections
-                                which means that it can only establish one
-                                TCP connection.
-                            </li>
-                            <li>
-                                Server responses only comes in
-                                <a href="../pages/htmldoc.html">HTML</a> form.
-                            </li>
-                            <li>
-                                Clients can only send a single ASCII form of string.
-                            </li>
-                            <li>
-                                Client requests are terminated using
-                                <span class="pop-up">CRLF
-                                    <span class="pop-up-content">
-                                         Carriage Return Line Feedback (CRLF) is
-                                         used to indicate the termination of a line.
-                                    </span>
-                                </span>
-                            </li>
+                            <li>It does not allow persistent connections which means that it can only establish one TCP connection.</li>
+                            <li>Server responses only comes in <a href="../pages/htmldoc.html">HTML</a> form.</li>
+                            <li>Clients can only send a single ASCII form of string.</li>
+                            <li>Client requests are terminated using<span class="pop-up">CRLF<span class="pop-up-content">Carriage Return Line Feedback (CRLF) is used to indicate the termination of a line.</span></span></li>
                         </ul>
                     </li>
-                    <li>
-                        HTTP 1.0
-
+                    <li>HTTP 1.0
                         <ul>
-                            <li>
-                                <a href="http://www.ietf.org/rfc/rfc1945.txt">RFC 1945</a>
-                            </li>
-                            <li>
-                                Improved HTTP 0.9 by adding the following methods:
+                            <li><a href="http://www.ietf.org/rfc/rfc1945.txt" target="_blank">RFC 1945</a></li>
+                            <li>Improved HTTP 0.9 by adding the following methods:
                                 <ul>
-                                    <li>
-                                        POST - An HTTP method that allows Clients to
-                                        send an information to the Web Server.
-                                    </li>
-                                    <li>
-                                        HEAD - Identical to the GET method
-                                        but it does not display the content of the
-                                        response’s body. It only displays the
-                                        headers used in the response.
-                                    </li>
+                                    <li>POST - An HTTP method that allows Clients to send an information to the Web Server.</li>
+                                    <li> HEAD - Identical to the GET method but it does not display the content of the response’s body. It only displays the headers used in the response.</li>
                                 </ul>
                             </li>
-                            <li>
-                                It already provides the accommodation of extensions.
-                            </li>
+                            <li>It already provides the accommodation of extensions.</li>
                         </ul>
                     </li>
-                    <li>
-                        HTTP 1.1
+                    <li>HTTP 1.1
                         <ul>
-                            <li><a href="https://www.ietf.org/rfc/rfc2068.txt">RFC 2068</a></li>
-                            <li><a href="https://www.ietf.org/rfc/rfc2616.txt">RFC 2616</a></li>
+                            <li><a href="https://www.ietf.org/rfc/rfc2068.txt" target="_blank">RFC 2068</a></li>
+                            <li><a href="https://www.ietf.org/rfc/rfc2616.txt" target="_blank">RFC 2616</a></li>
                             <li><span class="pop-up">RFC 7230-7235
                                     <span class="pop-up-content">
                                         <ul>
-                                            <li><a href="https://tools.ietf.org/html/rfc7230">RFC 7230</a></li>
-                                            <li><a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a></li>
-                                            <li><a href="https://tools.ietf.org/html/rfc7232">RFC 7232</a></li>
-                                            <li><a href="https://tools.ietf.org/html/rfc7233">RFC 7233</a></li>
-                                            <li><a href="https://tools.ietf.org/html/rfc7234">RFC 7234</a></li>
-                                            <li><a href="https://tools.ietf.org/html/rfc7235">RFC 7235</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7230" target="_blank">RFC 7230</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7231" target="_blank">RFC 7231</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7232" target="_blank">RFC 7232</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7233" target="_blank">RFC 7233</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7234" target="_blank">RFC 7234</a></li>
+                                            <li><a href="https://tools.ietf.org/html/rfc7235" target="_blank">RFC 7235</a></li>
                                         </ul>
                                     </span>
                                 </span>
                             </li>
                             <li>HTTP 1.1 is the protocol which is used up until the present.</li>
-                            <li>
-                                More methods are added:
+                            <li>More methods are added:
                                 <ul>
-                                    <li>
-                                        PUT - An HTTP method that allows Clients
-                                        to replace the contents of the website
-                                        with the data sent/uploaded by the Client.
-                                    </li>
-                                    <li>
-                                        DELETE - An HTTP method that allows Clients
-                                        to remove the content of the Web resource.
-                                    </li>
-                                    <li>
-                                        CONNECT - An HTTP method that creates
-                                        connection to the Server identified by
-                                        the given URI.
-                                    </li>
-                                    <li>
-                                        OPTIONS - An HTTP method that shows a list
-                                        of HTTP methods allowed by the Server.
-                                    </li>
-                                    <li>
-                                        TRACE - An HTTP method that echoes the contend
-                                        of the Client's request.
-                                    </li>
+                                    <li>PUT - An HTTP method that allows Clients to replace the contents of the website with the data sent/uploaded by the Client.</li>
+                                    <li>DELETE - An HTTP method that allows Clients to remove the content of the Web resource.</li>
+                                    <li>CONNECT - An HTTP method that creates connection to the Server identified by the given URI.</li>
+                                    <li>OPTIONS - An HTTP method that shows a list of HTTP methods allowed by the Server.</li>
+                                    <li>TRACE - An HTTP method that echoes the content of the Client's request.</li>
                                 </ul>
                             </li>
-                            <li>
-                                HTTP 1.1 can already accommodate persistent
-                                connections such that it allows connections to be reused.
-                            </li>
-                            <li>
-                                HTTP 1.1 already supports data compression
-                                wherein content of the message body can
-                                already be compressed to enhance speed.
-                            </li>
-                            <li>
-                                Pipelining is already supported such that it
-                                lowers the transmission delay of the communication
-                                between the Server and the Client.
-                            </li>
-                            <li>
-                                It added more mechanisms regarding Cache Control.
-                            </li>
+                            <li>HTTP 1.1 can already accommodate persistent connections such that it allows connections to be reused.</li>
+                            <li>HTTP 1.1 already supports data compression wherein content of the message body canalready be compressed to enhance speed.</li>
+                            <li>Pipelining is already supported such that it lowers the transmission delay of the communication between the Server and the Client.</li>
+                            <li>It added more mechanisms regarding Cache Control.</li>
                         </ul>
                     </li>
-                    <li>
-                        HTTP 2.0
+                    <li>HTTP 2.0
                         <ul>
-                            <li><a href="https://tools.ietf.org/html/rfc7540">RFC 7540</a></li>
-                            <li>
-                                It is an enhanced version of HTTP 1.1.
+                            <li><a href="https://tools.ietf.org/html/rfc7540" target="_blank">RFC 7540</a></li>
+                            <li>It is an enhanced version of HTTP 1.1.
                                 <ul>
-                                    <li>
-                                        Parallel requests can already be
-                                        handled allowing things to be concurrent.
-                                    </li>
-                                    <li>
-                                        It can already accommodate header compression.
-                                    </li>
+                                    <li>Parallel requests can already be handled allowing things to be concurrent.</li>
+                                    <li>It can already accommodate header compression.</li>
                                 </ul>
                             </li>
-                            <li>
-                                Added accommodation to
-                                <span class="pop-up">Server push
-                                    <span class="pop-up-content">
-                                        Allows the Server to
-                                        automatically send information even
-                                        if the request is not yet sent.
-                                    </span>
-                                </span>.
+                            <li>Added accommodation to
+                                <span class="pop-up">Server push<span class="pop-up-content">Allows the Server to automatically send information even if the request is not yet sent.</span></span>.
                             </li>
                         </ul>
                     </li>
