@@ -39,14 +39,12 @@
                 </a>
                 <div class="list-body">
                     <ul>
-                        <li>Overview</li>
-                        <li>HTTP</li>
-                        <li>URI</li>
-                        <li>HTML</li>
-                        <li>CSWS</li>
-                        <li>SSWS</li>
-                        <li>Web Security</li>
-                        <li>Advanced Topics</li>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="httpfundamentals.html">HTTP</a></li>
+                        <li><a href="htmldoc.html">HTML</a></li>
+                        <li><a href="uri.html">URI</a></li>
+                        <li><a href="cssoverview.html">CSS</a></li>
+                        <li><a href="javascript.html">JavaScript</li>
                     </ul>
                 </div>
             </li>
@@ -54,7 +52,7 @@
                 <a href="#"><img src="../img/quizwhite.png" alt="Resources">Quiz</a>
             </li>
             <li>
-                <a href="#"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
+                <a href="resources.html"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
             </li>
             <li>
                 <a href="#"><img src="../img/aboutuswhite.png" alt="About Us">About Us</a>
@@ -69,46 +67,22 @@
 
                 <h2 id="whatIsCss" class="topic-title">What is CSS?</h2>
                 <ul>
-                    <li>
-                        It is used to specify how websites/documents are
-                        displayed/presented. It is purposely used for
-                        presentation aspects such as for fonts, colors,
-                        and screen layouts of HTML, XML, SVG, MathML documents
-                        and other documents using a
-                        <span class="pop-up">markup language
-                            <span class="pop-up-content">
-                                languages used to indicate how documents are presented
-                                or structured. It uses tags to define the structure
-                                of the document.
-                            </span>
-                        </span>.
-                    </li>
+                    <li>It is used to specify how websites/documents are displayed/presented. It is purposely used for presentation aspects such as for fonts, colors, and screen layouts of HTML, XML, SVG, MathML documents and other documents using a <span class="pop-up">markup language <span class="pop-up-content"> languages used to indicate how documents are presented or structured. It uses tags to define the structure of the document.</span></span>.</li>
                 </ul>
 
                 <hr>
 
                 <h2 id="cssVersionHistory" class="topic-title">Version History (a.k.a 'The CSS Saga')</h2>
                 <ul>
-                    <li>
-                        1994
+                    <li>1994
                         <ul>
-                            <li>
-                                <a href="https://www.w3.org/People/howcome/">Hakon Wium Lee</a>
-                                released the draft of 'Cascading HTML Style Sheets' along
-                                with Bert Bos who was, at that time, developing a browser
-                                name Argo, which supports its own stylesheet.
-                            </li>
-                            <li>
-                                The <a href="https://www.w3.org/People/howcome/p/cascade.html">proposal</a>
-                                for 'Cascading HTML Style Sheets' was launched.
-                            </li>
+                            <li><a href="https://www.w3.org/People/howcome/" target="_blank">Hakon Wium Lee</a> released the draft of 'Cascading HTML Style Sheets' along  with Bert Bos who was, at that time, developing a browser name Argo, which supports its own stylesheet.</li>
+                            <li>The <a href="https://www.w3.org/People/howcome/p/cascade.html" target="_blank">proposal</a> for 'Cascading HTML Style Sheets' was launched.</li>
                         </ul>
                     </li>
-                    <li>
-                        1996
+                    <li>1996
                         <ul>
-                            <li>
-                                CSS Level 1 was published as a W3C Recommendation
+                            <li>CSS Level 1 was published as a W3C Recommendation
                                 <ul>
                                     <li>
                                         CSS Level 1 supports the following features:
@@ -132,12 +106,10 @@
                             <li>Mozilla browser was the first ever browser to support CSS.</li>
                         </ul>
                     </li>
-                    <li>
-                        1998
+                    <li>1998
                         <ul>
                             <li>CSS Level 2 became a W3C Recommendation</li>
-                            <li>
-                                Features which were not included in CSS Level 1 were added to CSS Level 2
+                            <li>Features which were not included in CSS Level 1 were added to CSS Level 2
                                 <ul>
                                     <li>
                                         CSS Level 2 added the following features:
@@ -155,20 +127,12 @@
                     </li>
                     <li>
                         2011
-                        <ul>
-                            <li>
-                                W3C released CSS Level 2.1 which fixes errors/bugs in CSS Level
-                                2 and fixed its browser function capabilities.
-                            </li>
-                        </ul>
+                        <ul><li>W3C released CSS Level 2.1 which fixes errors/bugs in CSS Level 2 and fixed its browser function capabilities.</li></ul>
                     </li>
-                    <li>
-                        Around 2012
+                    <li>Around 2012
                         <ul>
-                            <li>
-                                CSS Level 3 was released which was a modular approach to CSS
-                                Development (as opposed to the 'monolithic' specification of
-                                CSS Level 2.1).
+                            <li>CSS Level 3 was released which was a modular approach to CSS Development (as opposed to the 'monolithic' specification
+                                of CSS Level 2.1).
                                 <ul>
                                     <li>
                                         The following are the 4 modules which were released as
@@ -192,60 +156,33 @@
                 <ul>
                     <li>Three Main source styles for HTML Documents:</li>
                     <ol type="A">
-                        <li>
-                            Author Style
+                        <li>Author Style
                             <ol type="i">
-                                <li>
-                                    External
+                                <li>External
                                     <ul>
-                                        <li>
-                                            a.k.a 'Linked Stylesheet' which is recommended
-                                            because it provides easier caching and it can
-                                            be edited easily as well as it can be used in
-                                            multiple sites and documents.
-                                        </li>
+                                        <li>a.k.a 'Linked Stylesheet' which is recommended because it provides easier caching and it can be edited easily as well as it can be used in multiple sites and documents.</li>
                                         <li>These are stylesheets separated from the HTML documents.</li>
                                     </ul>
                                 </li>
-                                <li>
-                                    Embedded
+                                <li>Embedded
                                     <ul>
-                                        <li>
-                                            a.k.a 'Internal Stylesheet' which is not very much
-                                            recommended because since it is internal, it cannot
-                                            be used by other sites/documents.
-                                        </li>
+                                        <li>a.k.a 'Internal Stylesheet' which is not very much recommended because since it is internal, it cannot be used by other sites/documents.</li>
                                         <li>These are style sheets defined within the HTML Document.</li>
                                     </ul>
                                 </li>
-                                <li>
-                                    Inline
-                                    <ul>
-                                        <li>These style sheets are defined within the HTML tags.</li>
-                                    </ul>
+                                <li>Inline
+                                    <ul><li>These style sheets are defined within the HTML tags.</li></ul>
                                 </li>
                             </ol>
                         </li>
-                        <li>
-                            User Styles
+                        <li>User Styles
                             <ul>
-                                <li>
-                                    These are non-standard styles such that it allows users to provide
-                                    their own style sheet or preferred layout for the website.
-                                </li>
-                                <li>
-                                    Some browsers also provide alternative styles through plugins and
-                                    extensions. For example, Chrome's extension called 'Stylish Extension'
-                                    provides different themes for different websites which the users can
-                                    choose from.
-                                </li>
+                                <li>These are non-standard styles such that it allows users to provide their own style sheet or preferred layout for the website.</li>
+                                <li>Some browsers also provide alternative styles through plugins and extensions. For example, Chrome's extension called 'Stylish Extension' provides different themes for different websites which the users can choose from.</li>
                             </ul>
                         </li>
-                        <li>
-                            User Agent Styles
-                            <ul>
-                                <li>Browsers provide their own/default style sheet in rendering the websites.</li>
-                            </ul>
+                        <li>User Agent Styles
+                            <ul><li>Browsers provide their own/default style sheet in rendering the websites.</li></ul>
                         </li>
                     </ol>
                 </ul>
@@ -254,12 +191,10 @@
 
                 <h2 id="cssStatements" class="topic-title">CSS Statements</h2>
                 <ol>
-                    <li>
-                        At-Rules
+                    <li>At-Rules
                         <ul>
                             <li>these are commonly denoted with an annotation '@'</li>
-                            <li>
-                                Example:
+                            <li>Example:
                                 <ul>
                                     <li><span class="code highlight misc">@charset</span></li>
                                     <li><span class="code highlight misc">@import</span></li>
@@ -290,8 +225,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        CSS Rule Sets
+                    <li>CSS Rule Sets
                         <ul>
                             <li>a.k.a 'CSS Rules'/ 'Style Rules'</li>
                             <li>
