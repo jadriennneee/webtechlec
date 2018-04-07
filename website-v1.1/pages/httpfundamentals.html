@@ -394,24 +394,33 @@
                     </li>
                 </ul>
 
-
-                <div class="page-button-container">
-                    <button id="nextPageButton">Next Page &#9112;</button>
+                <div class="page-button-container" data-pages="2" data-currentPage="1">
+                    <button id="backPageButton" class="page-button">&#9112; Previous</button>
+                    <h5>Page 1 out of 2</h5>
+                    <button id="nextPageButton" class="page-button" data-target="httpTechnical.html">Next &#9112;</button>
                 </div>
             </section>
 
             <section id="tableOfContents">
                 <ol>
                     <h5>Contents</h5>
-                    <li data-target="#whatIsHttp" class="content-list">What is HTTP?</li>
-                    <li data-target="#httpFundamentals" class="content-list">HTTP Fundamentals</li>
-                    <li data-target="#httpFeatures" class="content-list">HTTP Features and Functionalities</li>
-                    <li data-target="#httpVersions" class="content-list">HTTP Version History</li>
-                    <li data-target="httpTechnical.html#messages" class="content-list">HTTP Messages</li>
-                    <li data-target="httpTechnical.html#methods" class="content-list">HTTP Methods</li>
-                    <li data-target="httpTechnical.html#statusCodes" class="content-list">HTTP Status Codes</li>
-                    <li data-target="httpTechnical.html#headers" class="content-list">HTTP Headers</li>
-                    <li data-target="httpTechnical.html#extensions" class="content-list">HTTP Extensions</li>
+
+                    <h6 class="current-page-header">Page 1</h6>
+                    <ol>
+                        <li data-target="#whatIsHttp" class="content-list">What is HTTP?</li>
+                        <li data-target="#httpFundamentals" class="content-list">HTTP Fundamentals</li>
+                        <li data-target="#httpFeatures" class="content-list">HTTP Features and Functionalities</li>
+                        <li data-target="#httpVersions" class="content-list">HTTP Version History</li>
+                    </ol>
+
+                    <h6>Page 2</h6>
+                    <ol>
+                        <li data-target="httpTechnical.html#messages" class="content-list">HTTP Messages</li>
+                        <li data-target="httpTechnical.html#methods" class="content-list">HTTP Methods</li>
+                        <li data-target="httpTechnical.html#statusCodes" class="content-list">HTTP Status Codes</li>
+                        <li data-target="httpTechnical.html#headers" class="content-list">HTTP Headers</li>
+                        <li data-target="httpTechnical.html#extensions" class="content-list">HTTP Extensions</li>
+                    </ol>
                 </ol>
             </section>
         </main>

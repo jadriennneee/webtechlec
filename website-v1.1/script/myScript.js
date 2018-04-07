@@ -71,11 +71,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 contentIndicators[i].classList.remove("current-section");
             }
 
-            currentIndicator = document.querySelector(`[data-target="#${topicTitles[currentSectionIndex].id}"]`);
+            currentIndicator = document.querySelector(`li[data-target="#${topicTitles[currentSectionIndex].id}"]`);
             currentIndicator.classList.add("current-section");
 
             if (currentSectionIndex != previousSectionIndex && previousSectionIndex >= 0) {
-                previousIndicator = document.querySelector(`[data-target="#${topicTitles[previousSectionIndex].id}"]`);
+                previousIndicator = document.querySelector(`li[data-target="#${topicTitles[previousSectionIndex].id}"]`);
                 previousIndicator.classList.remove("current-section");
             }
 
@@ -92,5 +92,27 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         }
+    }
+
+    // Handle paging
+    var pageButtonContainer = document.querySelector(".page-button-container");
+    if (pageButtonContainer) {
+        var currentPage = parseInt(pageButtonContainer.getAttribute("data-currentPage"));
+        var currentPage = parseInt(pageButtonContainer.getAttribute("data-currentPage"));
+        var lastPage = parseInt(pageButtonContainer.getAttribute("data-pages"));
+
+        if (currentPage == 1) {
+            document.querySelector("#backPageButton").style.visibility = "hidden";
+        } else if (currentPage == lastPage) {
+            document.querySelector("#backPageButton").style.visibility = "visible";
+            document.querySelector("#nextPageButton").style.visibility = "hidden";
+        }
+
+        function redirect() {
+            window.location.href = this.getAttribute("data-target");
+        }
+
+        document.querySelector("#nextPageButton").addEventListener("click", redirect);
+        document.querySelector("#backPageButton").addEventListener("click", redirect);
     }
 });

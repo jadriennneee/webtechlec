@@ -256,19 +256,26 @@ header {
 }
 
 .page-button-container {
-    margin-top: 40px;
-    justify-content: flex-end;
+    margin-top: 50px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#nextPageButton {
+.page-button-container h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.page-button {
     background-color: #30ad63;
-    padding: 10px 20px;
+    padding: 10px;
     border: 0;
     color: #ffffff;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
+    min-width: 100px;
 }
 
 /* Section a */
@@ -447,12 +454,25 @@ header {
         margin-bottom: 10px;
     }
 
-    #tableOfContents ol {
+    #tableOfContents h6 {
+        margin-bottom: 0;
+    }
+
+    #tableOfContents h6.current-page-header {
+        color: #30ad63;
+    }
+
+    #tableOfContents > ol, #tableOfContents > ol ol {
         list-style-position: inside;
         list-style-type: none;
         border-left: 3px solid #30ad63;
         padding: 10px 20px;
         margin-left: 20px;
+    }
+
+    #tableOfContents > ol ol {
+        border-left: none;
+        margin-left: 0px;
     }
 
     #tableOfContents ol li {
