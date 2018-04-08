@@ -153,8 +153,12 @@ header {
     margin-right: 15px;
 }
 
-#nav > ul > li.current {
+#nav li.current {
     background-color: #222f3e;
+}
+
+#nav .currentTopic {
+	color: #4db749;
 }
 
 #nav ul > li > a {
