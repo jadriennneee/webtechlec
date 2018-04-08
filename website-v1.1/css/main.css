@@ -153,8 +153,12 @@ header {
     margin-right: 15px;
 }
 
-#nav > ul > li.current {
+#nav li.current {
     background-color: #222f3e;
+}
+
+#nav .currentTopic {
+	color: #4db749;
 }
 
 #nav ul > li > a {
@@ -252,12 +256,13 @@ header {
 }
 
 .pop-up {
-    color: red;
+    color: #59b300;
 }
 
 .pop-up-content {
-    /* display: none;
+    display: none;
     margin: 0 auto;
+    width:20vw;
     background-color: #ffffff;
     color: #000000;
     border-radius: 6px;
@@ -265,8 +270,7 @@ header {
     padding: 5px 10px;
     z-index: 0;
     transition: 0.3s;
-    position: absolute; */
-    display: none;
+    position: absolute;
 }
 
 .pop-up:hover + .pop-up-content {
