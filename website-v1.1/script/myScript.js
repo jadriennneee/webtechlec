@@ -115,4 +115,63 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("#nextPageButton").addEventListener("click", redirect);
         document.querySelector("#backPageButton").addEventListener("click", redirect);
     }
+
+    // Quiz
+    var quizContainer = document.querySelector(".quiz-container");
+    var filePath = "../script/" + quizContainer.getAttribute("data-quizName") + ".json";
+    if (quizContainer) {
+        function generateQuiz(quiz) {
+            console.log("Generating quiz...");
+            var listOfQuestions = document.createElement("ol");
+
+            for (var i = 0; i < quiz["item"].length; i++) {
+                var list = document.createElement("LI");
+
+                var question = document.createElement("SPAN");
+                question.className = "question"
+                question.innerHTML = `${quiz["item"][i].question}`;
+
+                var answerContainer = document.createElement("DIV");
+                var label = document.createElement("LABEL");
+                label.setAttribute("for", `answer${i}`);
+                label.innerHTML = "Answer: ";
+                answerContainer.appendChild(label);
+
+                var answer = document.createElement("INPUT");
+                answer.setAttribute("type", "text");
+                answer.setAttribute("id", `answer${i}`);
+                answerContainer.appendChild(answer);
+
+                list.appendChild(question);
+                list.appendChild(answerContainer);
+                listOfQuestions.appendChild(list);
+            }
+
+            var submitButtonContainer = document.createElement("DIV");
+            submitButtonContainer.className = "submit-button-container";
+
+            var submitButton = document.createElement("INPUT");
+            submitButton.setAttribute("type", "button");
+            submitButton.setAttribute("id", "submitButton");
+            submitButton.setAttribute("value", "Submit");
+
+            submitButtonContainer.appendChild(submitButton);
+
+            document.getElementById("quizForm").appendChild(listOfQuestions);
+            document.getElementById("quizForm").appendChild(submitButtonContainer);
+
+            console.log("Quiz generated...");
+        }
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.overrideMimeType("application/json");
+        xhttp.onreadystatechange = function () {
+            if (xhttp.readyState == 4 && xhttp.status == "200") {
+                var quiz = JSON.parse(xhttp.responseText);
+                generateQuiz(quiz);
+            }
+        };
+        xhttp.open('GET', filePath, true);
+        xhttp.send(null);
+    }
 });

@@ -210,7 +210,7 @@ header {
     padding: 15px;
 }
 
-#mainContent h1 {
+#mainContent h1, #main .main-heading {
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
@@ -340,6 +340,48 @@ span.input-value {
 
 span.id {
     color: #4078f2;
+}
+
+/* Quiz */
+#quizForm ol > li {
+    margin-bottom: 20px;
+}
+
+#quizForm .question {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#quizForm .answer {
+    display: flex;
+    align-items: center;
+}
+
+#quizForm label {
+    margin-right: 10px;
+}
+
+#quizForm input[type="text"] {
+    background-color: #ffffff;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#quizForm #submitButton {
+    background-color: #30ad63;
+    padding: 10px 15px;
+    border: 0;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#quizForm .submit-button-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* Section a */
@@ -490,7 +532,7 @@ span.id {
         padding: 25px 50px;
     }
 
-    #mainContent h1 {
+    #mainContent h1, #main .main-heading {
         text-align: left;
     }
 
@@ -561,6 +603,19 @@ span.id {
         display: grid;
         grid-template-columns: minmax(auto, 65%) 1fr;
         grid-column-gap: 20px;
+    }
+
+    #quizForm .submit-button-container {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    #quizForm {
+        padding-right: 200px;
+    }
+
+    #quizForm ol > li {
+        margin-bottom: 50px;
     }
 
     #section-b {
