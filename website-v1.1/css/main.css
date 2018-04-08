@@ -256,7 +256,7 @@ header {
 }
 
 .pop-up-content {
-     display: none;
+    /* display: none;
     margin: 0 auto;
     background-color: #ffffff;
     color: #000000;
@@ -265,12 +265,12 @@ header {
     padding: 5px 10px;
     z-index: 0;
     transition: 0.3s;
-    position: absolute; 
-    /*display: none;*/
+    position: absolute; */
+    display: none;
 }
 
-.pop-up:hover .pop-up-content {
-     display: inline-block; 
+.pop-up:hover + .pop-up-content {
+    /* display: inline-block; */
 }
 
 .page-button-container {
@@ -316,10 +316,6 @@ h6.code-title {
 code, span.code {
     font-family: monospace;
     font-size: 16px;
-}
-
-code.pop-up{
-	color: black;
 }
 
 span.highlight {
@@ -370,6 +366,7 @@ span.id {
     border: 1px solid #a9a9a9;
     border-radius: 5px;
     padding: 3px;
+    font-size: 16px;
 }
 
 #quizForm #submitButton {
@@ -383,9 +380,45 @@ span.id {
     margin-top: 20px;
 }
 
+#quizForm #submitButton:disabled {
+    background-color: #a9a9a9;
+}
+
 #quizForm .submit-button-container {
     display: flex;
     justify-content: center;
+}
+
+#quizForm .answer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#quizForm .answer-container.correct {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+#quizForm .answer-container.wrong {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#quizForm .answer-container.correct > label, .passed {
+    color: #006400;
+}
+
+#quizForm .answer-container.wrong > label, .failed {
+    color: #8B0000;
+}
+
+#quizForm .remark {
+    font-weight: bold;
+}
+
+#quizForm .result h2 {
+    font-weight: bold;
 }
 
 /* Section a */
@@ -672,6 +705,10 @@ span.id {
 
     .nav-toggler {
         margin-right: 10px;
+    }
+
+    #quizForm {
+        padding-right: 500px;
     }
 
     #section-a {

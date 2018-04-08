@@ -119,6 +119,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Quiz
     var quizContainer = document.querySelector(".quiz-container");
     var filePath = "../script/" + quizContainer.getAttribute("data-quizName") + ".json";
+    var quizCopy = null;
+
     if (quizContainer) {
         function generateQuiz(quiz) {
             console.log("Generating quiz...");
@@ -132,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 question.innerHTML = `${quiz["item"][i].question}`;
 
                 var answerContainer = document.createElement("DIV");
+                answerContainer.className = "answer-container"
                 var label = document.createElement("LABEL");
                 label.setAttribute("for", `answer${i}`);
                 label.innerHTML = "Answer: ";
@@ -142,10 +145,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 answer.setAttribute("id", `answer${i}`);
                 answerContainer.appendChild(answer);
 
+                var remark = document.createElement("DIV");
+                remark.className = "remark";
+
                 list.appendChild(question);
                 list.appendChild(answerContainer);
+                list.appendChild(remark);
                 listOfQuestions.appendChild(list);
             }
+
+            quizCopy = quiz;
 
             var submitButtonContainer = document.createElement("DIV");
             submitButtonContainer.className = "submit-button-container";
@@ -160,7 +169,42 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("quizForm").appendChild(listOfQuestions);
             document.getElementById("quizForm").appendChild(submitButtonContainer);
 
+            submitButton.addEventListener("click", function() {
+                checkScore();
+            });
+
             console.log("Quiz generated...");
+        }
+
+        function checkScore() {
+            console.log("Checking score...");
+            var correctScores = 0;
+
+            var answerFields = document.querySelectorAll("#quizForm ol > li input[type='text']");
+
+            for (var i = 0; i < answerFields.length; i++) {
+                if (answerFields[i].value.toLowerCase() == quizCopy["item"][i].answer.toLowerCase()) {
+                    correctScores += 1;
+                    answerFields[i].parentElement.classList.add("correct");
+                } else {
+                    answerFields[i].parentElement.classList.add("wrong");
+                    answerFields[i].parentElement.nextElementSibling.innerHTML = "Correct answer: " + quizCopy["item"][i].answer;
+                }
+
+                answerFields[i].setAttribute("disabled", "true");
+                document.getElementById("submitButton").disabled = true;
+
+                var result = document.querySelector(".result h2");
+
+                result.innerHTML = `Score: ${correctScores} out of ${answerFields.length}`;
+                if (correctScores > (quizCopy.length / 2)) {
+                    result.classList.add("passed");
+                } else {
+                    result.classList.add("failed");
+                }
+
+                window.scrollTo(0, 0);
+            }
         }
 
         var xhttp = new XMLHttpRequest();
