@@ -1,0 +1,33 @@
+{
+	"item": [{
+		"question": "What is the meaning of HTML?",
+		"answer": "Hypertext Mark-up Language"
+	}, {
+		"question": "It is intended for providing accessibility.",
+		"answer": "WAI-ARAI"
+	}, {
+		"question": "An easily parsed structure that allows users to create their own tags.",
+		"answer": "XML"
+	}, {
+		"question": "It is commonly used as an escape sequence.",
+		"answer": "Character References"
+	}, {
+		"question": "It forbids the use of deprecated elements.",
+		"answer": "Strict"
+	}, {
+		"question": "HTML attribute that specifies the destination of the link",
+		"answer": "href"
+	}, {
+		"question": "An element used to indicate an ordered list",
+		"answer": "ol"
+	}, {
+		"question": "It is used to identify the language of the document",
+		"answer": "lang"
+	}, {
+		"question": "It is strictly formatted as XML.",
+		"answer": "XHTML"
+	}, {
+		"question": "It allows deprecated elements for backward compatibility.",
+		"answer": "Transitional"
+	}]
+}
