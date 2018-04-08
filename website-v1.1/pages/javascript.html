@@ -93,9 +93,12 @@
                 <ol>
                     <li>External
                         <ul>
-                            <li>Standard approach</li>
-                            <li>* defer - execution is deferred when script has been downloaded.</li>
-                            <li>* async - JS can execute while HTML is parsing.</li>
+                            <li>Standard approach
+                            <ul type="none">
+                                <li><strong>defer</strong> - execution is deferred when script has been downloaded.</li>
+                                <li><strong>async</strong> - JS can execute while HTML is parsing.</li>
+                            </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>Embedded/Internal
@@ -104,11 +107,20 @@
                     <li>Inline
                         <ul>
                             <li>Script is already included within the HTML document.</li>
-                            <li>Example:
-                                <pre><xmp><p><button onclick = 'alert("You Clicked Me!");'> Click Me! </button></p></xmp></pre>
+                            <li type="none">
+                                <div class="code-topic">
+                                    <h6 class="code-title">Example:</h6>
+                                    <div class="code-container">
+                                        <code>
+                                            <span class="code element">
+                                                <pre><xmp><p><button onclick = 'alert("You Clicked Me!");'> Click Me! </button></p></xmp></pre>
+                                            </span> 
+                                        </code>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
-                                <pre><xmp>*<noscript> - alternative the browser will have if scripting is not supported</xmp></pre>
+                            <li type="none">
+                                <strong><pre><xmp><noscript> - alternative the browser will have if scripting is not supported</xmp></pre></strong>
                             </li>
                         </ul>
                     </li>
@@ -126,16 +138,16 @@
                                     <li>It is the top-level object of the hierarchy.</li>
                                     <li>Methods:
                                         <ol>
-                                            <li>alert() - A method of the browser's window that posts a message dialog.</li>
-                                            <li>open() - A method of the browser's window that opens a new browser window.</li>
-                                            <li>close() - A method f the browser's window that closes the window.</li>
+                                            <li><strong>alert()</strong> - A method of the browser's window that posts a message dialog.</li>
+                                            <li><strong>open()</strong> - A method of the browser's window that opens a new browser window.</li>
+                                            <li><strong>close()</strong> - A method of the browser's window that closes the window.</li>
                                         </ol>
                                     </li>
                                     <li>Properties:
                                         <ol>
-                                            <li>name - It refers to the name of the window.</li>
-                                            <li>defaultStatus - It refers to the text in the status bar.</li>
-                                            <li>outerwidth and outerheight - It refers to the window extents.</li>
+                                            <li><strong>name</strong> - It refers to the name of the window.</li>
+                                            <li><strong>defaultStatus</strong> - It refers to the text in the status bar.</li>
+                                            <li><strong>outerwidth and outerheight</strong> - It refers to the window extents.</li>
                                         </ol>
                                     </li>
                                 </ul>
@@ -144,13 +156,13 @@
                                 <ul>
                                     <li>It represents information about the browser and the underlying Operating System.</li>
                                     <li>Methods:
-                                        <ol><li>javaEnabled() - It returns true or false.</li></ol>
+                                        <ol><li><strong>javaEnabled()</strong> - It returns true or false.</li></ol>
                                     </li>
                                     <li>Properties:
                                         <ol>
-                                            <li>appCodeName - It refers to the code name of the browser.</li>
-                                            <li>appName - It refers to the name of the browser.</li>
-                                            <li>appVersion - It refers to the platform and version of the browser.</li>
+                                            <li><strong>appCodeName</strong> - It refers to the code name of the browser.</li>
+                                            <li><strong>appName</strong> - It refers to the name of the browser.</li>
+                                            <li><strong>appVersion</strong> - It refers to the platform and version of the browser.</li>
                                         </ol>
                                     </li>
                                 </ul>
@@ -178,13 +190,13 @@
                                     <li>It contains information of the recently visited sites.</li>
                                     <li>Methods:
                                         <ol>
-                                            <li>back() - It loads the previous URL in the history list.</li>
-                                            <li>forward() - It loads the next URL in the history list.</li>
-                                            <li>go() - It loads a specific page in the history list.</li>
+                                            <li><strong>back()</strong> - It loads the previous URL in the history list.</li>
+                                            <li><strong>forward()</strong> - It loads the next URL in the history list.</li>
+                                            <li><strong>go()</strong> - It loads a specific page in the history list.</li>
                                         </ol>
                                     </li>
                                     <li>Properties:
-                                        <ol><li>length - It refers to the number of elements in the history list.</li></ol>
+                                        <ol><li><strong>length</strong> - It refers to the number of elements in the history list.</li></ol>
                                     </li>
                                 </ul>
                             </li>
@@ -193,9 +205,9 @@
                                     <li>It contains information about the current URL.</li>
                                     <li>Methods:
                                         <ol>
-                                            <li>assign() - It loads a new document.</li>
-                                            <li>reload() - It reloads the current document.</li>
-                                            <li>replace() - It replaces the current document with a new document.</li>
+                                            <li><strong>assign()</strong> - It loads a new document.</li>
+                                            <li><strong>reload()</strong> - It reloads the current document.</li>
+                                            <li><strong>replace()</strong> - It replaces the current document with a new document.</li>
                                         </ol>
                                     </li>
                                     <li>Properties:
@@ -234,7 +246,7 @@
                     <li>It is also accessed via the Document Object Property of the global window object.</li>
                     <li>FUNCTIONALITIES:
                         <ol type="A">
-                            <li>Retrieve references to nodes (or node collection) in the DOM
+                            <li>Retrieve references to nodes (<em>or node collection</em>) in the DOM
                                 <ul>
                                     <li>Example:
                                         <ol>
@@ -245,7 +257,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>Traverse the DOM type (from a given node)
+                            <li>Traverse the DOM type (<em>from a given node</em>)
                                 <ul>
                                     <li>Example:
                                         <ol>

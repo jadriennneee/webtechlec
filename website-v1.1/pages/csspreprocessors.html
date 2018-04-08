@@ -70,18 +70,23 @@
                 <ol>
                     <li>CSS Preprocessors
                         <ul>
-                            <li>generates CSS using a custom language syntax that typically includes features that don't exist in pure CSS (e.g., variables, control flows, nesting, mixins, functions, etc.).</li>
+                            <li>generates CSS using a custom language syntax that typically includes features that don't exist in pure CSS (<em>e.g., variables, control flows, nesting, mixins, functions, etc.</em>).</li>
                             <li>Example:
                                 <ol type="a">
                                     <li>SASS
                                         <ul>
                                             <li>curly braces can already be omitted.</li>
-                                            <li>Example:
-                                                <ul>
-                                                    <li>@include</li>
-                                                    <li>@mixin</li>
-                                                    <li>@extend</li>
-                                                </ul>
+                                            <li type="none">
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Example:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">@include</span><br>
+                                                            <span class="code element">@mixin</span><br>
+                                                            <span class="code element">@extend</span>
+                                                        </code>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
@@ -96,11 +101,52 @@
                                     <li>Variables
                                         <ul>
                                             <li>Variables store values of attributes which can be reused in any element minimizing the need to rewrite the same code everytime.</li>
-                                            <li>
-                                                <figure>
-                                                    <img src="../assets/css-preprocessors-variables.PNG" alt="css preprocessors">
-                                                    <figcaption>Taken from <a href="https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus" target="_blank">HtMLMAG</a></figcaption>
-                                                </figure>
+                                            <li type="none">
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Sass:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            $font-size: <span class="code value">16px</span>; <br>
+                                                            <span class="code element">div</span> { <br>
+                                                                &nbsp;&nbsp;font-size: <span class="code value">$font-size</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Less:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            @font-size: <span class="code value">16px</span>; <br>
+                                                            <span class="code element">div</span> { <br>
+                                                                &nbsp;&nbsp;font-size: <span class="code value">@font-size</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Stylus:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            font-size = <span class="code value">16px</span> <br>
+                                                            <span class="code element">div</span> <br>
+                                                                &nbsp;&nbsp;font-size <span class="code value">font-size</span>
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">CSS:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">div</span> { <br>
+                                                                &nbsp;&nbsp;font-size: <span class="code value">16 px</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
@@ -108,35 +154,178 @@
                                         <ul>
                                             <li>Nesting provides a hierarchical structure for developers similar to the HTML code which enables them
                                             to easily understand and read the CSS code.</li>
-                                            <li>
-                                                <figure>
-                                                    <img src="../assets/css-preprocessors-nesting.PNG" alt="css preprocessors">
-                                                    <figcaption>Taken from <a href="https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus" target="_blank">HtMLMAG</a></figcaption>
-                                                </figure>
+                                            <li type="none">
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Sass:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            $link-color: <span class="code value">#999</span>; <br>
+                                                            $link-hover: <span class="code value">#229ed3</span>; <br>
+                                                            <br>
+                                                            <span class="code element">ul</span> { <br>
+                                                                &nbsp;&nbsp;margin: <span class="code value">0</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">li</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;float: <span class="code value">left</span>; <br>
+                                                                &nbsp;&nbsp;} <br> 
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">a</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;color: <span class="code value">$link-color</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code element">&amp;:hover</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: <span class="code value">$link-hover</span>; <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                                &nbsp;&nbsp;} <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Less:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            @link-color: <span class="code value">#999</span>; <br>
+                                                            @link-hover: <span class="code value">#229ed3</span>; <br>
+                                                            <br>
+                                                            <span class="code element">ul</span> { <br>
+                                                                &nbsp;&nbsp;margin: <span class="code value">0</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">li</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;float: <span class="code value">left</span>; <br>
+                                                                &nbsp;&nbsp;} <br> 
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">a</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;color: <span class="code value">@link-color</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code element">&amp;:hover</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: <span class="code value">@link-hover</span>; <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                                &nbsp;&nbsp;} <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>Mixins
                                         <ul>
                                             <li>Accepts parameters which can then be used to set the values of the attributes.</li>
-                                            <li>It uses @include to indlue the mixins within the CSS code.</li>
-                                            <li>
-                                                <figure>
-                                                    <img src="../assets/css-preprocessors-mixins.PNG" alt="css preprocessors">
-                                                    <figcaption>Taken from <a href="https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus" target="_blank">HtMLMAG</a></figcaption>
-                                                </figure>
+                                            <li>It uses <strong>@include</strong> to indlue the mixins within the CSS code.</li>
+                                            <li type="none">
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Sass:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">@mixin bordered($width)</span> { <br>
+                                                                &nbsp;&nbsp;border: <span class="code value">$width solid #ddd</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">&amp;:hover</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;border-color: <span class="code value">#999</span>; <br>
+                                                                &nbsp;&nbsp;} <br>
+                                                            }
+                                                            <br>
+                                                            <br>
+                                                            <span class="code element">h1</span> { <br>
+                                                                &nbsp;&nbsp;@include <span class="code value">bordered(5px)</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Less:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">.bordered(@width)</span> { <br>
+                                                                &nbsp;&nbsp;border: <span class="code value">@width solid #ddd</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">&amp;:hover</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;border-color: <span class="code value">#999</span>; <br>
+                                                                &nbsp;&nbsp;} <br>
+                                                            }
+                                                            <br>
+                                                            <br>
+                                                            <span class="code element">h1</span> { <br>
+                                                                &nbsp;&nbsp;.<span class="code value">bordered(5px)</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Stylus:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">bordered(w)</span><br>
+                                                                &nbsp;&nbsp;border: <span class="code value">w solid #ddd</span> <br>
+                                                                &nbsp;&nbsp;<span class="code element">&amp;:hover</span> <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;border-color: <span class="code value">#999</span> <br>
+                                                            <span class="code element">h1</span><br>
+                                                                &nbsp;&nbsp;<span class="code value">bordered(5px)</span><br>
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">CSS:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">h1</span> { border: <span class="code value">5px solid #ddd</span>; } <br>
+                                                            <span class="code element">h1:hover</span> { border-color: <span class="code value">#999</span>; }
+                                                        </code>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>Extends
                                         <ul>
                                             <li>Used in sharing the same code with other elements which makes it easier rather than copying the entire code.</li>
-                                            <li>It uses @extend to extend the code within a block of CSS code.</li>
-                                            <li>
-                                                <figure>
-                                                    <img src="../assets/css-preprocessors-extends.PNG" alt="css preprocessors">
-                                                    <figcaption>Taken from <a href="https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus" target="_blank">HtMLMAG</a></figcaption>
-                                                </figure>
+                                            <li>It uses <strong>@extend</strong> to extend the code within a block of CSS code.</li>
+                                            <li type="none">
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Sass:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">.block</span> { margin: <span class="code value">10px 5px</span>; } <br>
+                                                            <span class="code element">p</span> { <br>
+                                                                &nbsp;&nbsp;@extend <span class="code value">.block</span>; <br>
+                                                                &nbsp;&nbsp;border: <span class="code value">1px solid #eee</span>; <br>
+                                                                &nbsp;&nbsp;text-transform: <span class="code value">uppercase</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Less:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">.block</span> { margin: <span class="code value">10px 5px</span>; } <br>
+                                                            <span class="code element">p</span> { <br>
+                                                                &nbsp;&nbsp;&amp;:extend <span class="code value">(.block)</span>; <br>
+                                                                &nbsp;&nbsp;border: <span class="code value">1px solid #eee</span>; <br>
+                                                                &nbsp;&nbsp;text-transform: <span class="code value">uppercase</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Stylus:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">.block</span><br>
+                                                            &nbsp;&nbsp;margin <span class="code value">10px 5px</span><br>
+                                                            <span class="code element">p</span> <br>
+                                                                &nbsp;&nbsp;@extend <span class="code value">.block</span><br>
+                                                                &nbsp;&nbsp;border <span class="code value">1px solid #eee</span><br>
+                                                                &nbsp;&nbsp;text-transform <span class="code value">uppercase</span>
+                                                        </code>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>

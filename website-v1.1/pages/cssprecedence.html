@@ -78,7 +78,7 @@
                            <li>By origin and importance
                                 <ul>
                                     <li>The precedence is in descending order:</li>
-                                    <li><ol>
+                                    <li type="none"><ol>
                                         <li><span class="pop-up">Transition
                                             <span class="pop-up-content">Transitions must be visible to the users</span>
                                         </span> Declarations</li>
@@ -92,13 +92,14 @@
                                         <li>Normal User Declarations</li>
                                         <li>Normal User Agent Declarations</li>
                                     </ol></li>
-                                    <li>* Important Declarations
+                                    <br>
+                                    <li>Important Declarations
                                         <ul>
-                                            <li>are indicated by the !important annotation</li>
+                                            <li>are indicated by the <strong>!important</strong> annotation</li>
                                             <li>it has the highest precedence among all other precedence factors</li>
                                         </ul>
                                     </li>
-                                    <li>* Override Declarations are simply superceding Author Declarations</li>
+                                    <li>Override Declarations are simply superceding Author Declarations</li>
                                 </ul>
                            </li>
                            <li>By Specificity
@@ -133,30 +134,48 @@
                             <li>Shorthand properties
                                 <ul>
                                     <li>Allows authors to specify the values of several properties with a single property.</li>
-                                    <li>Example:
-                                        <ul>
-                                            <li>background property can already define the following properties:
-                                                <ul>
-                                                    <li>background-color</li>
-                                                    <li>background-image</li>
-                                                    <li>background-positiont</li>
-                                                    <li>background-repeat</li>
-                                                    <li><img src="../assets/shorthand-property-bg2.PNG" alt="shorthand-property-bg2"></li>
-                                                </ul>
-                                            </li>
-                                            <li>background property syntax:</li>
-                                            <li><img src="../assets/shorthand-property-bg-syntax.PNG" alt="shorthand-property-bg-syntax"></li>
-                                            <li>other examples of shorthand properties: margin, font, padding, and border.</li>
-                                        </ul>
+                                    <li type="none">
+                                        <div class="code-topic">
+                                            <h6 class="code-title">Example:</h6>
+                                            <ul><li>background property can already define the following properties:</li></ul>
+                                            <ul class="syntax-list">
+                                                <li><span class="code highlight element">background-color</span></li>
+                                                <li><span class="code highlight element">background-image</span></li>
+                                                <li><span class="code highlight element">background-position</span></li>
+                                                <li><span class="code highlight element">background-repeat</span></li>
+                                            </ul>
+                                            <div class="code-container">
+                                                <code>
+                                                    <span class="code element">#showcase</span> { <br>
+                                                        &nbsp;&nbsp;min-height: <span class="code value">50vh</span>;<br>
+                                                        &nbsp;&nbsp;width: <span class="code value">100%</span>;<br>
+                                                        &nbsp;&nbsp;background: <span class="code value">url('image/showcase.jpg') center/covcer no-repeat</span>;<br>
+                                                        &nbsp;&nbsp;opacity: <span class="code value">0.9</span>;<br>
+                                                        &nbsp;&nbsp;display: <span class="code value">table</span>;<br>
+                                                    }
+                                                </code>
+                                            </div>
+                                        </div>
                                     </li>
+                                    <li type="none">
+                                        <div class="code-topic">
+                                            <h6 class="code-title">Syntax:</h6>
+                                            <div class="code-container">
+                                                <code>
+                                                    background: <span class="code value">bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>other examples of shorthand properties: margin, font, padding, and border.</li>
                                 </ul>
                             </li>
-                            <li>Vendor specific extensions (a.k.a., vendor prefixes)
+                            <li>Vendor specific extensions (<em>a.k.a., vendor prefixes</em>)
                                 <ul>
                                     <li>Used by browser vendors as a prefix for the names of experimental or non-standard
                                     CSS properties; lately, vendors are moving away from vendor prefixes in favor of
                                     user-controlled flags/preferences.</li>
-                                    <li>It may begin with a dash '-' or an underscore '_'</li>
+                                    <li>It may begin with a dash '&ndash;' or an underscore '_'</li>
                                     <li>format:
                                         <ul>
                                             <li>'-' + vendor identifier + '-' + meaningful name</li>
@@ -164,24 +183,42 @@
                                         </ul>
                                     </li>
                                     <li>Example:
-                                        <li>-webkit- (Chrome, Safari, newer versions of Opera, any WebKit based browser)</li>
-                                        <li>-moz- (Firefox)</li>
-                                        <li>-o- (Old, pre-WebKit, versions of Opera)</li>
-                                        <li>-ms- (Internet Explorer and Microsoft Edge)</li>
+                                        <ul>
+                                            <li>-webkit- (Chrome, Safari, newer versions of Opera, any WebKit based browser)</li>
+                                            <li>-moz- (Firefox)</li>
+                                            <li>-o- (Old, pre-WebKit, versions of Opera)</li>
+                                            <li>-ms- (Internet Explorer and Microsoft Edge)</li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li>Custom properties (a.k.a., CSS Variable) - Experimental
+                            <li>Custom properties (<em>a.k.a., CSS Variable</em>) - Experimental
                                 <ul>
-                                    <li>Property names prefixed with a double dash '--' represents a value that can be
-                                     reused throughout the document using the var() function.</li>
-                                     <li>syntax:
-                                        <ul>
-                                            <li>var(custom property);</li>
-                                            <li>var(custom property, alternative value);</li>
-                                        </ul>
-                                     </li>
-                                     <li>Example: <ul><li><img src="../assets/custom-property.PNG" alt="custom property"></li></ul></li>
+                                    <li>Property names prefixed with a double dash '<strong>--</strong>' represents a value that can be
+                                     reused throughout the document using the <strong>var()</strong> function.</li>
+                                    <li type="none">
+                                        <div class="code-topic">
+                                            <h6 class="code-title">Syntax:</h6>
+                                            <div class="code-container">
+                                                <code>
+                                                    <span class="code element">var(custom property);</span>
+                                                    <span class="code element">var(custom property, alternative value);</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li type="none">
+                                        <div class="code-topic">
+                                            <h6 class="code-title">Example:</h6>
+                                            <div class="code-container">
+                                                <code>
+                                                    <span class="code element">:root</span> { --coolor: <span class="code value">red</span>;} <br>
+                                                    <span class="code element">h1</span> { color: <span class="code value">var(--coolor)</span>;} <br>
+                                                    <span class="code element">p</span> { color: <span class="code value">var(--coolor, blue)</span>;}
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                         </ol>
@@ -201,13 +238,12 @@
                                             <li>Used value is transformed into the actual value. The used value may or may not have an actual value per property per element.</li>
                                         </ol>
                                     </li>
-                                    <li>* The actual value is the final value of the property.</li>
+                                    <li type="none"><strong><em>** The actual value is the final value of the property.</em></strong></li>
                                     <li>Declared Values
                                         <ul>
                                             <li>Value that is declared to a property of an element.</li>
                                             <li>Values declared are collected and undergoes Cascading.</li>
-                                            <li>*Cascading
-                                                <ul><li>process done by the cascade wherein it sorts the unordered list of Declared values according to their precedence the provides a single cascaded value</li></ul>
+                                            <li type="none"><strong>* Cascading</strong> is a process done by the cascade wherein it sorts the unordered list of Declared values according to their precedence the provides a single cascaded value
                                             </li>
                                         </ul>
                                     </li>
@@ -217,10 +253,8 @@
                                     <li>Specified Values
                                         <ul>
                                             <li>It is the result of the cascaded value undorgoing the defaulting process.</li>
-                                            <li>*Defaulting
-                                                <ul><li>process done when the cascade does not return a value. It finds the specified value through the default values of the properties. Properties that inherit from their parent element has a default value similar to their parent element while other properties that are not inherited properties take their default value from their initial value.</li></ul>
-                                            </li>
-                                            <li>From defaulting process, it uses the keywords 'intial' and 'inherit'.</li>
+                                            <li type="none"><strong>* Defaulting</strong> is a process done when the cascade does not return a value. It finds the specified value through the default values of the properties. Properties that inherit from their parent element has a default value similar to their parent element while other properties that are not inherited properties take their default value from their initial value.</li>
+                                            <li>From defaulting process, it uses the keywords '<strong>intial</strong>' and '<strong>inherit</strong>'.</li>
                                         </ul>
                                     </li>
                                     <li>Computed Values
@@ -265,9 +299,9 @@
                                             <ul>
                                                 <li>Length Units:
                                                     <ol>
-                                                        <li>font-relative: em, ex, ch, rem</li>
-                                                        <li>view-port percentage: vw, vh, vmin, vmax</li>
-                                                        <li>absolute: cm, mm, in, pt, pc, px</li>
+                                                        <li><strong>font-relative</strong>: em, ex, ch, rem</li>
+                                                        <li><strong>view-port percentage</strong>: vw, vh, vmin, vmax</li>
+                                                        <li><strong>absolute</strong>: cm, mm, in, pt, pc, px</li>
                                                     </ol>
                                                 </li>
                                                 <li>Angle Units:
@@ -300,33 +334,33 @@
                                     </li>
                                     <li>Percentages
                                         <ul>
-                                            <li>Number with a percent '%' suffix.</li>
+                                            <li>Number with a percent '<strong>%</strong>' suffix.</li>
                                             <li>Calculated as a percentage of some value (usually taken from the parent element).</li>
                                         </ul>
                                     </li>
                                     <li>URLs and URIs
                                         <ul>
-                                            <li>url() function with an absolute or relative (to the stylesheet) URL parameter.</li>
+                                            <li><strong>url()</strong> function with an absolute or relative (to the stylesheet) URL parameter.</li>
                                             <li>It denotes a pointer to a resource such as image or a font.</li>
                                         </ul>
                                     </li>
                                     <li>Colors
                                         <ul>
                                             <li>color keywords
-                                                <ul><li>ex: red, blue, blackt</li></ul>
+                                                <ul><li><strong>ex:</strong> red, blue, blackt</li></ul>
                                             </li>
                                             <li>RGB hexadecimal notation
-                                                <ul><li>ex: #ffffff</li></ul>
+                                                <ul><li><strong>ex:</strong> #ffffff</li></ul>
                                             </li>
                                             <li>RGB functions
-                                                <ul><li>ex: rgb(255,0,0)</li></ul>
+                                                <ul><li><strong>ex:</strong> rgb(255,0,0)</li></ul>
                                             </li>
                                             <li>HSL functions</li>
                                             <li>Currentcolor, transparent</li>
                                         </ul>
                                     </li>
                                     <li>Strings
-                                        <ul><li>determined by single quotes (') or double quotes (")</li></ul>
+                                        <ul><li>determined by single quotes (<strong>'</strong>) or double quotes (<strong>"</strong>)</li></ul>
                                     </li>
                                     <li>functions</li>
                                     <li>miscellaneous types</li>
