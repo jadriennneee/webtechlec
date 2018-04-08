@@ -1,6 +1,5 @@
 Overview ng WWW (10 Objectives), 
-	1)It is a Web crawler application which performs Web Indexing to obtain all of the 
-	information for a certain topic in the Web.
+	1)It is a Web crawler application which performs Web Indexing to obtain all of the information for a certain topic in the Web.
 	2)It hosts/houses electronic resources.
 	3)Who invented the World Wide Web?
 	4)It is a typical tool used to interact with the Web.
