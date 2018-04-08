@@ -146,6 +146,7 @@ header {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 #nav img {
@@ -167,6 +168,7 @@ header {
     margin-bottom: 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 #nav ul > li > a:hover {
@@ -181,6 +183,10 @@ header {
 
 #nav .list-body ul li:first-child {
     margin-top: 10px;
+}
+
+#nav .list-body ul li {
+    margin-bottom: 0;
 }
 
 #nav .list-body li {
