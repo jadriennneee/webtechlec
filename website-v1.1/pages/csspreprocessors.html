@@ -70,18 +70,23 @@
                 <ol>
                     <li>CSS Preprocessors
                         <ul>
-                            <li>generates CSS using a custom language syntax that typically includes features that don't exist in pure CSS (e.g., variables, control flows, nesting, mixins, functions, etc.).</li>
+                            <li>generates CSS using a custom language syntax that typically includes features that don't exist in pure CSS (<em>e.g., variables, control flows, nesting, mixins, functions, etc.</em>).</li>
                             <li>Example:
                                 <ol type="a">
                                     <li>SASS
                                         <ul>
                                             <li>curly braces can already be omitted.</li>
-                                            <li>Example:
-                                                <ul>
-                                                    <li>@include</li>
-                                                    <li>@mixin</li>
-                                                    <li>@extend</li>
-                                                </ul>
+                                            <li type="none">
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Example:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">@include</span><br>
+                                                            <span class="code element">@mixin</span><br>
+                                                            <span class="code element">@extend</span>
+                                                        </code>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
@@ -96,11 +101,52 @@
                                     <li>Variables
                                         <ul>
                                             <li>Variables store values of attributes which can be reused in any element minimizing the need to rewrite the same code everytime.</li>
-                                            <li>
-                                                <figure>
-                                                    <img src="../assets/css-preprocessors-variables.PNG" alt="css preprocessors">
-                                                    <figcaption>Taken from <a href="https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus" target="_blank">HtMLMAG</a></figcaption>
-                                                </figure>
+                                            <li type="none">
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Sass:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            $font-size: <span class="code value">16px</span>; <br>
+                                                            <span class="code element">div</span> { <br>
+                                                                &nbsp;&nbsp;font-size: <span class="code value">$font-size</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Less:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            @font-size: <span class="code value">16px</span>; <br>
+                                                            <span class="code element">div</span> { <br>
+                                                                &nbsp;&nbsp;font-size: <span class="code value">@font-size</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Stylus:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            font-size = <span class="code value">16px</span> <br>
+                                                            <span class="code element">div</span> <br>
+                                                                &nbsp;&nbsp;font-size <span class="code value">font-size</span>
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">CSS:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">div</span> { <br>
+                                                                &nbsp;&nbsp;font-size: <span class="code value">16 px</span>; <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
@@ -108,11 +154,58 @@
                                         <ul>
                                             <li>Nesting provides a hierarchical structure for developers similar to the HTML code which enables them
                                             to easily understand and read the CSS code.</li>
-                                            <li>
-                                                <figure>
-                                                    <img src="../assets/css-preprocessors-nesting.PNG" alt="css preprocessors">
-                                                    <figcaption>Taken from <a href="https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus" target="_blank">HtMLMAG</a></figcaption>
-                                                </figure>
+                                            <li type="none">
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Sass:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            $link-color: <span class="code value">#999</span>; <br>
+                                                            $link-hover: <span class="code value">#229ed3</span>; <br>
+                                                            <br>
+                                                            <span class="code element">ul</span> { <br>
+                                                                &nbsp;&nbsp;margin: <span class="code value">0</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">li</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;float: <span class="code value">left</span>; <br>
+                                                                &nbsp;&nbsp;} <br> 
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">a</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;color: <span class="code value">$link-color</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code element">&amp;:hover</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: <span class="code value">$link-hover</span>; <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                                &nbsp;&nbsp;} <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="code-topic">
+                                                    <h6 class="code-title">Less:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            @link-color: <span class="code value">#999</span>; <br>
+                                                            @link-hover: <span class="code value">#229ed3</span>; <br>
+                                                            <br>
+                                                            <span class="code element">ul</span> { <br>
+                                                                &nbsp;&nbsp;margin: <span class="code value">0</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">li</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;float: <span class="code value">left</span>; <br>
+                                                                &nbsp;&nbsp;} <br> 
+                                                                <br>
+                                                                &nbsp;&nbsp;<span class="code element">a</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;color: <span class="code value">@link-color</span>; <br>
+                                                                <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code element">&amp;:hover</span> { <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: <span class="code value">@link-hover</span>; <br>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                                                &nbsp;&nbsp;} <br>
+                                                            }
+                                                        </code>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>

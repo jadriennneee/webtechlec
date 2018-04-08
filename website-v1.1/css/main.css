@@ -256,7 +256,7 @@ header {
 }
 
 .pop-up-content {
-    /* display: none;
+     display: none;
     margin: 0 auto;
     background-color: #ffffff;
     color: #000000;
@@ -265,12 +265,12 @@ header {
     padding: 5px 10px;
     z-index: 0;
     transition: 0.3s;
-    position: absolute; */
-    display: none;
+    position: absolute; 
+    /*display: none;*/
 }
 
-.pop-up:hover + .pop-up-content {
-    /* display: inline-block; */
+.pop-up:hover .pop-up-content {
+     display: inline-block; 
 }
 
 .page-button-container {
@@ -316,6 +316,10 @@ h6.code-title {
 code, span.code {
     font-family: monospace;
     font-size: 16px;
+}
+
+code.pop-up{
+	color: black;
 }
 
 span.highlight {
