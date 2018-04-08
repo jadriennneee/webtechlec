@@ -38,6 +38,33 @@ h2::before {
   visibility: hidden;
 }
 
+section#section-about {
+    grid-area: section-about;
+    min-height: 450px;
+    padding: 150px 0;
+}
+
+#section-about-wrapper {
+    width: 30%;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 40px;
+    color: #2C3A47;
+    box-shadow: 10px 10px;
+    background-color: #ffffff;
+}
+
+#section-about-wrapper h1 {
+    font-size: 250%;
+    margin-bottom: 20px;
+}
+
+#section-about-wrapper p {
+    line-height: 1.5;
+    padding: 0 50px;
+}
+
 .btn {
     text-decoration: none;
     text-align: center;
