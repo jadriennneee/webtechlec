@@ -1,21 +1,33 @@
 {
 	"item": [{
-		"question": "A software system used to link one text-based to another.",
-		"answer": "hypertext"
+		"question": "It serves as a tool that allows Web Servers and Web browsers to communicate",
+		"answer": "HTTP"
 	}, {
-		"question": "An extended features of hypertext that handling multimedia.",
-		"answer": "hypermedia"
+		"question": "What is the meaning of MIME?",
+		"answer": "Multimedia-Purpose Internet Mail Extensions"
 	}, {
-		"question": "Who invented the Hypermedia and Hypertext?",
-		"answer": "Ted Nelson"
+		"question": "Allows responses to be stored in the methods for future use.",
+		"answer": "Cacheable Methods"
 	}, {
-		"question": "Gives response to client request.",
-		"answer": "Web Server"
+		"question": "A code used to indicate the status of the Client’s request.",
+		"answer": "Status Code"
 	}, {
-		"question": "On what year did Tim-Berners-Lee first hosted websites?",
-		"answer": "1990"
+		"question": "Provision that allows methods used for authoring the websites remotely.",
+		"answer": "WebDAV"
 	}, {
-		"question": "It is an international organization that provides standards in Web development.",
-		"answer": "W3C"
+		"question": "It is used to identify the data type of the information being sent.",
+		"answer": "MIME-TYPE"
+	}, {
+		"question": "A protocol wherein the Client initiates the transmission of Web resources by sending a request to the server.",
+		"answer": "Request-Response Protocol"
+	}, {
+		"question": "Version of HTTP that supports data compression",
+		"answer": "1.1"
+	}, {
+		"question": "It includes additional information regarding the Client.",
+		"answer": "Header"
+	}, {
+		"question": "A method property that indicates no changes are done in the state of the Server.",
+		"answer": "Safe method"
 	}]
 }
