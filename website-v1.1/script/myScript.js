@@ -94,6 +94,39 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // Modal Event
+    var modal = document.getElementById("myModal");
+    if (modal) {
+        function updatePopUp() {
+            if (window.innerWidth < 991) {
+                var popUps = document.querySelectorAll(".pop-up");
+
+                for (var i = 0; i < popUps.length; i++) {
+                    popUps[i].addEventListener("click", function() {
+                        document.querySelector(".modal-header h2").innerText = this.firstChild.textContent;
+                        document.querySelector(".modal-body p").innerText = this.firstElementChild.firstChild.textContent;
+
+                        // Show the modal
+                        modal.style.display = "block";
+
+                        document.querySelector("#myModal .close").addEventListener("click", function() {
+                            modal.style.display = "none";
+                        });
+
+                        window.addEventListener("click", function(e) {
+                            if (e.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        });
+                    });
+                }
+            }
+        }
+
+        window.addEventListener("resize", updatePopUp);
+        window.dispatchEvent(new Event("resize"));
+    }
+
     // Handle paging
     var pageButtonContainer = document.querySelector(".page-button-container");
     if (pageButtonContainer) {

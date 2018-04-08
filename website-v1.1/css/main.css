@@ -290,12 +290,13 @@ header {
 
 .pop-up {
     color: #59b300;
+    cursor: pointer;
 }
 
 .pop-up-content {
     display: none;
     margin: 0 auto;
-    width:20vw;
+    width: 20vw;
     background-color: #ffffff;
     color: #000000;
     border-radius: 6px;
@@ -304,10 +305,6 @@ header {
     z-index: 0;
     transition: 0.3s;
     position: absolute;
-}
-
-.pop-up:hover .pop-up-content {
-     display: inline-block;
 }
 
 .page-button-container {
@@ -696,9 +693,9 @@ span.id {
 
 .close {
     color: white;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,
@@ -942,6 +939,10 @@ span.id {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .pop-up:hover .pop-up-content {
+         display: inline-block;
+    }
+
     #nav {
         width: 30%;
     }
