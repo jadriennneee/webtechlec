@@ -29,5 +29,20 @@
 	}, {
 		"question": "Allows authors to specify the values of several properties with a single property.",
 		"answer": "Shorthand properties"
+	}, {
+		"question": "CSS uses ___________ to extend the code within a block of CSS code.",
+		"answer": "@extend"
+	}, {
+		"question": "It provides functionality without having to write CSS.",
+		"answer": "CSS Frameworks"
+	}, {
+		"question": "It allows users/developers to make use of the features of the browsers.",
+		"answer": "Polyfills"
+	}, {
+		"question": "CSS uses _________ to include the mixins within the CSS code.",
+		"answer": "@include"
+	}, {
+		"question": "Accepts parameters which can then be used to set the values of the attributes.",
+		"answer": "Mixins"
 	}]
 }
