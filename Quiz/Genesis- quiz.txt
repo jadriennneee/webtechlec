@@ -4,10 +4,11 @@ Overview ng WWW (10 Objectives),
 	2)It hosts/houses electronic resources.
 	3)Who invented the World Wide Web?
 	4)It is a typical tool used to interact with the Web.
-	5&6) What are the the two forms of Application?
+	5) What are the the two forms of Application?
+	6)Where did CERN hosted the developed first website?
 	7)It is a collection of Web resources and applications that serves as a tool for users to share and obtain information through
 	the Internet
-	8)It serves nas a medium between the Web and the Web browser.
+	8)It serves as a medium between the Web and the Web browser.
 	9)A type of website that generates or displays information that varies and dependes on the client.
 	10)A type of website where the information that is displayed does not change or alter.
 
@@ -16,9 +17,8 @@ HTTP(15 objectives)
 	understand requests given by the Web Browser.
 	2)A protocol wherein the Client initiates the transmission of Web resources by sending a request to the server.
 	3)It is used to identify the data type of the information being sent.
-	4)It allows Servers to specify who can access the Web resources (Authentication) and the level of privileges the 
-	Clients can do to the Website (Authorization).
-	5)An HTTP method that echoes the contend of the Client's request.
+	4)It allows Servers to specify who can access the Web resources (Authentication) and the level of privileges the Clients can do to the Website (Authorization).
+	5)An HTTP method that echoes the content of the Client's request.
 	6)An HTTP method that allows Clients to send an information to the Web Server.
 	7)An HTTP method that creates connection to the Server identified by the given URI.
 	8)It already supports data compression wherein content of the message body 

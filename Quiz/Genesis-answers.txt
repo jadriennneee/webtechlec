@@ -1,0 +1,136 @@
+HTML
+1)Spider
+2)Web Server
+3)Sir Tim Berners-Lee
+4)Browser
+5)Switzerland
+6)Ted Nelson
+7)World Wide Web
+8)Internet
+9)Dyanmic
+10) Static
+
+============================================
+HTTP
+1)HTTP
+2)Request-Response Protocol
+3)MIME-TYPE
+4)Authentication and Authorization
+5)TRACE
+6)POST
+7)CONNECT
+8)HTTP 1.1
+9)Safe method
+10)Cacheable Methods
+11)Entity
+12)Request
+13)Header
+14)Payload
+15)Status Code
+============================================
+HTML
+1)HTML
+2)XML
+3)Ian Hickson
+4)WAI-ARIA attributes
+5)Global Attributes
+6)Character References
+7)Strict
+8)Transitional
+9)Custom Non-visible Data Attributes
+10)XHTML
+
+Coding:
+1) <body>
+	  <p>TechWeb!</p>
+   </body>
+2)<ol>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+	<li>PHP</li>
+  </ol>
+3)<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+	<li>PHP</li>
+  </ul>
+4)<!DOCTYPE html>
+5)<html>
+	<head>
+	<title> </title>
+	</head>
+
+	<body> </body>
+  </html>
+===========================================
+CSS:
+1)External
+2)CSS Rules/Style Rules
+3)Simple Selector
+4)Pseudo Classes
+5)Shorthand properties
+
+Coding:
+	1) Fill in the blank to apply white text color to the paragraph.
+		p {color: #FFF;}
+	2) Fill in the blanks to call an external stylesheet called "test.css":
+		<head>
+			<link rel="stylesheet" href="test.css">
+		</head>
+	3) Fill in the blanks to give yellow background color to the element with id="intro", and black text color to the class="mytext":
+ 		#intro{
+   			background-color: yellow;
+		}
+  
+		.mytext{
+ 			color: black;
+		}
+	4) Turn the text into a comment:
+  		<--This is a comment-->
+	5) Set the font-size of the paragraph to 20px
+		p { font-size:20px;}
+	6) How do you select all p elements inside a div element?(Provide an example)
+		div p {
+		  color: black;
+		}
+	7) How do you group selectors? (Provide an example)
+		h1,h2, h3 {
+			text-align: center;
+		}
+	8) Match the first <i> element that is a descendant of the <p> element.
+		p i{
+
+		}
+	9) Match all <i> elements in all first child <p> elements
+		i:firstchild {}
+	10) Provide the basic syntax of vendor specific extensions.
+		'-' + vendor identifier + '-' + meaningful name
+		'_' + vendor identifier + '-' + meaningful name
+===========================================
+JavaScript
+1)JavaScript
+2)Embedded/Internal
+3)(Traditional) Browser Object Model(BOM) API (non-standardized)
+4)open()
+5)Navigator
+6)appCodeName
+7)History
+8)length
+9)deep cloning
+10)Document Object Model (DOM) API
+
+	Coding:
+	1) How to print "Hello World" to the browser?
+	<script>
+		<alert(“Hello World!”)
+	<script>
+	2) What attribute and what value is used along with the script tag?
+		<script  type="text/javascript">
+	3) How does the single line comment look like?
+		//this is a singlecomment line
+	4) Use the corresponding keyword to complete the statement.
+		var my_variable = 32;
+	5) How to declare variables in JavaScript?
+		var var;
