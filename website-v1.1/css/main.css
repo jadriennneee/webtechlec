@@ -157,7 +157,7 @@ header {
     background-color: #222f3e;
 }
 
-#nav .currentTopic {
+#nav li.current li.currentTopic a{
 	color: #4db749;
 }
 
