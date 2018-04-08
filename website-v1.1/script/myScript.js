@@ -116,6 +116,13 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("#backPageButton").addEventListener("click", redirect);
     }
 
+    // Go to quiz
+    if (document.getElementById("takeQuizButton")) {
+        document.getElementById("takeQuizButton").addEventListener("click", function() {
+            window.location.href = `../quiz/${this.getAttribute("data-redirect")}.html`;
+        });
+    }
+
     // Quiz dashboard
     var quizBoards = document.querySelectorAll(".quiz-card");
     if (quizBoards) {

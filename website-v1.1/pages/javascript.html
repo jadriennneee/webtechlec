@@ -103,21 +103,6 @@
                     <li>Inline
                         <ul>
                             <li>Script is already included within the HTML document.</li>
-                            <li type="none">
-                                <div class="code-topic">
-                                    <h6 class="code-title">Example:</h6>
-                                    <div class="code-container">
-                                        <code>
-                                            <span class="code element">
-                                                <pre><xmp><p><button onclick = 'alert("You Clicked Me!");'> Click Me! </button></p></xmp></pre>
-                                            </span>
-                                        </code>
-                                    </div>
-                                </div>
-                            </li>
-                            <li type="none">
-                                <strong><pre><xmp><noscript> - alternative the browser will have if scripting is not supported</xmp></pre></strong>
-                            </li>
                         </ul>
                     </li>
                 </ol>
@@ -326,13 +311,18 @@
             <section id="tableOfContents">
                 <ol>
                     <h5>Contents</h5>
-                    <ol>
-                        <li data-target="#whatIsJS" class="content-list">What is JavaScript?</li>
-                        <li data-target="#javaScriptPlacement" class="content-list">Different Ways of JavaScript Placement</li>
-                        <li data-target="#bom" class="content-list">Browser Object Model(BOM) API</li>
-                        <li data-target="#dom" class="content-list">Document Object Model (DOM) API</li>
-                    </ol>
+                    <li data-target="#whatIsJS" class="content-list">What is JavaScript?</li>
+                    <li data-target="#javaScriptPlacement" class="content-list">Different Ways of JavaScript Placement</li>
+                    <li data-target="#bom" class="content-list">Browser Object Model(BOM) API</li>
+                    <li data-target="#dom" class="content-list">Document Object Model (DOM) API</li>
                 </ol>
+
+                <div class="take-quiz-container">
+                    <div class="take-quiz-wrapper">
+                        <h5>Take the Quiz/Challenge Now</h5>
+                        <button id="takeQuizButton" data-redirect="js-quiz">Go</button>
+                    </div>
+                </div>
             </section>
         </main>
 

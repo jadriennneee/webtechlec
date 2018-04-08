@@ -728,6 +728,7 @@ span.id {
         font-weight: bold;
         font-style: italic;
         margin-bottom: 10px;
+        color: #1a2228;
     }
 
     #tableOfContents h6 {
@@ -767,6 +768,25 @@ span.id {
 
     #tableOfContents .current-section {
         color: #30ad63;
+    }
+
+    #tableOfContents .take-quiz-container {
+        margin-left: 20px;
+    }
+
+    #tableOfContents .take-quiz-wrapper {
+        padding: 30px 20px;
+    }
+
+    #takeQuizButton {
+        background-color: #30ad63;
+        padding: 10px;
+        border: 0;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        min-width: 99px;
     }
 
     #main.grid {
