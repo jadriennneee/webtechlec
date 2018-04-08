@@ -116,12 +116,22 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("#backPageButton").addEventListener("click", redirect);
     }
 
+    // Quiz dashboard
+    var quizBoards = document.querySelectorAll(".quiz-card");
+    if (quizBoards) {
+        for (var i = 0; i < quizBoards.length; i++) {
+            quizBoards[i].addEventListener("click", function() {
+                window.location.href = this.getAttribute("data-quizTarget");
+            })
+        }
+    }
+
     // Quiz
     var quizContainer = document.querySelector(".quiz-container");
-    var filePath = "../script/" + quizContainer.getAttribute("data-quizName") + ".json";
     var quizCopy = null;
 
     if (quizContainer) {
+        var filePath = "../script/" + quizContainer.getAttribute("data-quizName") + ".json";
         function generateQuiz(quiz) {
             console.log("Generating quiz...");
             var listOfQuestions = document.createElement("ol");
