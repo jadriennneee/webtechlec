@@ -273,8 +273,8 @@ header {
     position: absolute;
 }
 
-.pop-up:hover + .pop-up-content {
-    /* display: inline-block; */
+.pop-up:hover .pop-up-content {
+     display: inline-block; 
 }
 
 .page-button-container {
