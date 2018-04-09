@@ -1,0 +1,33 @@
+{
+	"item": [{
+		"question": "It provides code in which users can interact with the webpage.",
+		"answer": "JavaScript"
+	}, {
+		"question": "It is a set of objects that comprises various elements of the browser. (Answer in complete form)",
+		"answer": "Browser Object Model"
+	}, {
+		"question": "It refers to the name of the browser.",
+		"answer": "appCodeName"
+	}, {
+		"question": "It refers to the number of elements in the history list.",
+		"answer": "length"
+	}, {
+		"question": "It creates a copy of the entire structure.",
+		"answer": "deep cloning"
+	}, {
+		"question": "An API that allows access to the HTML document from within scripts associated with the Web page. (Answer in complete form)",
+		"answer": "Document Object Model"
+	}, {
+		"question": "Execution is deferred when script has been downloaded.",
+		"answer": "defer"
+	}, {
+		"question": "It is a method of the browser's window that posts a message dialog box?",
+		"answer": "alert()"
+	}, {
+		"question": "Use the corresponding keyword to complete the statement. ___ my_variable = 32;",
+		"answer": "var my_variable = 32;"
+	}, {
+		"question": "Keyword used to declare variables in JavaScript?",
+		"answer": "var"
+	}]
+}

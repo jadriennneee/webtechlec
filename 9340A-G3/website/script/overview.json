@@ -1,0 +1,33 @@
+{
+	"item": [{
+		"question": "A software system used to link one text-based to another.",
+		"answer": "hypertext"
+	}, {
+		"question": "An extended feature of hypertext that handles multimedia.",
+		"answer": "hypermedia"
+	}, {
+		"question": "Who invented the terms Hypermedia and Hypertext?",
+		"answer": "Ted Nelson"
+	}, {
+		"question": "Gives response to Web Client request.",
+		"answer": "Web Server"
+	}, {
+		"question": "On what year did Tim-Berners-Lee first hosted websites?",
+		"answer": "1990"
+	}, {
+		"question": "It is an international organization that provides standards in Web development.",
+		"answer": "W3C"
+	}, {
+		"question": "It is a typical tool used to interact with the Web.",
+		"answer": "Browser"
+	}, {
+		"question": "It serves as a medium between the Web and the Web browser.",
+		"answer": "Internet"
+	}, {
+		"question": "It is a collection of Web resources and applications that serves as a tool for users to share and obtain information through the Internet",
+		"answer": "World Wide Web"
+	}, {
+		"question": "Who invented the World Wide Web?",
+		"answer": "Sir Tim Berners-Lee"
+	}]
+}

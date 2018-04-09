@@ -1,0 +1,48 @@
+{
+	"item": [{
+		"question": "It is used to specify how websites/documents are displayed/presented. (Answer in abbreviated form)",
+		"answer": "CSS"
+	}, {
+		"question": "Fill in the blank to apply white text color to the paragraph. p { ____#FFF; }",
+		"answer": "color:"
+	}, {
+		"question": "Turn the text into a comment: __This is a comment__",
+		"answer": "<--This is a comment-->"
+	}, {
+		"question": "How do you select the first-child of p?",
+		"answer": "p:first-child"
+	}, {
+		"question": "CSS code for setting the font-size to 50px",
+		"answer": "font-size: 50px;"
+	}, {
+		"question": "Match all i elements in all first child p elements",
+		"answer": "i:firstchild {}"
+	}, {
+		"question": "He proposed the CSS",
+		"answer": "Hakon Wium Lee "
+	}, {
+		"question": "At-Rule used for defining font-styles which are typically Google Fonts",
+		"answer": "@font-face"
+	}, {
+		"question": "It has the highest precedence among all other precedence factors",
+		"answer": "Important Declarations"
+	}, {
+		"question": "Allows authors to specify the values of several properties with a single property.",
+		"answer": "Shorthand properties"
+	}, {
+		"question": "CSS uses ___________ to extend the code within a block of CSS code.",
+		"answer": "@extend"
+	}, {
+		"question": "It provides functionality without having to write CSS.",
+		"answer": "CSS Frameworks"
+	}, {
+		"question": "It allows users/developers to make use of the features of the browsers.",
+		"answer": "Polyfills"
+	}, {
+		"question": "CSS uses _________ to include the mixins within the CSS code.",
+		"answer": "@include"
+	}, {
+		"question": "Accepts parameters which can then be used to set the values of the attributes.",
+		"answer": "Mixins"
+	}]
+}

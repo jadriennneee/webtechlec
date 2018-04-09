@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <title>techweb | CSS</title>
+</head>
+
+<body>
+   <header>
+        <div id="headerWrapper">
+            <h1 id="branding">
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
+        </div>
+        <progress id="progressBar" value="0" max="100"></progress>
+    </header>
+
+    <nav id="nav">
+        <div id="navHeader">
+            <h1>
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
+        </div>
+
+        <ul>
+            <li>
+                <a href="../index.html"><img src="../img/homewhite.png" alt="Home">Home</a>
+            </li>
+            <li class="current">
+                <a class="list-header">
+                    <img src="../img/topicswhite.png" alt="Topics" class="collapse-header">Topics
+                </a>
+                <div class="list-body">
+                    <ul>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="httpfundamentals.html">HTTP</a></li>
+                        <li><a href="htmldoc.html">HTML</a></li>
+                        <li><a href="uri.html">URI</a></li>
+                        <li class="currentTopic"><a href="cssoverview.html">CSS</a></li>
+                        <li><a href="javascript.html">JavaScript</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="../quiz/quiz-dashboard.html"><img src="../img/quizwhite.png" alt="Quizzes">Quiz</a>
+            </li>
+            <li>
+                <a href="../resources.html"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
+            </li>
+            <li>
+                <a href="../about_us.html"><img src="../img/aboutuswhite.png" alt="About Us">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <main id="main" class="grid">
+            <section id="mainContent">
+                <h1>Cascading Style Sheet (CSS)</h1>
+
+                <h2 id="cssSelectors" class="topic-title">CSS Selectors</h2>
+                <ul>
+                    <li>
+                        Selector
+                        <ul>
+                            <li>Structure used as a condition in a CSS Rule</li>
+                            <li>It is used to specify the HTML elements we want to style.</li>
+                        </ul>
+                    </li>
+                    <li>Types of Selector:
+                        <ol>
+                            <li>Simple Selector
+                                <ul>
+                                    <li>It does not contain any combinators which means that it cannot contain other types of selectors or Universal selectors.</li>
+                                    <li>It starts with a type selector (HTML element) or a Universal Selector.</li>
+                                    <li type="none">
+                                        <div class="code-topic">
+                                            <h6 class="code-title">Example:</h6>
+                                            <div class="code-container">
+                                                <code>
+                                                    <span class="code element">h1</span> { text-align: <span class="code value">center</span>; }
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>Types of Simple Selectors:
+                                        <ol type="a">
+                                            <li>Universal Selector
+                                                <ul>
+                                                    <li>It is denoted by an asterisk (<strong>*</strong>) symbol.</li>
+                                                    <li>It means that it targets any element or component of the document.</li>
+                                                    <li type="none">
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">p</span> { font-size: <span class="code value">20px</span>; }
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Type Selector
+                                                <ul>
+                                                    <li>It specifies the element type specifically the HTML element allowing all elements that matches the indicated type Selector to be styled.</li>
+                                                    <li type="none">
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">p</span> { color: <span class="code value">red</span>; }
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>ID Selector
+                                                <ul>
+                                                    <li>It is always introduced by the pound (<strong>#</strong>) sign.</li>
+                                                    <li>This type of selector targets elements that has an attribute called '<em>id</em>' and the values of the attributes matches the specified ID selector.</li>
+                                                    <li type="none">
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">#main</span> { padding: <span class="code value">10px</span>; }
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Class Selector
+                                                <ul>
+                                                    <li>It is always introduced by the period (<strong>.</strong>).</li>
+                                                    <li>It is somewhat similar to the ID Selector but it uses the values of the '<em>class</em>' attribute instead.</li>
+                                                    <li type="none">
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">.container</span> { margin-bottom: <span class="code value">10px</span>; }
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        It can also target class attributes with 2 or more values.
+                                                    </li>
+                                                    <li type="none">
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">p</span><span class="code class">.feature.quote</span> { text-align: <span class="code value">justfiy</span>; }
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Attribute Selector
+                                                <ul>
+                                                    <li>It is a generic way of associating design to the attributes of the document.</li>
+                                                    <li>It is indicated by a square brackets (<strong>[]</strong>).</li>
+                                                    <li type="none">
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">img<span class="code misc">[<span class="code value">alt</span>]</span></span>
+                                                                    <span class="code">{ border: <span class="code value">1px solid green</span>; }</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>Wildcards used in the selector:
+                                                        <ol>
+                                                            <li>
+                                                                <kbd>*=</kbd>
+                                                                <ul>
+                                                                    <li>This targets all attributes that contains the specified value.</li>
+                                                                    <li>It also means '<em>contains</em>'.</li>
+                                                                    <li type="none">
+                                                                        <div class="code-topic">
+                                                                            <h6 class="code-title">Example:</h6>
+                                                                            <div class="code-container">
+                                                                                <code class="pop-up">
+                                                                                    <span class="code element">a</span><span class="code misc">[</span><span class="code value">href</span>
+                                                                                    *=
+                                                                                    <span class="code input-value">"google"</span><span class="code misc">]</span>
+
+                                                                                    <span class="pop-up-content">this targets all href attributes that has a value containing the word 'google'</span>
+                                                                                </code>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <kbd>$=</kbd>
+                                                                <ul>
+                                                                    <li>This targets all attributes with values having a suffix similar to the value indicated in the selector.</li>
+                                                                    <li type="none">
+                                                                        <div class="code-topic">
+                                                                            <h6 class="code-title">Example:</h6>
+                                                                            <div class="code-container">
+                                                                                <code class="pop-up">
+                                                                                    <span class="code element">a</span><span class="code misc">[</span><span class="code value">href</span>
+                                                                                    $=
+                                                                                    <span class="code input-value">".png"</span><span class="code misc">]</span>
+
+                                                                                    <span class="pop-up-content">this targets all href attributes with values ending in <strong>.png</strong></span>
+                                                                                </code>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>^=
+                                                                <ul>
+                                                                    <li>Instead of suffix, similar to No. 2, it targets all attrbutes with values having a prefix similar to the value indicated in the selector.
+                                                                    </li>
+                                                                    <li type="none">
+                                                                        <div class="code-topic">
+                                                                            <h6 class="code-title">Example:</h6>
+                                                                            <div class="code-container">
+                                                                                <code class="pop-up">
+                                                                                    <span class="code element">a</span><span class="code misc">[</span><span class="code value">href</span>
+                                                                                    ^=
+                                                                                    <span class="code input-value">https</span><span class="code misc">]</span>
+
+                                                                                    <span class="pop-up-content">this targets all href attributes with values starting in <strong>https</strong></span>
+                                                                                </code>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>|=
+                                                                <ul>
+                                                                    <li>This targets attributes who has a value that has either an exact match or exact match with a hyphen/dash (&mdash;).</li>
+                                                                    <li type="none">
+                                                                        <div class="code-topic">
+                                                                            <h6 class="code-title">Example:</h6>
+                                                                            <div class="code-container">
+                                                                                <code class="pop-up">
+                                                                                    <span class="code element">p</span><span class="code misc">[</span><span class="code value">lang</span>
+                                                                                    |=
+                                                                                    <span class="code input-value">en</span><span class="code misc">]</span>
+
+                                                                                    <span class="pop-up-content">this targets all lang attributes with values <strong>en</strong> or &mdash;<strong>en</strong></span>
+                                                                                </code>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>~=
+                                                                <ul>
+                                                                    <li>This targets all attributes who has a value of one or more such that either of the values matches the indicated value for the selector.</li>
+                                                                    <li type="none">
+                                                                        <div class="code-topic">
+                                                                            <h6 class="code-title">Example:</h6>
+                                                                            <div class="code-container">
+                                                                                <code class="pop-up">
+                                                                                    <span class="code element">p</span><span class="code misc">[</span><span class="code value">class</span>
+                                                                                    ~=
+                                                                                    <span class="code input-value">warn</span><span class="code misc">]</span>
+
+                                                                                    <span class="pop-up-content">this targets all p elements with class having <strong>warn</strong> as one of its values</span>
+                                                                                </code>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Selector Group
+                                <ul>
+                                    <li>It is a comma-separated list of selectors to represent the union of all selectors which has a similar declaration.</li>
+                                    <div class="code-topic">
+                                        <h6 class="code-title">Syntax:</h6>
+                                        <div class="code-container">
+                                            <code>
+                                                <span class="code element">h1</span> { background-color: <span class="code value">#f4f4f4</span>; } <br>
+                                                <span class="code element">h2</span> { background-color: <span class="code value">#f4f4f4</span>; } <br>
+                                                <span class="code element">h3</span> { background-color: <span class="code value">#f4f4f4</span>; }
+                                            </code>
+                                        </div>
+                                        <br>
+                                        <p><em>Is the same as:</em></p>
+                                        <div class="code-container">
+                                            <code>
+                                                <span class="code element">h1, h2, h3</span> { background-color: <span class="code value">#f4f4f4</span>; }
+                                            </code>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>Combinators
+                                <ul>
+                                    <li>It is used to prepend/add another sequence of a selector.</li>
+                                    <li>It is a way of combining sequence of simple elements.</li>
+                                    <li>Types of Combinators:
+                                        <ol type="a">
+                                            <li>Descendant Combinator
+                                                <ul>
+                                                    <li> Uses
+                                                        <span class="pop-up">whitespace<span class="pop-up-content">indicated by a tab, space, linefeed, carriage return, etc.</span>
+                                                        </span>to combine selectors.
+                                                    </li>
+                                                    <li>It selects elements which are direct descendants of the element indicated before it.</li>
+                                                    <li type="none">
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code class="pop-up">
+                                                                    <span class="code element">div p</span>
+
+                                                                    <span class="pop-up-content">this targets all href attributes that has a value containing the word 'google'</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Child Combinator
+                                                <ul>
+                                                    <li>Uses the greater than (<strong>></strong>) sign to combine sequence of selectors.</li>
+                                                    <li>It selects elements which are direct children of the element indicated before it.</li>
+                                                    <li type="none">
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code class="pop-up">
+                                                                    <span class="code element">div > p</span>
+
+                                                                    <span class="pop-up-content">targets all p elements who are direct children of the div element.</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Sibling Combinators
+                                                <ol>
+                                                    <li>Adjacent Sibling Combinator
+                                                        <ul>
+                                                            <li>Uses the plus (<strong>+</strong>) sign to combine sequence of selectors.</li>
+                                                            <li>It selects elements that are exactly after the element indicated before it.</li>
+                                                            <li type="none">
+                                                                <div class="code-topic">
+                                                                    <h6 class="code-title">Example:</h6>
+                                                                    <div class="code-container">
+                                                                        <code class="pop-up">
+                                                                            <span class="code element">div + p</span>
+
+                                                                            <span class="pop-up-content">targets all p elements which are exactly after the ending tag of thediv element.</span>
+                                                                        </code>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>General Sibling Combinator
+                                                        <ul>
+                                                            <li>Uses the tilde (<strong>~</strong>) to combine sequence of selectors.</li>
+                                                            <li>It selects all elements that follows the element indicated before it as long as they share the same parent.</li>
+                                                            <li type="none">
+                                                                <div class="code-topic">
+                                                                    <h6 class="code-title">Example:</h6>
+                                                                    <div class="code-container">
+                                                                        <code class="pop-up">
+                                                                            <span class="code element">div ~ p</span>
+
+                                                                            <span class="pop-up-content">targets all p elements that follows after the div element even if they are not exactly after the div element.</span>
+                                                                        </code>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Pseudo-Classes
+                                <ul>
+                                    <li>These are used to target elements that has a changed state typically from a user interaction.</li>
+                                    <li>It is indicated by a colon (<strong>:</strong>)</li>
+                                    <li>Types of Pseudo-Classes:
+                                        <ol type="a">
+                                            <li>Dynamic Pseudo-Class
+                                                <ol type="i">
+                                                    <li>link-pseudo-class
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">:link</span><br>
+                                                                    <span class="code element">:visited</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>user action pseudo-class
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">:hover</span><br>
+                                                                    <span class="code element">:active</span><br>
+                                                                    <span class="code element">:focus</span><br>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>Target Pseudo-Class
+                                                <ul>
+                                                    <li>It is usually associated with the href attribute.
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">:target</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Language Pseudo-Class
+                                                <ul>
+                                                    <li>It specifies the way of presenting text.
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">:lang()</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>UI Element States
+                                                <ul>
+                                                    <li>It is commonly used with forms.
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">:enabled</span><br>
+                                                                    <span class="code element">:disabled</span><br>
+                                                                    <span class="code element">:checked</span><br>
+                                                                    <span class="code element">:indeterminate</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Structural Pseudo-Class
+                                                <ul>
+                                                    <li>It is associated with elements in the document tree.
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">:root</span><br>
+                                                                    <span class="code element">:first-child</span><br>
+                                                                    <span class="code element">:only-child</span><br>
+                                                                    <span class="code element">:nth-child()</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Negation
+                                                <ul>
+                                                    <li>It negates the specified value for the pseudo-class.
+                                                        <div class="code-topic">
+                                                            <h6 class="code-title">Example:</h6>
+                                                            <div class="code-container">
+                                                                <code>
+                                                                    <span class="code element">:not()</span>
+                                                                </code>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>Pseudo-Elements
+                                        <ul>
+                                            <li>In CSS3, it is indicated by a double colon (<strong>::</strong>).</li>
+                                            <li type="none">
+                                                 <div class="code-topic">
+                                                    <h6 class="code-title">Example:</h6>
+                                                    <div class="code-container">
+                                                        <code>
+                                                            <span class="code element">:first-letter</span><br>
+                                                            <span class="code element">::before</span><br>
+                                                            <span class="code element">::after</span>
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <div class="page-button-container" data-pages="4" data-currentPage="2">
+                    <button id="backPageButton" class="page-button" data-target="cssoverview.html">&#9112; Previous</button>
+                    <h5>Page 2 of 4</h5>
+                    <button id="nextPageButton" class="page-button" data-target="cssprecedence.html">Next &#9112;</button>
+                </div>
+            </section>
+
+            <section id="tableOfContents">
+                <ol>
+                    <h5>Contents</h5>
+
+                    <h6>Page 1</h6>
+                    <ol>
+                        <li data-target="cssoverview.html#whatIsCss" class="content-list">What is CSS?</li>
+                        <li data-target="cssoverview.html#cssVersionHistory" class="content-list">Version History</li>
+                        <li data-target="cssoverview.html#htmlStyleSheets" class="content-list">HTML Stylesheets</li>
+                        <li data-target="cssoverview.html#cssStatements" class="content-list">CSS Statements</li>
+                    </ol>
+
+                    <h6 class="current-page-header">Page 2</h6>
+                    <ol><li data-target="#cssSelectors" class="content-list">CSS Selectors</li></ol>
+
+                    <h6>Page 3</h6>
+                    <ol>
+                        <li data-target="cssprecedence.html#cssPrecedence" class="content-list">CSS Rule Precedence</li>
+                        <li data-target="cssprecedence.html#cssdeclarations" class="content-list">CSS Declarations</li>
+                    </ol>
+
+                    <h6>Page 4</h6>
+                    <ol><li data-target="csspreprocessors.html#cssPreprocessors" class="content-list">CSS Preprocessors, Frameworks and Polyfills</li></ol>
+                </ol>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="content-wrap">
+                <p>IT 324 Web Tech 9340A, 2018</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="overlay"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Test</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="../script/myScript.js"></script>
+    </footer>
+        </div>
+    </footer>
+</body>
+</html>

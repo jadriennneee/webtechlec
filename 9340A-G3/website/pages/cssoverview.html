@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <title>techweb | CSS</title>
+</head>
+
+<body>
+    <header>
+        <div id="headerWrapper">
+            <h1 id="branding">
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
+        </div>
+        <progress id="progressBar" value="0" max="100"></progress>
+    </header>
+
+    <nav id="nav">
+        <div id="navHeader">
+            <h1>
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
+        </div>
+
+        <ul>
+            <li>
+                <a href="../index.html"><img src="../img/homewhite.png" alt="Home">Home</a>
+            </li>
+            <li class="current">
+                <a class="list-header">
+                    <img src="../img/topicswhite.png" alt="Topics" class="collapse-header">Topics
+                </a>
+                <div class="list-body">
+                    <ul>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="httpfundamentals.html">HTTP</a></li>
+                        <li><a href="htmldoc.html">HTML</a></li>
+                        <li><a href="uri.html">URI</a></li>
+                        <li class="currentTopic"><a href="cssoverview.html">CSS</a></li>
+                        <li><a href="javascript.html">JavaScript</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="../quiz/quiz-dashboard.html"><img src="../img/quizwhite.png" alt="Quizzes">Quiz</a>
+            </li>
+            <li>
+                <a href="../resources.html"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
+            </li>
+            <li>
+                <a href="../about_us.html"><img src="../img/aboutuswhite.png" alt="About Us">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <main id="main" class="grid">
+            <section id="mainContent">
+                <h1>Cascading Style Sheet (CSS)</h1>
+
+                <h2 id="whatIsCss" class="topic-title">What is CSS?</h2>
+                <ul>
+                    <li>It is used to specify how websites/documents are displayed/presented. It is purposely used for presentation aspects such as for fonts, colors, and screen layouts of HTML, XML, SVG, MathML documents and other documents using a <span class="pop-up">markup language <span class="pop-up-content"> languages used to indicate how documents are presented or structured. It uses tags to define the structure of the document.</span></span>.</li>
+                </ul>
+
+                <hr>
+
+                <h2 id="cssVersionHistory" class="topic-title">Version History (a.k.a 'The CSS Saga')</h2>
+                <ul>
+                    <li>1994
+                        <ul>
+                            <li><a href="https://www.w3.org/People/howcome/" target="_blank">Hakon Wium Lee</a> released the draft of 'Cascading HTML Style Sheets' along  with Bert Bos who was, at that time, developing a browser name Argo, which supports its own stylesheet.</li>
+                            <li>The <a href="https://www.w3.org/People/howcome/p/cascade.html" target="_blank">proposal</a> for 'Cascading HTML Style Sheets' was launched.</li>
+                        </ul>
+                    </li>
+                    <li>1996
+                        <ul>
+                            <li>CSS Level 1 was published as a W3C Recommendation
+                                <ul>
+                                    <li>CSS Level 1 supports the following features:
+                                        <ul data-type="checkmark">
+                                            <li>font properties</li>
+                                            <li>text attributes</li>
+                                            <li>alignment of text</li>
+                                            <li>tables</li>
+                                            <li>images</li>
+                                            <li>text colors</li>
+                                            <li>backgrounds</li>
+                                            <li>word spacing</li>
+                                            <li>margins</li>
+                                            <li>borders</li>
+                                            <li>padding</li>
+                                            <li>positioning</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Mozilla browser was the first ever browser to support CSS.</li>
+                        </ul>
+                    </li>
+                    <li>1998
+                        <ul>
+                            <li>CSS Level 2 became a W3C Recommendation</li>
+                            <li>Features which were not included in CSS Level 1 were added to CSS Level 2
+                                <ul>
+                                    <li>CSS Level 2 added the following features:
+                                        <ul data-type="checkmark">
+                                            <li>z-index</li>
+                                            <li>media types</li>
+                                            <li>bidirectional text</li>
+                                            <li>absolute, relative and fixed positioning</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>The new browser 'Opera' was released which supports CSS.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        2011
+                        <ul><li>W3C released CSS Level 2.1 which fixes errors/bugs in CSS Level 2 and fixed its browser function capabilities.</li></ul>
+                    </li>
+                    <li>Around 2012
+                        <ul>
+                            <li>CSS Level 3 was released which was a modular approach to CSS Development (as opposed to the 'monolithic' specification
+                                of CSS Level 2.1).
+                                <ul>
+                                    <li>The following are the 4 modules which were released as formal recommendation:
+                                        <ul data-type="checkmark">
+                                            <li>color</li>
+                                            <li>selectors level 3</li>
+                                            <li>namespaces</li>
+                                            <li>media queries</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h2 id="htmlStyleSheets" class="topic-title">HTML Style Sheets</h2>
+                <ul>
+                    <li>Three Main source styles for HTML Documents:</li>
+                    <ol type="A">
+                        <li>Author Style
+                            <ol type="i">
+                                <li>External
+                                    <ul>
+                                        <li><em>a.k.a 'Linked Stylesheet'</em> which is recommended because it provides easier caching and it can be edited easily as well as it can be used in multiple sites and documents.</li>
+                                        <li>These are stylesheets separated from the HTML documents.</li>
+                                    </ul>
+                                </li>
+                                <li>Embedded
+                                    <ul>
+                                        <li><em>a.k.a 'Internal Stylesheet'</em> which is not very much recommended because since it is internal, it cannot be used by other sites/documents.</li>
+                                        <li>These are style sheets defined within the HTML Document.</li>
+                                    </ul>
+                                </li>
+                                <li>Inline
+                                    <ul><li>These style sheets are defined within the HTML tags.</li></ul>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>User Styles
+                            <ul>
+                                <li>These are non-standard styles such that it allows users to provide their own style sheet or preferred layout for the website.</li>
+                                <li>Some browsers also provide alternative styles through plugins and extensions. For example, Chrome's extension called 'Stylish Extension' provides different themes for different websites which the users can choose from.</li>
+                            </ul>
+                        </li>
+                        <li>User Agent Styles
+                            <ul><li>Browsers provide their own/default style sheet in rendering the websites.</li></ul>
+                        </li>
+                    </ol>
+                </ul>
+
+                <hr>
+
+                <h2 id="cssStatements" class="topic-title">CSS Statements</h2>
+                <ol>
+                    <li>At-Rules
+                        <ul>
+                            <li>these are commonly denoted with an annotation '<strong>@</strong>'</li>
+                            <li>Example:
+                                <ul>
+                                    <li><span class="code highlight misc">@charset</span></li>
+                                    <li><span class="code highlight misc">@import</span></li>
+                                    <li><span class="code highlight misc">@namespace</span></li>
+                                    <li>
+                                        <span class="code highlight misc">@font-face</span>
+                                        <ul type="none">
+                                            <li>At-Rule used for defining font-styles which are typically Google Fonts</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="code highlight misc">@keyframes</span>
+                                        <ul type="none">
+                                            <li>At-Rule used for animations</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <em>* Nested At-Rules</em>
+                                <ul type="none">
+                                    <li>These are At-Rules within an At-Rule</li>
+                                    <li>Example: <span class="code highlight misc">@media</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>CSS Rule Sets
+                        <ul>
+                            <li><em>a.k.a 'CSS Rules'/ 'Style Rules'</em></li>
+                            <li>consists of a selector followed by a brace-enclosed declaration block that contains 0 or more declarations that end in semi-colon(<strong>;</strong>).</li>
+                        </ul>
+
+                        <div class="code-topic">
+                            <h6 class="code-title">Syntax:</h6>
+                            <ul class="syntax-list">
+                                <li><span class="code highlight element">body</span> - selector<br></li>
+                                <li><span class="code highlight">background-color: <span class="code value">#f4f4f4</span>;</span> - declaration block</li>
+                            </ul>
+                            <div class="code-container">
+                                <code>
+                                    <span class="code element">body</span> { <br>
+                                        &nbsp;&nbsp;font-family: <span class="code value">Arial</span>, <span class="code value"> sans-serif</span>;<br>
+                                        &nbsp;&nbsp;background-color: <span class="code value">#f4f4f4</span>; <br>
+                                    }
+                                </code>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="page-button-container" data-pages="4" data-currentPage="1">
+                    <button id="backPageButton" class="page-button">&#9112; Previous</button>
+                    <h5>Page 1 of 4</h5>
+                    <button id="nextPageButton" class="page-button" data-target="cssselectors.html">Next &#9112;</button>
+                </div>
+            </section>
+
+            <section id="tableOfContents">
+                <ol>
+                    <h5>Contents</h5>
+
+                    <h6 class="current-page-header">Page 1</h6>
+                    <ol>
+                        <li data-target="#whatIsCss" class="content-list">What is CSS?</li>
+                        <li data-target="#cssVersionHistory" class="content-list">Version History</li>
+                        <li data-target="#htmlStyleSheets" class="content-list">HTML Stylesheets</li>
+                        <li data-target="#cssStatements" class="content-list">CSS Statements</li>
+                    </ol>
+
+                    <h6>Page 2</h6>
+                    <ol><li data-target="cssselectors.html#cssSelectors" class="content-list">CSS Selectors</li></ol>
+
+                    <h6>Page 3</h6>
+                    <ol>
+                        <li data-target="cssprecedence.html#cssPrecedence" class="content-list">CSS Rule Precedence</li>
+                        <li data-target="cssprecedence.html#cssdeclarations" class="content-list">CSS Declarations</li>
+                    </ol>
+
+                    <h6>Page 4</h6>
+                    <ol><li data-target="csspreprocessors.html#cssPreprocessors" class="content-list">CSS Preprocessors, Frameworks and Polyfills</li></ol>
+                </ol>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="content-wrap">
+                <p>IT 324 Web Tech 9340A, 2018</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="overlay"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Test</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="../script/myScript.js"></script>
+    </footer>
+</body>
+</html>

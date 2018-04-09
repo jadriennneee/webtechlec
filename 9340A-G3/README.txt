@@ -1,20 +1,22 @@
 The resource folder contains the following files and directory:
 		> img directory - this contains all of the images and 
 						  icons used for the website
-		> fonts directory - this contains all of the fonts used in 						the website
-		> css directory - this contains the main.css file used in 					  styling the website
-		> scipt directory - this contains all the json files used for 					  the website's quiz as well as the 							website's javascript file used for the 						website's different functionalities
+		> fonts directory - this contains all of the fonts used in the website
+		> css directory - this contains the main.css file used in styling the website
+		> scipt directory - this contains all the json files used for the website's quiz as well as the 
+							website's javascript file used for the website's different functionalities
 
-		> pages directory - this contains all of the html documents 					that comprises the website topics.
+		> pages directory - this contains all of the html documents that comprises the website topics.
 			* HTML documnts within the directory:
-				1. cssoverview.html, cssprecedence.html, csspreprocessors.html, and cssselectors.html contains the content for CSS topic.
+				1. cssoverview.html, cssprecedence.html, csspreprocessors.html, 
+				and cssselectors.html contains the content for CSS topic.
 				2. htmldoc.html contains the content for HTML topic.
 				3. httpfundamentals.html, httpTechnical.html contains the content for HTTP topic.
 				4. javascript.html contains the content for JavaScript topic.
 				5. overview.html contains the content for WWW topic.
 				6. uri.html contains the content for URI/URL topic.
 
-		> quiz directory - this contains all of the html documents 					   that comprises the website quizzes.
+		> quiz directory - this contains all of the html documents that comprises the website quizzes.
 			* HTML documents within the directory:
 				1. quiz-dashboard.html contains the dashboard layout for accessing the differenc quizzes
 				2. html-quiz.html contains document for the CSS topic quiz.

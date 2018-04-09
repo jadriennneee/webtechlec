@@ -1,0 +1,18 @@
+{
+	"item": [{
+		"question": "It is resolved into an IP Address with the use of the DNS",
+		"answer": "Domain Name"
+	}, {
+		"question": "Sequence of characters that provides a uniqueaddress to identify the path/location of a certain HTTP Resource",
+		"answer": "URI"
+	}, {
+		"question": "It denotes the start of a query",
+		"answer": "Question Mark"
+	}, {
+		"question": "It is typically provided as a key=value pair.", 
+		"answer": "Query"
+	}, {
+		"question": "It indicates the port of connection.",
+		"answer": "Port Number"
+	}]
+}

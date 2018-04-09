@@ -1,0 +1,1050 @@
+commit 496a22a8df7d2d15c5ba9fc5346311902301b25d
+Merge: 92d483c 39f308e
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Apr 9 15:24:52 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 92d483c6badb7e7835e990e4c5eaab7e2810e868
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Apr 9 14:51:57 2018 +0800
+
+    Fixed issues
+
+commit 39f308e861d5fcbf39070c858a217ea43fe98e1a
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Mon Apr 9 13:22:06 2018 +0800
+
+    Deleted unecessary files and added README.txt
+
+commit a57f924db00b30225a49e550d4952f33d4d671aa
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Apr 9 00:23:04 2018 +0800
+
+    Added feature on modal
+
+commit 71376178ceb804c59da4da8d5270b4d7b10b5e9c
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 23:24:53 2018 +0800
+
+    Added about us
+
+commit 5418a810df6f2a5d897b2341b0bc12ec51ae869d
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 22:14:22 2018 +0800
+
+    Proof read content
+
+commit f6eefc7c8e123fe63f67d5deedefc7fa40875042
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 19:12:32 2018 +0800
+
+    Minor bug fix on broken links
+
+commit 707bc439ab01b4b847533b483ffa6c258e1a6e0a
+Merge: 0c0319f 17c2679
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 18:59:50 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 0c0319f6f9aca3476eb3600206c6ff72eb2681e4
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 18:57:59 2018 +0800
+
+    Fixed minor issue in nav
+
+commit f770b50d5fac3514545e54f280d5e0030e4324cd
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 18:50:45 2018 +0800
+
+    Added quiz dashboard
+
+commit 17c26790cbaf08f005337901a51519b81ae72ccc
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 14:27:52 2018 +0800
+
+    Modified paging of html documents
+
+commit 51cf66b14560870749b05f501e7ab1c29bcb624b
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 14:06:31 2018 +0800
+
+    Added about_us.html and linked it to all other html documents
+
+commit 86405d54b3b400f46ae223d1b62a2d5d92919c32
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 13:32:48 2018 +0800
+
+    Added JavaScript quiz
+
+commit f716896affe4b2ecbe3a8e200520e3867517b559
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 13:15:02 2018 +0800
+
+    Added CSS quiz
+
+commit 1c212c05f8619561b90386e507bfde60b4c182d4
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 13:00:31 2018 +0800
+
+    Added html and uri quiz
+
+commit 0b9ef7aa0dd27db2eb61bd1d386235efb23a416a
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 12:37:47 2018 +0800
+
+    Added quiz for HTTP
+
+commit d841f13b4dfe3b34c7342221db5fd912105512f5
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 12:08:55 2018 +0800
+
+    Added more questions for overview quiz
+
+commit 61bbf22d41f2c3caf8f19a8f01b17a3c8f997044
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 11:43:06 2018 +0800
+
+    fixed website navigation and reverted back to example codes for documents
+
+commit 0b5f707e54d901827958374ecbc91beb68cb026b
+Author: 2161745 <2161745@slu.edu.ph>
+Date:   Sun Apr 8 14:31:09 2018 +0800
+
+    updated the quiz questions and added the answers.txt
+
+commit 695042aaff6d28a646539d311978fde2913355ae
+Merge: abd7b89 aad75a8
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 14:07:23 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit abd7b899e6648c70b29df1651a915d98d96b7f4e
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 14:07:15 2018 +0800
+
+    Pushed quiz feature
+
+commit 29f9c3910811193ddc932003ec091a4be48f70e1
+Merge: 6cf94db dd61475
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 13:52:23 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 6cf94db33aa5690a40487851d7d2f326330c983e
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 13:50:41 2018 +0800
+
+    Finished quiz feature
+
+commit 0e48f20cd02f947f7e62a3d7f920b86ab94fdd6b
+Merge: e3bf4dd b308547
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 12:26:15 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit e3bf4dd2cb9052a41c838451c9c800222ebfdc3b
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 12:25:52 2018 +0800
+
+    Added generated quiz feature
+
+commit aad75a85ca951d490a1b1e9d066d0df7fce1fb87
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 10:35:56 2018 +0800
+
+    fixed navigation indicator for topics
+
+commit dd61475da9db9ef917c6c3f69423b0a7e9d60454
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 10:23:49 2018 +0800
+
+    made simple changes to issues
+
+commit 1392e7a3b8ad2981b8b5cbfa879b1f873e6b063a
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 09:32:33 2018 +0800
+
+    Finished fixing popup feature of website
+
+commit b30854796d38b6db92ea5cdcd91242c128821abb
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 08:59:37 2018 +0800
+
+    Finalized example codes
+
+commit ff78de56bea876b8086ebcf9cbe4d21cd67db1cf
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 08:20:56 2018 +0800
+
+    Changed code images to actual code examples
+
+commit a668bd59e841e72e7ce2128e27044b4444edd7cb
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 08:20:06 2018 +0800
+
+    deleted assets images
+
+commit eb0312230039849fe3a5769c06572087229db9b2
+Merge: d3ab11b 48d1d00
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 06:06:18 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit d3ab11bdb93856e8e6625aed1ab7c5d241b4732b
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 06:02:43 2018 +0800
+
+    Added page 1 of CSS (code)
+
+commit 48d1d00983deb7f7b55970dfdc8615a3bd537133
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 04:34:34 2018 +0800
+
+    added final navigation links to website and organized website structure
+
+commit 77425da46d42964930d369395ea29d211219a69b
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Apr 8 02:58:46 2018 +0800
+
+    added additional interface features for html documents
+
+commit c056b029f07745ceebe4f6eaad2b6e88ad6b74f2
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 02:09:48 2018 +0800
+
+    Added paging feature
+
+commit c0b932efa62171d5200892373460fd815827803b
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Apr 8 01:11:25 2018 +0800
+
+    Added table of contents to some pages
+
+commit b6135500dafd2ec65cf5f4f8f3931081fa5a8580
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sat Apr 7 23:17:10 2018 +0800
+
+    Minor bug fixes for table of contents
+
+commit 4747f8a1e90c288dc1dcde2a18bb07c29359ac77
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sat Apr 7 22:57:46 2018 +0800
+
+    Added scroll to content feature
+
+commit 89f252fd78c2802fa47a50febaf716b6ea14072c
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Fri Apr 6 11:48:31 2018 +0800
+
+    Added additional changes to html documents
+
+commit 52670095384e3448f50d7eb9f12bdc39ef375aa7
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Fri Apr 6 11:09:17 2018 +0800
+
+    Modified Navigation of table of contents section
+
+commit 8f4a2aa96e79a3375142aa977423a7b8afaff340
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sat Apr 7 01:22:55 2018 +0800
+
+    Added table of contents progress functionality
+
+commit 9b4e52910450840aa258dc55fa6aad76ae74b0c4
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Fri Apr 6 06:19:57 2018 +0800
+
+    deleted redundant files
+
+commit dabc85fb40a47eb5df71c70ead836258b434245a
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Fri Apr 6 06:03:14 2018 +0800
+
+    modified html documents and added final css modification
+
+commit 626b08e47c22fd99757299111194fcc2e77d0909
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Fri Apr 6 03:28:49 2018 +0800
+
+    Minor fix
+
+commit 5d78a34ec9728b034c5571922b663c00e00a4718
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Fri Apr 6 03:22:40 2018 +0800
+
+    Added progress bar for mobile version (topics)
+
+commit 91f2c26c776f8190416381f540ef096942e6b13d
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Thu Apr 5 03:25:46 2018 +0800
+
+    Added topics side bar collapsable
+
+commit 977247e5be9e65dc1e31c9520ba0f018180d609b
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Thu Apr 5 02:34:48 2018 +0800
+
+    Finished up to laptop version index.html
+
+commit 0450187f2f8c755a5065cceda1e5f45fec6738ec
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Thu Apr 5 01:17:18 2018 +0800
+
+    Added new logos inside Logos folder, and remove older ones
+
+commit 60f4596585792d85eab41228ed36e32c3fafd665
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Wed Apr 4 15:40:37 2018 +0800
+
+    Finished mobile index.html
+
+commit 1551ee1a691dbc5b117b38f13ebce329a9a1a38b
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Mon Apr 2 01:26:14 2018 +0800
+
+    Added quiz buttons to all html dcouments under pages folder and added html document for references
+
+commit 016d31acb01da4a7f936b8258b075ea3b139d8e3
+Author: RandyEspejo <espejorandy19@gmail.com>
+Date:   Sun Apr 1 19:28:49 2018 +0800
+
+    added organized references
+
+commit b52c2cccb020f87ab63716efa26603f8427a6280
+Author: RandyEspejo <espejorandy19@gmail.com>
+Date:   Sun Apr 1 19:27:39 2018 +0800
+
+    remove prelims, css and javascript references
+
+commit 76f333eb623f1007318513cb1f0201c2a8cfdf54
+Author: RandyEspejo <espejorandy19@gmail.com>
+Date:   Sat Mar 31 21:46:55 2018 +0800
+
+    added javaScript references apa format
+
+commit 6b4aa6dd9f4977897e15d903a93ec5ffba8ed4ca
+Author: RandyEspejo <espejorandy19@gmail.com>
+Date:   Sat Mar 31 21:32:49 2018 +0800
+
+    Added CSS references apa format
+
+commit dd11d3456cb990f4d7c7ce6558df6c20c05d51e3
+Author: RandyEspejo <espejorandy19@gmail.com>
+Date:   Sat Mar 31 20:48:49 2018 +0800
+
+    added JS questionaires and answers
+
+commit 98c26abec85f5a084dd3dc4bc445d4e13b005179
+Author: 2161745 <2161745@slu.edu.ph>
+Date:   Sat Mar 31 10:51:30 2018 +0800
+
+    added css and javascript questions
+
+commit c8d3f603785f0d234165bfee1b581b010c0cd727
+Author: 2161745 <2161745@slu.edu.ph>
+Date:   Sat Mar 31 10:48:43 2018 +0800
+
+    added css and javascript questions
+
+commit c27ed4aa81f902369986d8ca966b5b72fd35c555
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sat Mar 31 09:38:52 2018 +0800
+
+    Finished HTML document of JavaScript
+
+commit 61fc72cbefa05d99c47c3041419708b44dce276a
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sat Mar 31 08:53:49 2018 +0800
+
+    Finished HTML documents for CSS and created HTML document for JavaScript
+
+commit e19f7a4b62d957528fe48b50dd6d8b77d7cf76c1
+Author: RandyEspejo <espejorandy19@gmail.com>
+Date:   Sat Mar 31 08:13:58 2018 +0800
+
+    finish the questionnaires and answers of CSS
+
+commit 43166a84b4f3a6f1da240134c2805dfe566d3466
+Author: RandyEspejo <2164149@slu.edu.ph>
+Date:   Fri Mar 30 08:41:43 2018 +0800
+
+    Added www, http, html and css questions and answers
+
+commit e8a573cb8b75c892d20488ba46dbe3e9fa4dfc39
+Author: genesissoriano <2161745@slu.edu.ph>
+Date:   Thu Mar 29 23:43:09 2018 +0800
+
+    added questionnaire
+
+commit 656641c435951d6aa9c69d3ff4dd59cbda9df51c
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 29 21:19:17 2018 +0800
+
+    Added more content to css.html
+
+commit d501e6659abe06b22fcea215e06902fd5ab7de20
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 29 17:34:09 2018 +0800
+
+    Modified previous html documents and added css.html
+
+commit 49385cf5d61ffeca67a4f1529253d67b4fa5287f
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 29 16:34:46 2018 +0800
+
+    Added DOM notes in JavaScript Notes
+
+commit d4643cacd2b5939db3f1be4d32ccef0284d244bd
+Merge: cfa4dd4 e4eaa14
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 29 15:16:13 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit cfa4dd40ff7a0f87f8241bdd5452908685557a57
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 29 15:13:48 2018 +0800
+
+    Added notes for BOM in JavaScript notes
+
+commit e4eaa14443932f2cfae5e37e653d2d7acca4f651
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Thu Mar 29 12:19:45 2018 +0800
+
+    Screenshots
+
+commit f94c20404b8a92ab824b7309518bccc028247f69
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 29 11:45:32 2018 +0800
+
+    Added JavaScript notes and References
+
+commit 4b0a29a5d52f57e1ac05961e3717b381472ea1cf
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Thu Mar 29 10:26:26 2018 +0800
+
+    Edited hamburger menu and icons for mobile
+
+commit 1f45e93332c2eeb95c9fdbecd11b43901898902b
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Wed Mar 28 07:48:26 2018 +0800
+
+    Added few content to polyfills
+
+commit 8c21ddf8420742dd4786b4b1df92d3e37aa4f93a
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Wed Mar 28 07:45:53 2018 +0800
+
+    added polyfills and framework in CSS content
+
+commit 32235532d5ff95a508df972cb503b661b6a4f50d
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Wed Mar 28 07:44:33 2018 +0800
+
+    Added more html.html, uri.html and httpfundamentals.html
+
+commit 7acaad2a8bf9b07be2a168e905fb54329999ce4e
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Fri Mar 23 00:28:28 2018 +0800
+
+    Added more content in CSS Preprcessors
+
+commit f1327c4c04c5c88907d04778d394ae1bc69b7306
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 22 23:08:00 2018 +0800
+
+    Added CSS notes regarding CSS Preprocessors, Frameworks and Polyfills
+
+commit c8c8680eeb0be58d23f298e4535638f551c6f1c6
+Merge: 49b7639 42404ed
+Author: Jodyadriene <2160809@slu.edu.ph>
+Date:   Thu Mar 22 22:34:33 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 49b7639317f9795a284a9d6106c870d261a6f6ca
+Author: Jodyadriene <2160809@slu.edu.ph>
+Date:   Thu Mar 22 22:30:28 2018 +0800
+
+    made modifications to html files
+
+commit 42404edc132686e1bce595df4d52bcc7e4b39524
+Merge: 00ac2fe 368e324
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Mar 19 14:13:02 2018 +0800
+
+    Merge fix
+
+commit 00ac2febefa9c1511c5bd2417126aed010960373
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Mar 19 14:03:25 2018 +0800
+
+    Added mobile feature to exit sidebar when offset background is clicked
+
+commit 368e324189bfb9eaf16fefa95ec014d25aea61ea
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 23:21:06 2018 +0800
+
+    made changes in file navigations
+
+commit cddff3dfdbf4c45c95f8a26a3287876fc2b9eac5
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 23:10:18 2018 +0800
+
+    modified main.css
+
+commit fb31ad19e9b2e33f1103a524b5f72c4546e4224b
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 23:00:16 2018 +0800
+
+    Added httpfundamentals.html and modified overview.html
+
+commit 4dd6f719252bc925dc4225d334dca1361a1c3632
+Merge: 85bf677 400812b
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Mar 18 21:30:33 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 400812bf28ccf4155590d322b4c7de5be1643d86
+Author: randyespejo <espejorandy19@gmail.com>
+Date:   Sun Mar 18 20:24:21 2018 -0700
+
+    added CSS declaration
+
+commit 85bf6776b57c2558009cbae7a660f8ec1bbedd39
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Mar 18 21:24:38 2018 +0800
+
+    Finished index.html laptop version
+
+commit 63fcd2f479d96bca4243d40dd0810d72139cda33
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Mar 18 20:01:03 2018 +0800
+
+    Finished mobile version of index.html
+
+commit c8e8a87afd7e82c61d6661173fbd445281050b82
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 19:53:55 2018 +0800
+
+    modified index.html and overview.html
+
+commit 738a4ef275bd0a1dda88bee234b6b72795036eda
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 19:38:00 2018 +0800
+
+    Organized website-v1.1 folder
+
+commit d364880621a64e4fb844753046d4eb071c2f00f5
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 19:34:29 2018 +0800
+
+    Added CSS for content htmls and Added content for overview.html
+
+commit 4e9d63d848a20d3d332f092fd27a8a5997bdf2bb
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 17:09:39 2018 +0800
+
+    Modified sidebar navigation of Website
+
+commit 13c588f124d1fac99180d3190687bba74fb7e647
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 14:44:36 2018 +0800
+
+    Added CSS Declaration-Values notes
+
+commit b3d17841e0b09775e7b897c4b4d3a0eed476d228
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 13:36:25 2018 +0800
+
+    Added images for content and Added CSS Declaration-Properties notes
+
+commit cc435a64156aa9d6285a65090f533c26973189a2
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 13:05:09 2018 +0800
+
+    Modified CSS for section-a
+
+commit 79673208f08a04f4034091dddcc79ce234457774
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Mar 18 06:00:21 2018 +0800
+
+    Sidebar update
+
+commit 0892467ce02915c055fbea4c39821f24da28e433
+Merge: 320a9c4 84b7119
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Mar 18 04:52:12 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 320a9c41992109a24ea5ff8c005d59b667b87dea
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Mar 18 04:51:36 2018 +0800
+
+    Started modifying for sidebar
+
+commit 84b71199204755fce6bf6c1f18eb4bdec9e9709e
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Sun Mar 18 01:36:34 2018 +0800
+
+    Added latest logos inside Logos foler
+
+commit 4fef016c172e1bf1250d429651469213f2a2a652
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Sun Mar 18 01:34:33 2018 +0800
+
+    Removed some logos inside Logos folder
+
+commit 894ebe37b183cf871b288e66f1d28a16cb6a6534
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 18 01:30:41 2018 +0800
+
+    Added menu logos inside Logos folder
+
+commit e8e1be349e473c0eb068c3767c7482a05a4d199c
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Mar 18 01:14:42 2018 +0800
+
+    Finished up to laptop version (homepage)
+
+commit eb9962399bc15d12231950bc2893de8a2d5f42c5
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Fri Mar 16 04:33:42 2018 +0800
+
+    Edited the contents of the Website
+
+commit fbd5a851b6391897ba3b3d2da2169cb2452db3a6
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Fri Mar 16 00:49:57 2018 +0800
+
+    Added media query for landscape phones
+
+commit 90fc172e9b28b4e11b706d51046af53420c38f67
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Thu Mar 15 23:12:59 2018 +0800
+
+    Finished mobile version index.html
+
+commit 2198ea63e230015ec1d322b3c9b0b7a93480ddd6
+Author: randyespejo <espejorandy19@gmail.com>
+Date:   Thu Mar 15 19:01:52 2018 -0700
+
+    Added APA reference for prelims
+
+commit 43ab23d08d3e725e871ab5dcf001e8acee13a0ee
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Thu Mar 15 03:08:22 2018 +0800
+
+    Added websitev1.1
+
+commit e373d3cfb20fe861505c74b6066074bb8c988dce
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Wed Mar 14 23:10:10 2018 +0800
+
+    Added CSS Rule Precedence in notes
+
+commit 43e9a3c704e7709eac7565e8caf2bd758de52318
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Thu Mar 8 22:19:09 2018 +0800
+
+    Added CSS notes
+
+commit 1e87c79aef7cdc940801a784d8244b816f287b27
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Thu Mar 8 22:16:00 2018 +0800
+
+    Revert "Added CSS notes"
+    
+    This reverts commit 0c38a518f8ac6ce6dbeedd1be392589f21fe0c10.
+
+commit 0c38a518f8ac6ce6dbeedd1be392589f21fe0c10
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 8 22:13:37 2018 +0800
+
+    Added CSS notes
+
+commit ddb3929f07e289ac9080bb128cabead21abd5456
+Author: 2161745 <2161745@slu.edu.ph>
+Date:   Thu Mar 8 21:35:07 2018 +0800
+
+    added References
+
+commit d9f4d5b9349ce9de4a507a3c69aaf6f1a10df6ab
+Author: 2161745 <2161745@slu.edu.ph>
+Date:   Thu Mar 8 21:31:17 2018 +0800
+
+    Added content for CSS: CSS Rule sets, Selectors, Combinators, etc.
+
+commit 18ce15a02b747d51c0ad9e95e519ff57946c4068
+Author: RandyEspejo <espejorandy19@gmail.com>
+Date:   Thu Mar 8 21:07:59 2018 -0800
+
+    added css content: Selector,combinator,pseudo classes and pseudo elements
+
+commit 6bb38a5dee1ae170aae67191aee48d008d72ac02
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 8 20:40:12 2018 +0800
+
+    Updated LOGS.txt
+
+commit d76ba0f766305978dd4d8c82f1afa852abb23b4c
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 8 20:37:08 2018 +0800
+
+    moved pdf of design issues to root folder
+
+commit ff08b3064e1123287eb81b250355129b8cec9b18
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 8 20:35:54 2018 +0800
+
+    Created folder for website's content image and moved CSS Ruleset img to said folder
+
+commit c458bcd19423f6b3d0cc292b8ede443c557b736e
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 8 20:34:01 2018 +0800
+
+    Added content for CSS: CSS Rule sets, Selectors, Combinators, etc.
+
+commit e103b074eb7b09b57cacf655d82240419f24967e
+Author: 2161745 <2161745@slu.edu.ph>
+Date:   Thu Mar 8 20:23:33 2018 +0800
+
+    added css outline
+
+commit 28fe3baa8474510a17695d182927784446fdbab8
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 8 20:14:52 2018 +0800
+
+    Added CSS Ruleset > Mockups
+
+commit 7807b6931fdeffc8c3d87a79f836372d33224276
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Mar 8 19:45:49 2018 +0800
+
+    Added 'Interface redesign blueprint'>Mockups folder
+
+commit 73ae9187c41de49fc7b3e34d45aadefa5c22024b
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Mar 4 22:03:48 2018 +0800
+
+    Added Julz-CSS.txt (notes for March 3, 2018)
+
+commit 0257e61915fe2f0220fe00d81895c369c95b8325
+Author: randy <randy@randy.com>
+Date:   Sun Mar 4 17:01:21 2018 -0800
+
+    intro of css
+
+commit aad6e5614f1dc8c06669ce04b09ad38aae804b6e
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 4 11:49:34 2018 +0800
+
+    Organized outline subfolders and added notes for CSS
+
+commit 7bc52b84903d7a4c051c4bac48dfa4e8feae021d
+Merge: 4230f4c 990a8a5
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sun Mar 4 10:50:32 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 990a8a5805bd7069544b8a8c84683c205b77f625
+Author: genesissoriano <2161745@slu.edu.ph>
+Date:   Sun Mar 4 01:41:58 2018 +0800
+
+    added the CSS and overview outline
+
+commit 58aa889cb2ce1497918f7fe938c0a1c6155313c0
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 16:30:59 2018 +0800
+
+    Added media query for homepage
+
+commit ce127d067fc3ce8af892bbb266fb1bdc2baa15c7
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 16:23:59 2018 +0800
+
+    Added Resources and About us
+
+commit 163205c2a88e4030d5b6aa3fa8c1eca09e124bd9
+Merge: 0f4dcd6 e66052c
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 15:46:41 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 0f4dcd6eb8480b18fdbafc153831de5702720f19
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 15:46:34 2018 +0800
+
+    Finished all prelim topics
+
+commit e66052c8070f1bf1975e36a31dc97bda3f3e7526
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Mon Feb 26 15:27:44 2018 +0800
+
+    Finished Final Documentation up to URI
+
+commit 30ac554ae0df58f98423499fd6de4b603e10d216
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 14:57:30 2018 +0800
+
+    Finished httpTechnical.html
+
+commit 88d75c4385126d678f8d1a4b273d21218beeedbb
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 14:43:32 2018 +0800
+
+    Finished HTTP Headers
+
+commit bc6ff23505fa269512a31c95a47ff1b30d354c1a
+Merge: 390de8e 20f4f95
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Mon Feb 26 14:19:28 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 390de8e00e62207bc7728347cee692a638f6dce4
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Mon Feb 26 14:19:01 2018 +0800
+
+    Added additional content in HTTP
+
+commit 20f4f95421a20ab2e5a531b8e58f8a0b8186c85a
+Merge: d87ba04 623c078
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 14:06:16 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit d87ba04a464ad53ff5faf9e5f05637b0f3a9423e
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 14:05:45 2018 +0800
+
+    Finished first part of HTTP
+
+commit 0c6bbe28452696a6d1d13621fce26ff0e44ee9ac
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 12:32:19 2018 +0800
+
+    Finished adding colors
+
+commit a6c00599e68197f1440b8216927ecd85994d5f70
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 26 10:30:49 2018 +0800
+
+    Finsihed prototype of index.html
+
+commit 6fe89262a6e1ae721a4ed70f530ee5a1dc5ab07f
+Author: randy <randy@randy.com>
+Date:   Mon Feb 26 07:56:50 2018 -0800
+
+    added more information on http
+
+commit 623c07870493d33025a78e3e84b3f970fbc53dfa
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Mon Feb 26 12:25:59 2018 +0800
+
+    Created the Final Document to be added in the HTML
+
+commit 4230f4c7535f29e58988322753ff2121d5d77416
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Mon Feb 26 01:23:15 2018 +0800
+
+    Added content regarding HTTP Methods
+
+commit f66d996a72309604fd4642afe192a1318d359064
+Author: genesissoriano <2161745@slu.edu.ph>
+Date:   Mon Feb 26 01:13:09 2018 +0800
+
+    added a more detailed content about HTML
+
+commit 1713ef141b02a3fb2c5fc1f532fd5198c26ebe9b
+Author: randy <randy@randy.com>
+Date:   Sun Feb 25 23:07:19 2018 -0800
+
+    added purpose of http
+
+commit 40aea4ca3525182fcb726cb49cfbf10819454992
+Author: randy <randy@randy.com>
+Date:   Sun Feb 25 23:06:05 2018 -0800
+
+    added importance of http
+
+commit c04032e85b334800068b32b627e78da14341fb4b
+Author: randy <randy@randy.com>
+Date:   Sun Feb 25 22:59:22 2018 -0800
+
+    added information about http
+
+commit 80824dd0052afd0d6f4f1e8a2cd1d9e9844a155e
+Author: randy <randy@randy.com>
+Date:   Sun Feb 25 20:39:36 2018 -0800
+
+    added content in html
+
+commit 1294e658c70b6566084144aa0d97561c3bb0df36
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Sun Feb 25 13:14:10 2018 +0800
+
+    Added Banner4.jpg inside Banners folder
+
+commit f151e5c7e490d9ab53604be05e69749fa1c6da4a
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sat Feb 24 03:38:15 2018 +0800
+
+    moved Jody - HTTP.txt to folder named outlines
+
+commit e4439d8deaead5a28cdb3c66bd142134c81e80c2
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Sat Feb 24 03:35:44 2018 +0800
+
+    added HTTP notes
+
+commit f07b5d05c7f0c1fa22bd6565339721b7c54c702f
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Sat Feb 24 00:40:44 2018 +0800
+
+    Resized banner images inside Banners folder to 1440p
+
+commit 1fc18bc2b402e7487de4d5e3b00f1e754da1a2a4
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Sat Feb 24 00:37:26 2018 +0800
+
+    Added banner photos inside Banners folder
+
+commit 61927189dc37b81a0eb3583df3d9ba105115c804
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Sat Feb 24 00:36:26 2018 +0800
+
+    Added Palette Folder containing color palette images for website
+
+commit 94d42d5d7cb4ed47463ebb7cce0322b66337b4ef
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Sat Feb 24 00:35:07 2018 +0800
+
+    Added logos inside Logos folder
+
+commit 5fae9e8e346371561e36275e720d023383dd664a
+Author: 2161745 <2161745@slu.edu.ph>
+Date:   Fri Feb 23 17:24:41 2018 +0800
+
+    added a text file containing all possible colors for ui
+
+commit a6a1665e06a305cc91ab06f47739766c00dd3028
+Author: randy <randy@randy.com>
+Date:   Fri Feb 23 03:23:26 2018 -0800
+
+    html outline
+
+commit 3c86379934f75bc1f95461011b38a8bc582a3685
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Fri Feb 23 02:26:25 2018 +0800
+
+    Organized directory structure and added http and overview outline
+
+commit eb54f79f5695001cc73a449cbcfa707895690c22
+Merge: 26ede06 7cd8a0c
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Fri Feb 23 00:31:59 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 7cd8a0cc00183faf99921632bca3466858117b5d
+Author: randy <randy@randy.com>
+Date:   Thu Feb 22 22:25:51 2018 -0800
+
+    added content to http
+
+commit 26ede060157aafabc543e5e1ca23c5cfc6ae7e3d
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Fri Feb 23 00:31:44 2018 +0800
+
+    Added CSS to topics.html
+
+commit 88d8b90f608e8ac429399447c8f314d57c8b0f1e
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Thu Feb 22 12:04:48 2018 +0800
+
+    Finished html and css of index.html
+
+commit 076273f42e7c735c59536e7409ac810d7be76484
+Merge: 2d44566 e037ece
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Wed Feb 21 23:46:18 2018 +0800
+
+    Merge branch 'master' of https://github.com/jadriennneee/webtechlec
+
+commit 2d44566dd7f4f66a4d25535c73b2d4a99d1bf6b7
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Wed Feb 21 23:46:02 2018 +0800
+
+    Added circles div (temporary icons)
+
+commit e037ecefb6d38c0d450a39553d10e88f7370165e
+Author: 2161745 <2161745@slu.edu.ph>
+Date:   Wed Feb 21 22:40:43 2018 +0800
+
+    partial outline
+
+commit 2a1d3aacfd443df9bd4ef52ae077ca8e2448f4ee
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Tue Feb 20 14:16:28 2018 +0800
+
+    Finished CSS of header and banner
+
+commit e9ee10602132a86368ef2b19a1af490780b9e674
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Tue Feb 20 11:36:16 2018 +0800
+
+    modified stylesheet
+
+commit 471f24e21db3e15fdc036a7edc2e648140bda3af
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Tue Feb 20 00:08:18 2018 +0800
+
+    Added outline for HTML
+
+commit 629e012aef63545739815ecde2e3a6128b4616de
+Author: jadriennneee <donge_jody@yahoo.com>
+Date:   Mon Feb 19 23:46:12 2018 +0800
+
+    modified index.html and added initial style.cc with CSS Grid layout
+
+commit 8a58debb70160ccf5fadbf37e323dd412be8f15c
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Mon Feb 19 20:51:55 2018 +0800
+
+    Error fix
+
+commit ee9187b455ffbc3f9ed37ba7c2df2090358e5ba8
+Author: julianalonzo <julianaubreya@gmail.com>
+Date:   Sun Feb 18 23:45:56 2018 +0800
+
+    Added index.html
+
+commit b2c79c5818d6d0a0cb974093ef5b51cf1e51519e
+Author: randy <randy@randy.com>
+Date:   Sun Feb 18 22:00:56 2018 -0800
+
+    added http outline
+
+commit 3f6ccc3ad657e9b250bc1a9bf6fd1012e9401ad0
+Author: kmgitty <2161794@slu.edu.ph>
+Date:   Sun Feb 18 14:12:59 2018 +0800
+
+    Added mockups inside Mockups folder
+
+commit 87a19f513ceb204f8f8c0072d0b0ba4482c5fd3a
+Author: jadriennneee <32983930+jadriennneee@users.noreply.github.com>
+Date:   Fri Jan 26 20:58:59 2018 +0800
+
+    Initial commit

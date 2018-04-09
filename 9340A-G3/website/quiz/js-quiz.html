@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <title>techweb | Quiz</title>
+</head>
+<body>
+    <header>
+        <div id="headerWrapper">
+            <h1 id="branding">
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
+        </div>
+    </header>
+
+    <nav id="nav">
+        <div id="navHeader">
+            <h1>
+                <button class="nav-toggler">&#9776;</button>
+                <a href="../index.html">TechWeb</a>
+            </h1>
+        </div>
+
+        <ul>
+            <li>
+                <a href="../index.html"><img src="../img/homewhite.png" alt="Home">Home</a>
+            </li>
+            <li>
+                <a class="list-header">
+                    <img src="../img/topicswhite.png" alt="Topics" class="collapse-header">Topics
+                </a>
+                <div class="list-body">
+                    <ul>
+                        <li><a href="../pages/overview.html">Overview</a></li>
+                        <li><a href="../pages/httpfundamentals.html">HTTP</a></li>
+                        <li><a href="../pages/htmldoc.html">HTML</a></li>
+                        <li><a href="../pages/uri.html">URI</a></li>
+                        <li><a href="../pages/cssoverview.html">CSS</a></li>
+                        <li><a href="../pages/javascript.html">JavaScript</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="current">
+                <a href="../quiz/quiz-dashboard.html"><img src="../img/quizwhite.png" alt="Quizzes">Quiz</a>
+            </li>
+            <li>
+                <a href="../resources.html"><img src="../img/resourceswhite.png" alt="Resources">Resources</a>
+            </li>
+            <li>
+                <a href="../about_us.html"><img src="../img/aboutuswhite.png" alt="About Us">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <main id="main" class="quiz-grid">
+            <div id="mainContent">
+                <h1>JS Quiz</h1>
+
+                <div class="result">
+                    <h2></h2>
+                </div>
+
+                <div class="quiz-container" data-quizName="js">
+                    <form id="quizForm">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="content-wrap">
+                <p>IT 324 Web Tech 9340A, 2018</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="overlay"></div>
+
+    <!-- Custom Script -->
+    <script src="../script/myScript.js"></script>
+</body>
+</html>

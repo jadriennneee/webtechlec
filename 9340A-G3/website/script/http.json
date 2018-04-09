@@ -1,0 +1,33 @@
+{
+	"item": [{
+		"question": "It serves as a tool that allows Web Servers and Web browsers to communicate",
+		"answer": "HTTP"
+	}, {
+		"question": "What is the meaning of MIME?",
+		"answer": "Multimedia-Purpose Internet Mail Extensions"
+	}, {
+		"question": "Allows responses to be stored in the methods for future use.",
+		"answer": "Cacheable Methods"
+	}, {
+		"question": "A code used to indicate the status of the Client’s request.",
+		"answer": "Status Code"
+	}, {
+		"question": "Provision that allows methods used for authoring the websites remotely.",
+		"answer": "WebDAV"
+	}, {
+		"question": "It is used to identify the data type of the information being sent.",
+		"answer": "MIME-TYPE"
+	}, {
+		"question": "A protocol wherein the Client initiates the transmission of Web resources by sending a request to the server.",
+		"answer": "Request-Response Protocol"
+	}, {
+		"question": "Version of HTTP that supports data compression",
+		"answer": "1.1"
+	}, {
+		"question": "It includes additional information regarding the Client.",
+		"answer": "Header"
+	}, {
+		"question": "A method property that indicates no changes are done in the state of the Server.",
+		"answer": "Safe method"
+	}]
+}
