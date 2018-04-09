@@ -150,8 +150,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Go to quiz
-    if (document.getElementById("takeQuizButton")) {
-        document.getElementById("takeQuizButton").addEventListener("click", function() {
+    if (document.getElementById("takeQuizMobileButton")) {
+        document.getElementById("takeQuizMobileButton").addEventListener("click", function() {
             window.location.href = `../quiz/${this.getAttribute("data-redirect")}.html`;
         });
     }
