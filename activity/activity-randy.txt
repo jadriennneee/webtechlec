@@ -1,0 +1,13 @@
+multiple choice
+	- here it allows the user to choice the right answer to fill the blanks on the code.
+
+fill in the blank
+	example: http : tim berners-lee ; js : _____________.
+
+true or false
+	-there is a statement and one word that have underline. if the sentence is correct just choose the true if not choose the flase and put the corrected word on the blank underline.
+
+scrambled letter
+	- it allows the user to make a word on the scrambled letters
+
+
